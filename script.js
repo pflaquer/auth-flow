@@ -34,6 +34,8 @@ window.onload = function() {
     }).then(function(auth2) {
       const button = document.getElementById("google-login-button");
       button.addEventListener("click", function() {
+
+        alert('attempting sign in');
         auth2.signIn().then(onSuccess, onFailure);
       });
     });
