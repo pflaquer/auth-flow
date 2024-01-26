@@ -1,5 +1,5 @@
 const clientId = "45349294622-clh89uspdjaph48v033evuldh4792e07.apps.googleusercontent.com"; // Replace with your Google OAuth2 client ID
-const scope = "profile email"; // Adjust requested scope (e.g., "https://www.googleapis.com/auth/drive.readonly")
+const scope = "userinfo.email"; // Adjust requested scope (e.g., "https://www.googleapis.com/auth/drive.readonly")
 
 function handleCredentialResponse(response) {
   alert('logged in!');
