@@ -22,6 +22,24 @@
 <body>
   <!-- -->
 <script>
+  
+  function handleCredentialResponse(response) {
+     // decodeJwtResponse() is a custom function defined by you
+     // to decode the credential response.
+    alert('successfully logged in!'+Date());
+     const responsePayload = decodeJwtResponse(response.credential);
+
+     console.log("ID: " + responsePayload.sub);
+     console.log('Full Name: ' + responsePayload.name);
+     console.log('Given Name: ' + responsePayload.given_name);
+     console.log('Family Name: ' + responsePayload.family_name);
+     console.log("Image URL: " + responsePayload.picture);
+     console.log("Email: " + responsePayload.email);
+  }
+
+  
+  
+  
   function onSignIn(googleUser) {
   
   alert('succesfully logged in...!');
@@ -73,7 +91,7 @@ var profile = auth2.currentUser.get().getBasicProfile();
       <div class="input-container">
         <input type="password" id="password" placeholder="Password" required>
       </div>
-      <!--<div class="g-signin2" data-onsuccess="onSignIn"></div>-->
+      <!--<div class="g-signin2" data-onsuccess="handleCredentialResponse"></div>-->
       <!--<button type="submit">Login →</button>-->
 
 <div id="g_id_onload"
