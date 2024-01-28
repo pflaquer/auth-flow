@@ -29,6 +29,8 @@
     alert('successfully logged in!'+Date());
      //const responsePayload = decodeJwtResponse(response.credential);
     const responsePayload = response.credential;
+    console.log(response.credential);
+    console.log(response);
 
      console.log("ID: " + responsePayload.sub);
      console.log('Full Name: ' + responsePayload.name);
