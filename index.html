@@ -25,7 +25,7 @@
   function onSignIn(googleUser) {
   
   alert('succesfully logged in...!');
-  alert(gapi);
+  alert(JSON.stringify(gapi));
     alert(gapi.auth2.init());
   alert('auth2 initialized!');
   alert(GoogleAuth.isSignedIn.get());
