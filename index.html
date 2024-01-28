@@ -30,7 +30,8 @@
      //const responsePayload = decodeJwtResponse(response.credential);
     const responsePayload = response.credential;
     console.log(response.credential);
-    console.log(response);
+    console.log(atob(response.credential));
+    console.log(atob(response));
 
      console.log("ID: " + responsePayload.sub);
      console.log('Full Name: ' + responsePayload.name);
