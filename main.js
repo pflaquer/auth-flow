@@ -2,7 +2,7 @@ var auth2 = gapi.auth2.getAuthInstance();
 
 function onSignIn(googleUser) {
   
-  alert('succesfully logged in!');
+  alert('succesfully logged in...!');
   gapi.auth2.init()
   alert('auth2 initialized!');
   alert(GoogleAuth.isSignedIn.get());
