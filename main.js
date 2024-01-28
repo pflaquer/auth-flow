@@ -1,3 +1,5 @@
+var auth2 = gapi.auth2.getAuthInstance();
+
 function onSignIn(googleUser) {
   
   alert('succesfully logged in!');
