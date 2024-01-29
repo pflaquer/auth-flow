@@ -32,6 +32,7 @@
     console.log(response)
     let jwt = response.credential;
   let header = jwt.split('').slice(0,jwt.indexOf('.'));
+    let payload;
     
     console.log(header);
   
