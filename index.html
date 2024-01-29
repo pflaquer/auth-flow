@@ -29,9 +29,12 @@
     alert('successfully logged in!'+Date());
      //const responsePayload = decodeJwtResponse(response.credential);
     const responsePayload = response.credential;
-    console.log(response.credential);
-    console.log(atob(response.credential));
-    console.log(atob(response));
+    console.log(response)
+    let jwt = response.credential;
+  let header = jwt.split('').slice(0,jwt.indexOf('.'));
+    
+    console.log(header);
+  
 
      console.log("ID: " + responsePayload.sub);
      console.log('Full Name: ' + responsePayload.name);
@@ -82,6 +85,10 @@ var profile = auth2.currentUser.get().getBasicProfile();
      alert('Failed')
    }
  }
+
+
+
+  
 </script>
   
 
