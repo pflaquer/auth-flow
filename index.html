@@ -31,7 +31,7 @@
     const responsePayload = response.credential;
     console.log(response)
     let jwt = response.credential;
-  let header = jwt.split('').slice(0,jwt.indexOf('.')).join();
+  let header = jwt.split('').slice(0,jwt.indexOf('.')).join('');
     let payload;
     
     console.log(atob(header));
