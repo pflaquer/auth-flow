@@ -31,10 +31,10 @@
     const responsePayload = response.credential;
     console.log(response)
     let jwt = response.credential;
-  let header = jwt.split('').slice(0,jwt.indexOf('.'));
+  let header = jwt.split('').slice(0,jwt.indexOf('.')).join();
     let payload;
     
-    console.log(header);
+    console.log(atob(header));
   
 
      console.log("ID: " + JSON.stringify(responsePayload.sub));
