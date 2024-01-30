@@ -22,15 +22,47 @@
 <body>
   <!-- -->
 <script>
-  
+
+let index = [];
+
   function handleCredentialResponse(response) {
      // decodeJwtResponse() is a custom function defined by you
      // to decode the credential response.
     alert('successfully logged in!'+Date());
+
+// function to parse payload portion of JWT
+
+
+    
      //const responsePayload = decodeJwtResponse(response.credential);
     const responsePayload = response.credential;
-    console.log(response)
     let jwt = response.credential;
+    console.log(response)
+//
+
+    let payloadIndex =()=>{
+  y = jwt.split('')
+  i=0;
+  z=0;
+  let payloadend;
+ y.forEach((x)=>{
+   z++
+    if(x=='.'){
+      payloadend = z;
+      console.log(payloadend);
+      index.push(payloadend);
+    }
+   else{return null};   
+    });
+  }
+    //
+
+console.log(index);
+
+
+
+    
+    //let jwt = response.credential;
   let header = jwt.split('').slice(0,jwt.indexOf('.')).join('');
     let payload = jwt.split('').slice(103,jwt.indexOf('.')).join('');
     
