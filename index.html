@@ -32,10 +32,10 @@
     console.log(response)
     let jwt = response.credential;
   let header = jwt.split('').slice(0,jwt.indexOf('.')).join('');
-    let payload;
+    let payload = jwt.split('').slice(103,jwt.indexOf('.')).join('');
     
     console.log(atob(header));
-  
+  console.log(payload);
 
      console.log("ID: " + JSON.stringify(responsePayload.sub));
      console.log('Full Name: ' + responsePayload.name);
