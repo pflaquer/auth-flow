@@ -66,7 +66,10 @@ console.log(index);
     
     //let jwt = response.credential;
   let header = jwt.split('').slice(0,jwt.indexOf('.')).join('');
-    let payload = jwt.split('').slice(...index,...index).join('').length--;
+    let payload = jwt.split('').slice(...index,...index)
+    payload.length--
+    
+payload = payload.join('');
     
     console.log(atob(header));
   console.log(payload);
