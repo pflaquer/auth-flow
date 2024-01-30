@@ -59,14 +59,14 @@ let index = [];
 payloadIndex()
 
 console.log(index);
-    console.log(jwt.split(''));
+    //console.log(jwt.split(''));
 
 
 
     
     //let jwt = response.credential;
   let header = jwt.split('').slice(0,jwt.indexOf('.')).join('');
-    let payload = jwt.split('').slice(103,jwt.indexOf('.')).join('');
+    let payload = jwt.split('').slice(...index,...index).join('');
     
     console.log(atob(header));
   console.log(payload);
