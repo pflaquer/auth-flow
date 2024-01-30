@@ -71,6 +71,7 @@ console.log(index);
     
 payload = payload.join('');
 payload = atob(payload);
+    payload = JSON.parse(payload)
     console.log(atob(header));
   console.log(payload);
 
