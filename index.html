@@ -84,7 +84,7 @@ payload = atob(payload);
      console.log("Image URL: " + user.picture);
      console.log("Email: " + payload.email);
 
-    document.getElementById("data").innerHTML = `<img src=${user.picture} class="photo"></img>${user.name}` 
+    document.getElementById("data").innerHTML = `<hr><img src=${user.picture} class="photo"></img><br>${user.name}<br>${user.email}` 
   }
 
   
