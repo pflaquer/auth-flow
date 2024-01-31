@@ -83,6 +83,8 @@ payload = atob(payload);
      console.log('Family Name: ' + payload.family_name);
      console.log("Image URL: " + user.picture);
      console.log("Email: " + payload.email);
+
+    document.getElementById("data").innerHTML = `<img src=${user.picture} class="photo"></img>${user.name}` 
   }
 
   
@@ -169,6 +171,8 @@ var profile = auth2.currentUser.get().getBasicProfile();
       <!-- Removed Forgot Password link -->
     </div>
     <div class="credit"> <a href="#" class="credit">All Rights Reserved: ©PXDR0 ↗ </a></div>
+  </div>
+  <code id="data">
   </div>
 
 
