@@ -72,14 +72,16 @@ console.log(index);
 payload = payload.join('');
 payload = atob(payload);
     payload = JSON.parse(payload)
+    let user = payload;
     console.log(atob(header));
   console.log(payload);
 
      console.log("ID: " + payload.sub);
-     console.log('Full Name: ' + payload.name);
+    console.log("ID: " + user.sub);
+     console.log('Full Name: ' + user.name);
      console.log('Given Name: ' + payload.given_name);
      console.log('Family Name: ' + payload.family_name);
-     console.log("Image URL: " + payload.picture);
+     console.log("Image URL: " + user.picture);
      console.log("Email: " + payload.email);
   }
 
