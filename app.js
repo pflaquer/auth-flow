@@ -3,7 +3,8 @@ let venues = []
 user = {
 img:'https://raw.githubusercontent.com/emnatkins/cdn-codepen/main/default.jpeg'
 }
-document.getElementById("profileimg").setAttribute('src',user.img)
+let userimg = localStorage.getItem(1);
+document.getElementById("profileimg").setAttribute('src',userimg)
 class venue{
   constructor(name,description,img){
     this.name = name;
