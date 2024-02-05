@@ -92,4 +92,10 @@ button:hover {
   border-radius:50%;
 }
 
+.logo {
+  border-radius:50%;
+  border-style:dashed;
+  border-color:var(--main-color);
+  border-width:1px;
+}
 
