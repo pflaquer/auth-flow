@@ -1,11 +1,13 @@
 body {
   font-family: "Bricolage Grotesque", sans-serif;
-  background-color: #e1fd74;
+  /*background-color: #e1fd74;*/
+background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  opacity:.8;
 }
 
 .login-container {
