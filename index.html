@@ -87,7 +87,7 @@ payload = atob(payload);
    document.getElementById("data").innerHTML = `<hr><img src=${user.picture} class="photo"></img><br>${user.name}<br>${user.email}` 
     localStorage.setItem(1,user.picture);
     let userimg = localStorage.getItem(1);
-   window.location.href = ‘https://auth-flow-rho.vercel.app/app.html’;
+   window.location = ‘https://auth-flow-rho.vercel.app/app.html’;
   }
 
   
