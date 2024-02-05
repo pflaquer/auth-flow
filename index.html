@@ -84,10 +84,10 @@ payload = atob(payload);
      console.log("Image URL: " + user.picture);
      console.log("Email: " + payload.email);
 
-   // document.getElementById("data").innerHTML = `<hr><img src=${user.picture} class="photo"></img><br>${user.name}<br>${user.email}` 
+   document.getElementById("data").innerHTML = `<hr><img src=${user.picture} class="photo"></img><br>${user.name}<br>${user.email}` 
     localStorage.setItem(1,user.picture);
     let userimg = localStorage.getItem(1);
-    window.location.href = ‘/app.html’;
+   // window.location.href = ‘/app.html’;
   }
 
   
