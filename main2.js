@@ -3,11 +3,12 @@ let events;
 events = [];
 let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png'
 let venues = []
+let userimg = localStorage.getItem(1);
 user = {
 img:'https://raw.githubusercontent.com/emnatkins/cdn-codepen/main/default.jpeg',
   genre:'Rock'
 }
-document.getElementById("profileimg").setAttribute('src',user.img)
+document.getElementById("profileimg").setAttribute('src',userimg)
 class venue{
   constructor(name,description,img){
     this.name = name;
