@@ -84,7 +84,7 @@ payload = atob(payload);
      console.log("Image URL: " + user.picture);
      console.log("Email: " + payload.email);
 
-   document.getElementById("data").innerHTML = `<hr><img src=${user.picture} class="photo"></img><br>${user.name}<br>${user.email}<hr><button href="/app.html"><a href="app.html">Continue...</a></button>` 
+   document.getElementById("data").innerHTML = `<hr><img src=${user.picture} class="photo"></img><br>${user.name}<br>${user.email}<hr><button href="/app.html"><a href="app.html">Continue To App</a></button>` 
     localStorage.setItem(1,user.picture);
     let userimg = localStorage.getItem(1);
    //window.location = ‘https://auth-flow-rho.vercel.app/app.html’;
@@ -173,11 +173,12 @@ var profile = auth2.currentUser.get().getBasicProfile();
     <div class="extra-options">
       <!-- Removed Forgot Password link -->
     </div>
+      <code id="data">
+  </div>
     <div class="credit"> <a href="#" class="credit">All Rights Reserved: ©PXDR0 ↗ </a></div>
   </div>
   <div>
-  <code id="data">
-  </div>
+
 
 
   
