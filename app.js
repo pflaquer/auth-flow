@@ -297,3 +297,10 @@ function error(err) {
 }
 
 navigator.geolocation.getCurrentPosition(success, error, options);
+
+
+function test(){
+	alert('working');
+	btns.classList.toggle('button-ani');
+}
+
