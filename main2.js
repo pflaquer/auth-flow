@@ -187,21 +187,20 @@ btns.onclick = (e)=>{
   //send()
   btns.classList.toggle('button-ani');
   console.log(e);
-  /*state = !state;
+  state = !state;
   alert('Busking Status Set to '+state);
 	buskers.push(this);	
 	let msg = 'Currently Busking='+buskers.length;
   const customMarker = document.createElement('img');
   customMarker.className = 'marker';
   customMarker.src = user.img;
-*/
   //const image = {
     /*url: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
     
 
     size: new google.maps.Size(20, 32),
     */
-   /* url:custommarker,
+    url:custommarker,
 size: new google.maps.Size(61,61),
     origin: new google.maps.Point(0, 0),
 
@@ -241,7 +240,7 @@ size: new google.maps.Size(61,61),
    });
 	
 }
-*/
+
 /*
 let wsUri = "wss://socketsbay.com/wss/v2/1/b82aefd80dfc40b5c084ae38a67f6025/";
 let log;
