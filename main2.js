@@ -194,7 +194,7 @@ btns.onclick = (e)=>{
   const customMarker = document.createElement('img');
   customMarker.className = 'marker';
   customMarker.src = user.img;
-  //const image = {
+  const image = {
     /*url: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
     
 
