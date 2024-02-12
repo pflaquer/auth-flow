@@ -178,10 +178,10 @@ document.querySelector("#navitem").forEach((x)=>{
 
 let btns = document.getElementById("pulse")
 
-btns.onclick = (e)=>{
+btns.onclick = ()=>{
   //send()
   btns.classList.toggle('button-ani');
-  console.log(e);
+  //console.log(e);
   state = !state;
   alert('Busking Status Set to '+state);
 	buskers.push(this);	
