@@ -1,10 +1,13 @@
 let user;
 let venues = []
+let state;
+state = false;
+
 user = {
 img:'https://raw.githubusercontent.com/emnatkins/cdn-codepen/main/default.jpeg'
 }
-let userimg = localStorage.getItem(1);
-document.getElementById("profileimg").setAttribute('src',userimg)
+let user.img = localStorage.getItem(1);
+document.getElementById("profileimg").setAttribute('src',user.img)
 class venue{
   constructor(name,description,img){
     this.name = name;
@@ -82,7 +85,7 @@ buskers.forEach((x)=>{
 
 };
 
-let state = false;
+
 
 
 function broadcast(x){
