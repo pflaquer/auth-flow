@@ -1,5 +1,11 @@
 let user;
 let venues = []
+var map = null;
+var buskers = [];
+let latitude;
+let longitude;
+
+let loggedin = false;
 let state;
 state = false;
 
@@ -45,12 +51,7 @@ function toggleOfClass(element, ClassName) {
 }
 
 
-var map = null;
-var buskers = [];
-let latitude;
-let longitude;
 
-let loggedin = false;
 
 window.onload = function() {
 	
