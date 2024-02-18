@@ -10,6 +10,8 @@ user = {
 img:'https://raw.githubusercontent.com/emnatkins/cdn-codepen/main/default.jpeg',
   genre:'Rock'
 }
+
+user.img = userimg;
 document.getElementById("profileimg").setAttribute('src',userimg)
 class venue{
   constructor(name,description,img){
