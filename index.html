@@ -83,7 +83,7 @@ payload = atob(payload);
      console.log('Family Name: ' + payload.family_name);
      console.log("Image URL: " + user.picture);
      console.log("Email: " + payload.email);
-
+document.getElementById("status").innerHTML = 'Successfully Logged In';
    document.getElementById("data").innerHTML = `<img src=${user.picture} class="photo"></img><br>${user.name}<br>${user.email}<br><button href="/app.html"><a href="app.html">Continue</a></button>` 
     localStorage.setItem(1,user.picture);
     let userimg = localStorage.getItem(1);
@@ -140,7 +140,7 @@ var profile = auth2.currentUser.get().getBasicProfile();
 
   <div class="login-container">
     <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/61/72/98/61729802-4c9f-4c99-e775-ae7a252275d3/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" alt="User Icon" class="logo">
-    <h1>Login</h1>
+    <h1 id="status">Login</h1>
     <div id="data">
     <form id="login-form">
       <div class="input-container" >
