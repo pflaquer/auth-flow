@@ -514,7 +514,7 @@ a:link {
 
 .button-ani {
   animation: name 1000ms linear infinite;
-  background-color: red;
+  /*background-color: red;*/
   color: red;
   transition: ease 500ms; }
 
