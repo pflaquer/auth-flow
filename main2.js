@@ -1,5 +1,7 @@
 let user;
 let events;
+let btns = document.getElementById("pulse");
+
 events = [];
 let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png'
 let venues = []
@@ -185,7 +187,7 @@ function busk(){
 	console.log('working...');
 }
 
-let btns = document.getElementById("pulse")
+
 
 btns.onclick = (e)=>{
 //function busk(){
