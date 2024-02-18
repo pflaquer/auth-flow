@@ -431,3 +431,54 @@ document.getElementById("featuredevent").innerHTML = featuredEvent()
 */
 
 
+function addMarker(){
+	state = !state;
+  alert('Busking Status Set to '+state);
+	buskers.push(this);	
+	let msg = 'Currently Busking='+buskers.length;
+  const customMarker = document.createElement('img');
+  customMarker.className = 'marker';
+  customMarker.src = user.img;
+  const image = {
+    
+    url:custommarker,
+size: new google.maps.Size(61,61),
+    origin: new google.maps.Point(0, 0),
+
+    anchor: new google.maps.Point(0, 32),
+  };
+
+  const shape = {
+    coords: [1, 1, 1, 20, 18, 20, 18, 1],
+    type: "poly",
+  };
+  let contentString = `<img src=${user.img} class="userimg"></img><hr>
+  Genre: ${user.genre}<hr>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="32px" height="32px"></img>  
+<img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="32px" href="https://soundcloud.com" height="32px"></img>
+  `
+  const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    ariaLabel: "Uluru",
+  });
+  //
+  
+   let marker = new google.maps.Marker({
+		position: {lat: 40.70+(Math.random()/50), lng: -73.9171+(Math.random()/50)},
+    //{lat: parseInt(window.prompt('Insert Lat')), lng: parseInt(window.prompt('Insert Long'))},
+		map: map,
+		animation: google.maps.Animation.DROP,
+     icon: image,
+      shape: shape,
+		//icon: img
+     //content:customMarker
+	});
+   marker.addListener("click", () => {
+    infowindow.open({
+      anchor: marker,
+      map,
+    });
+   });
+	
+}
+	
