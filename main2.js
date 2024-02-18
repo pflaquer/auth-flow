@@ -183,7 +183,7 @@ document.querySelector("#navitem").forEach((x)=>{
 */
 function busk(){
 	alert('working');
-	btns.classList.toggle('button-ani');
+	document.getElementById("pulse").classList.toggle('button-ani');
 	console.log('working...');
 }
 
