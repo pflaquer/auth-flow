@@ -179,12 +179,14 @@ document.querySelector("#navitem").forEach((x)=>{
   x.onclick = alert('Clicked')
 })
 */
-
+function busk(){
+	alert('working');
+}
 
 let btns = document.getElementById("pulse")
 
-//btns.onclick = (e)=>{
-function busk(){
+btns.onclick = (e)=>{
+//function busk(){
   //send()
   btns.classList.toggle('button-ani');
   console.log(e);
