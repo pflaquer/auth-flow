@@ -181,6 +181,7 @@ document.querySelector("#navitem").forEach((x)=>{
 */
 function busk(){
 	alert('working');
+	btns.classList.toggle('button-ani');
 }
 
 let btns = document.getElementById("pulse")
