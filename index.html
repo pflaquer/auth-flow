@@ -1,217 +1,83 @@
 <!DOCTYPE html>
 <head>
-<meta name=”google-signin-scope” content=”profile email”>
-
-<meta name="google-signin-client_id" content="45349294622-clh89uspdjaph48v033evuldh4792e07.apps.googleusercontent.com">
-<meta http-equiv="Permissions-Policy" content="ch-ua-form-factor">
-  <meta charset="UTF-8">
-  <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="John Doe">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!--<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap" rel="stylesheet">-->
-<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
-  <script src="https://apis.google.com/js/api.js"></script>
-  <script src="https://accounts.google.com/gsi/client" async></script>
- 
+<title>
+Busk-It | Discover Live Music in NYC
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js"></script>
 </head>
-
 <body>
-  <!-- -->
-<script>
-
-let index = [];
-
-  function handleCredentialResponse(response) {
-     // decodeJwtResponse() is a custom function defined by you
-     // to decode the credential response.
-    alert('successfully logged in!'+Date());
-
-// function to parse payload portion of JWT
-
-
-    
-     //const responsePayload = decodeJwtResponse(response.credential);
-    const responsePayload = response.credential;
-    let jwt = response.credential;
-    console.log(response)
-    console.log(jwt);
-//
-
-    let payloadIndex =()=>{
-  y = jwt.split('')
-  i=0;
-  z=0;
-  let payloadend;
- y.forEach((x)=>{
-   z++
-    if(x=='.'){
-      payloadend = z;
-      //console.log(payloadend);
-      index.push(payloadend);
-    }
-   else{return null};   
-    });
-  }
-payloadIndex()
-
-console.log(index);
-    //console.log(jwt.split(''));
-
-
-
-    
-    //let jwt = response.credential;
-  let header = jwt.split('').slice(0,jwt.indexOf('.')).join('');
-    let payload = jwt.split('').slice(...index,...index)
-    payload.length--
-    
-payload = payload.join('');
-payload = atob(payload);
-    payload = JSON.parse(payload)
-    let user = payload;
-    console.log(atob(header));
-  console.log(payload);
-
-     console.log("ID: " + payload.sub);
-    console.log("ID: " + user.sub);
-     console.log('Full Name: ' + user.name);
-     console.log('Given Name: ' + payload.given_name);
-     console.log('Family Name: ' + payload.family_name);
-     console.log("Image URL: " + user.picture);
-     console.log("Email: " + payload.email);
-document.getElementById("status").innerHTML = 'Successfully Logged In';
-   document.getElementById("data").innerHTML = `<img src=${user.picture} class="photo"></img><br>${user.name}<br>${user.email}<br><button href="/app.html"><a href="app.html">Continue</a></button>` 
-    localStorage.setItem(1,user.picture);
-    let userimg = localStorage.getItem(1);
-   //window.location = ‘https://auth-flow-rho.vercel.app/app.html’;
-  }
-
-  
-  
-  
-  function onSignIn(googleUser) {
-  
-  alert('succesfully logged in...!');
-  alert(JSON.stringify(gapi));
-    alert(gapi.auth2.init());
-  alert('auth2 initialized!');
-  alert(GoogleAuth.isSignedIn.get());
-  var auth2 = gapi.auth2.getAuthInstance();
-  //var profile = googleUser.getBasicProfile();
-  //console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
- // console.log('Name: ' + profile.getName());
-  //console.log('Image URL: ' + profile.getImageUrl());
-  //console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-
-var profile = auth2.currentUser.get().getBasicProfile();
-  console.log('ID: ' + profile.getId());
-  console.log('Full Name: ' + profile.getName());
-  console.log('Given Name: ' + profile.getGivenName());
-  console.log('Family Name: ' + profile.getFamilyName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail());
-
-  
-}
-
- function signOut() {
-   try{
-     alert('starting!')
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(
-      function () {
-      alert('User signed out.');
-    });
-  }
-   catch(e){
-     alert('Failed')
-   }
- }
-
-
-
-  
-</script>
-  
-
-  <div class="login-container">
-    <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/61/72/98/61729802-4c9f-4c99-e775-ae7a252275d3/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" alt="User Icon" class="logo">
-    <h1 id="status">Login</h1>
-    <div id="data">
-    <form id="login-form">
-      <div class="input-container" >
-        <input type="text" id="username" placeholder="Username" required disabled>
+<div class="container">
+      <!-- Side infos -->
+      <div class="side-info">
+        <span>discover</span>
+        <h1>live music in NYC</h1>
+        <hr />
+        <center>
+        <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/61/72/98/61729802-4c9f-4c99-e775-ae7a252275d3/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" width="30%" height="30%" style="border-radius:10px; filter:drop-shadow(10px 5px 4px gray");"></img></center>
+        <br>
+        <p>
+          Find the latest, live performances in your city
+        </p>
+        <a href="https://auth-flow-rho.vercel.app">Login</a>
+        <a href="https://auth-flow-rho.vercel.app">Sign Up</a>
       </div>
-      <div class="input-container">
-        <input type="password" id="password" placeholder="Password" required disabled>
+      <!-- Swiper slider -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Content 1 -->
+          <div class="swiper-slide slide-one">
+            <div>
+              <h2>Wind and Brass</h2>
+              <p>
+                Discover and tune into live, smooth jazz!
+              </p>
+              <a href="#">Tune In</a>
+            </div>
+          </div>
+          <!-- Content 2 -->
+          <div class="swiper-slide slide-two">
+            <div>
+              <h2>Saxophone</h2>
+              <p>
+                Find Live Saxophone Music in NYC!
+              </p>
+              <a href="#">Tune In</a>
+            </div>
+          </div>
+          <!-- Content 3 -->
+          <div class="swiper-slide slide-three">
+            <div>
+              <h2>Live Music</h2>
+              <p>
+                Find Live Street Music in NYC!
+              </p>
+              <a href="#">Tune In</a>
+            </div>
+          </div>
+          <!-- Content 4 -->
+          <div class="swiper-slide slide-four">
+            <div>
+              <h2>Subway Music</h2>
+              <p>
+               Find Live Subway Music in NYC!
+              </p>
+              <a href="#">Tune In</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!--<div class="g-signin2" data-onsuccess="handleCredentialResponse"></div>-->
-      <!--<button type="submit">Login →</button>-->
-    
-
-<div id="g_id_onload"
-     data-client_id="45349294622-clh89uspdjaph48v033evuldh4792e07.apps.googleusercontent.com"
-     data-context="signin"
-     data-ux_mode="popup"
-     data-callback="handleCredentialResponse"
-     data-nonce=""
-     data-auto_prompt="false">
-</div>
-
-<div class="g_id_signin"
-     data-type="standard"
-     data-shape="pill"
-     data-theme="outline"
-     data-text="signin_with"
-     data-size="large"
-     data-logo_alignment="left">
-</div>
     </div>
-      
-    </form>
-    <div class="extra-options">
-      <!-- Removed Forgot Password link -->
-    </div>
-      <!--<code id="data">
-        -->
- 
-    <!--<div class="credit"> <a href="#" class="credit">All Rights Reserved: ©PXDR0 ↗ </a></div>-->
-  </div>
-  <div>
-     </div>
-
-
-
-  
-
-
-
-
- <!-- <div id="g_id_onload"
-     data-client_id="45349294622-clh89uspdjaph48v033evuldh4792e07.apps.googleusercontent.com"
-     data-context="signin"
-     data-ux_mode="popup"
-     data-login_uri="https://auth-flow-rho.vercel.app/"
-     data-nonce=""
-     data-auto_prompt="false">
 </div>
-
-<div class="g_id_signin"
-     data-type="standard"
-     data-shape="pill"
-     data-theme="outline"
-     data-text="signin_with"
-     data-size="large"
-     data-logo_alignment="left">
-</div>
+  <script src="main.js">
+  </script>
+  </body>
+<footer>
   
-  
-<script src="main.js></script> -->
-
-</body>
- 
+</footer>
 </html>
