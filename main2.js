@@ -431,7 +431,8 @@ document.getElementById("featuredevent").innerHTML = featuredEvent()
 
 function addMarker(){
 	state = !state;
-  alert('Busking Status Set to '+state);
+  //alert('Busking Status Set to '+state);
+	alert('Busking Status Set to Live!');
 	buskers.push(this);	
 	let msg = 'Currently Busking='+buskers.length;
   const customMarker = document.createElement('img');
@@ -481,7 +482,7 @@ size: new google.maps.Size(61,61),
 }
 
 function busk(){
-	alert('working');
+	//alert('working');
 	document.getElementById("pulse").classList.toggle('button-ani');
 	console.log('working...');
 	addMarker();
