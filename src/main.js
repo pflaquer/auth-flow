@@ -1,8 +1,10 @@
-import { App } from "index.js";
+import { App } from "/index.js";
 let render = (x)=>{
-	x = App();
-	document.getElementById("root").innerHTML = App();
+
+	document.getElementById("root").innerHTML = x;
 }
+
+render(App());
 
 let user;
 let events;
