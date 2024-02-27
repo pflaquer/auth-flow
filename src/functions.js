@@ -429,7 +429,7 @@ document.getElementById("featuredevent").innerHTML = featuredEvent()
 */
 
 
-function addMarker(){
+export function addMarker(){
 	state = !state;
   //alert('Busking Status Set to '+state);
 	alert('Busking Status Set to Live!');
