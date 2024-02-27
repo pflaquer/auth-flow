@@ -1,5 +1,5 @@
-const App = function App()
-export function App(){
+//const App = function App()
+function App(){
 return (`
 <main class="main-box">
       <aside class="sidebar">
