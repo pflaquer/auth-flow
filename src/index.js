@@ -167,7 +167,7 @@ return (`
         </div>
       </div>
     </main>
-  `);
+  `)
 }
 
 export default App;
