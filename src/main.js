@@ -1,3 +1,5 @@
+import { App } from 'index.js'
+
 let user;
 let events;
 let btns = document.getElementById("pulse");
