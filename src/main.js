@@ -488,3 +488,11 @@ function busk(){
 	addMarker();
 }
 	//code goes here
+
+function App(){
+	return 'hello world'
+}
+
+let render = (x)=>{
+	document.body.innerHTML = App();
+}
