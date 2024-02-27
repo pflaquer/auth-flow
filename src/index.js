@@ -1,4 +1,4 @@
-const App = function App();
+const App = function App()
 export function App(){
 return (`
 <main class="main-box">
