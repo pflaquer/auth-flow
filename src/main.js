@@ -484,16 +484,11 @@ size: new google.maps.Size(61,61),
 }
 
 function busk(){
-	//alert('working');
 	document.getElementById("pulse").classList.toggle('button-ani');
 	console.log('working...');
 	addMarker();
 }
-	//code goes here
 
-function App(){
-	return 'hello world'
-}
 
 let render = (x)=>{
 	x = App();
