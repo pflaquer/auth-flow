@@ -488,12 +488,12 @@ size: new google.maps.Size(61,61),
 }
 */
 
-export function busk(){
+function busk(){
 	//alert('working');
 	document.getElementById("pulse").classList.toggle('button-ani');
 	console.log('working...');
 	addMarker();
 }
-
+export default busk
 
 	
