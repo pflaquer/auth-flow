@@ -481,7 +481,7 @@ size: new google.maps.Size(61,61),
 	
 }
 
-function busk(){
+export function busk(){
 	//alert('working');
 	document.getElementById("pulse").classList.toggle('button-ani');
 	console.log('working...');
