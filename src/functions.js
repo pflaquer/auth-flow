@@ -1,4 +1,4 @@
-let user;
+/*let user;
 let events;
 let btns = document.getElementById("pulse");
 
@@ -167,6 +167,7 @@ let counter = 0;
       
     });
 */
+/*
 function handleClick(e){
   //alert(JSON.stringify(e))
   view.innerHTML = Home();
@@ -177,6 +178,9 @@ function Home(){
 }
 
 
+
+
+
 const view = document.getElementById("view");
 /*
 document.querySelector("#navitem").forEach((x)=>{
@@ -185,7 +189,7 @@ document.querySelector("#navitem").forEach((x)=>{
 */
 
 
-
+/*
 
 btns.onclick = (e)=>{
 //function busk(){
@@ -205,6 +209,7 @@ btns.onclick = (e)=>{
 
     size: new google.maps.Size(20, 32),
     */
+/*
     url:custommarker,
 size: new google.maps.Size(61,61),
     origin: new google.maps.Point(0, 0),
@@ -324,6 +329,7 @@ init();
 
 //
 */
+/*
 const options = {
   enableHighAccuracy: true,
   timeout: 5000,
@@ -428,7 +434,7 @@ document.getElementById("featuredevent").innerHTML = featuredEvent()
 
 */
 
-
+/*
 export function addMarker(){
 	state = !state;
   //alert('Busking Status Set to '+state);
@@ -480,6 +486,7 @@ size: new google.maps.Size(61,61),
    });
 	
 }
+*/
 
 export function busk(){
 	//alert('working');
@@ -487,4 +494,6 @@ export function busk(){
 	console.log('working...');
 	addMarker();
 }
+
+
 	
