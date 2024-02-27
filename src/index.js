@@ -1,5 +1,4 @@
-
-function App(){
+export function App(){
 return (`
 <main class="main-box">
       <aside class="sidebar">
@@ -170,4 +169,3 @@ return (`
   `);
 }
 
-export default App
