@@ -494,5 +494,6 @@ function App(){
 }
 
 let render = (x)=>{
-	document.body.innerHTML = App();
+	x = App();
+	document.getElementById("root").innerHTML = App();
 }
