@@ -1,4 +1,8 @@
 import { App } from "index.js";
+let render = (x)=>{
+	x = App();
+	document.getElementById("root").innerHTML = App();
+}
 
 let user;
 let events;
@@ -490,7 +494,4 @@ function busk(){
 }
 
 
-let render = (x)=>{
-	x = App();
-	document.getElementById("root").innerHTML = App();
-}
+
