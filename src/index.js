@@ -25,7 +25,7 @@ return (`
              <i class="fa-solid fa-calendar-days"></i>Hire
             </li></a
           >
-          <a href="#" onclick="loadView(Profile)"
+          <a href="#" onclick="loadView(1)"
             ><li class="item-menu">
               <i class="fa-solid fa-user"></i>
               Profile
@@ -55,7 +55,7 @@ return (`
                ><span style="color:lightyellow;"><i class="fa-solid fa-bell fa-2xl" id="pulse" onclick="busk()"></i></span></a>
               <img
                    id="profileimg"
-                src="../assets/user.jpg"
+                src="user.jpg"
                 alt="profile"
                 class="profile"
               />
