@@ -55,7 +55,7 @@ return (`
                ><span style="color:lightyellow;"><i class="fa-solid fa-bell fa-2xl" id="pulse" onclick="busk()"></i></span></a>
               <img
                    id="profileimg"
-                src=""
+                src="../assets/user.jpg"
                 alt="profile"
                 class="profile"
               />
