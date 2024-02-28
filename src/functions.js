@@ -506,8 +506,8 @@ export function includeJS(jsFilePath){
     document.body.appendChild(js);
 }
 
-export function loadView(x){
-	alert(x);
+export function loadView(1){
+	alert(1);
 }
 
 
