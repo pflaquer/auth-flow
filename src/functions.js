@@ -494,6 +494,6 @@ function busk(){
 	console.log('working...');
 	addMarker();
 }
-export default busk
+export default busk;
 
 	
