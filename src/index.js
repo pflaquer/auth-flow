@@ -1,4 +1,3 @@
-//const App = function App()
 function Index(){
 return (`
 <main class="main-box">
