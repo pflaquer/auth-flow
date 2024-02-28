@@ -25,7 +25,7 @@ return (`
              <i class="fa-solid fa-calendar-days"></i>Hire
             </li></a
           >
-          <a href="#"
+          <a href="#" onclick="loadView(Profile)"
             ><li class="item-menu">
               <i class="fa-solid fa-user"></i>
               Profile
