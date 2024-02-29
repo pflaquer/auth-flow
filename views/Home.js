@@ -1,5 +1,5 @@
 export function Home(){
-  return 1;
+  return "Home";
 }
 
 
