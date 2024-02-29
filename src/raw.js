@@ -1,3 +1,5 @@
+import { Home } from "../views/Home.js";
+
 let user;
 let events;
 let btns = document.getElementById("pulse");
