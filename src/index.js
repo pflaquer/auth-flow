@@ -1,5 +1,3 @@
-//import { Home } from "../views/Home.js";
-
 function Index(){
 return (`
 <main class="main-box">
