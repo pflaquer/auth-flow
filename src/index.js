@@ -1,4 +1,4 @@
-import { Home } from "../views/Home.js";
+//import { Home } from "../views/Home.js";
 
 function Index(){
 return (`
