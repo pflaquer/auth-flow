@@ -26,8 +26,8 @@ return (`
             </li></a
           >
           <a href="#" 
-            ><li class="item-menu">
-              <i class="fa-solid fa-user" onclick="loadView()"></i>
+            ><li class="item-menu" onclick="loadView()">
+              <i class="fa-solid fa-user"></i>
               Profile
             </li></a>
           >
