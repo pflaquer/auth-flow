@@ -63,7 +63,8 @@ return (`
           </header>
           <h1 class="title-page">Discover the best events!</h1>
         </div>
-        <div class="page-content" id="view">
+        <div class="page-content">
+        <div id="view">
           <div class="box-map-event">
             <div class="map" id="map">
              
@@ -78,6 +79,7 @@ return (`
                   id="input-search"
                 />
               </div>
+            </div>
             </div>
             <div class="list-events">
               <a href="#"
