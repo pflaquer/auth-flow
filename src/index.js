@@ -63,7 +63,7 @@ return (`
           </header>
           <h1 class="title-page">Discover the best events!</h1>
         </div>
-        <div class="page-content">
+        <div class="page-content" id="view">
           <div class="box-map-event">
             <div class="map" id="map">
              
