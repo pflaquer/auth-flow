@@ -498,9 +498,9 @@ export function render(x){
 document.getElementById("root").innerHTML = x;
 }
 
-export function includeJS(jsFilePath){
+export function includeJS(jsFilePath,type){
     let js = document.createElement("script");
-    js.type = "module";
+    js.type = type
     js.src = jsFilePath
 
     document.body.appendChild(js);
