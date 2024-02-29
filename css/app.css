@@ -110,6 +110,15 @@ a:link {
   flex: 0 0 calc(100% - 343px);
 }
 
+.view {
+  height: 389px;
+  position: relative;
+  border-radius: 29px;
+  background-size: cover;
+  background-color:white;
+  background-repeat: no-repeat;
+}
+
 .location-event {
   display: flex;
   align-items: center;
