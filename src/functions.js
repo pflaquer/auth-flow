@@ -500,7 +500,7 @@ document.getElementById("root").innerHTML = x;
 
 export function includeJS(jsFilePath){
     let js = document.createElement("script");
-    js.type = "text/javascript";
+    js.type = "module";
     js.src = jsFilePath
 
     document.body.appendChild(js);
