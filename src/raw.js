@@ -190,6 +190,12 @@ function Hire(){
   return '<div style="padding:20px;margin:auto">Current Route: /Hire</div>'
 }
 
+function Tickets(){
+/*let route = tickets
+*/
+  return '<div style="padding:20px;margin:auto">Current Route: /Tickets</div>'
+}
+
 
 
 const view = document.getElementById("view");
