@@ -173,11 +173,11 @@ function handleClick(e){
   //alert(JSON.stringify(e))
   view.innerHTML = Home();
 }
-/*
+
 function Home(){
-  return 'You Are Home'
+  return 'You Are /Home'
 }
-*/
+
 
 
 const view = document.getElementById("view");
