@@ -169,13 +169,25 @@ let counter = 0;
       
     });
 */
-function handleClick(e){
+function handleClick(route){
   //alert(JSON.stringify(e))
-  view.innerHTML = Home();
+  view.innerHTML = route();
 }
 
 function Home(){
-  return '<div style="padding:20px;margin:auto">You Are /Home</div>'
+  return '<div style="padding:20px;margin:auto">Current Route: /Home</div>'
+}
+
+function Profile(){
+  return '<div style="padding:20px;margin:auto">Current Route: /Profile</div>'
+}
+
+function Payments(){
+  return '<div style="padding:20px;margin:auto">Current Route: /Payments</div>'
+}
+
+function Hire(){
+  return '<div style="padding:20px;margin:auto">Current Route: /Hire</div>'
 }
 
 
