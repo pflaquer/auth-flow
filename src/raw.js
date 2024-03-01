@@ -175,7 +175,7 @@ function handleClick(e){
 }
 
 function Home(){
-  return '<div style="padding:5px;margin:auto">You Are /Home</div>'
+  return '<div style="padding:20px;margin:auto">You Are /Home</div>'
 }
 
 
