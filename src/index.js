@@ -6,27 +6,27 @@ return (`
         <nav class="menu-box">
            <div class="logo-type"><img src="https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/61/72/98/61729802-4c9f-4c99-e775-ae7a252275d3/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" class="logo"></img></div>
           <a href="#"
-            ><li class="item-menu" onclick="handleClick()">
+            ><li class="item-menu" onclick="handleClick(Home)">
               <i class="fas fa-search"></i>Events
             </li></a
           >
           <a href="#"
-            ><li class="item-menu">
+            ><li class="item-menu" onclick="handleClick(Tickets)>
               <i class="fa-solid fa-ticket"></i>Tickets
             </li></a
           >
           <a href="#"
-            ><li class="item-menu">
+            ><li class="item-menu" onclick="handleClick(Payments)>
               <i class="fa-solid fa-money-bill"></i>Payments
             </li></a
           >
           <a href="#"
-            ><li class="item-menu">
+            ><li class="item-menu" onclick="handleClick(Hire)>
              <i class="fa-solid fa-calendar-days"></i>Hire
             </li></a
           >
           <a href="#" 
-            ><li class="item-menu" onclick="loadView()">
+            ><li class="item-menu" onclick="handleClick(Profile)">
               <i class="fa-solid fa-user"></i>
               Profile
             </li></a>
