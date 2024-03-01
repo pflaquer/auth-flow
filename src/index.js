@@ -11,17 +11,17 @@ return (`
             </li></a
           >
           <a href="#"
-            ><li class="item-menu" onclick="handleClick(Tickets)>
+            ><li class="item-menu" onclick="handleClick(Tickets)">
               <i class="fa-solid fa-ticket"></i>Tickets
             </li></a
           >
           <a href="#"
-            ><li class="item-menu" onclick="handleClick(Payments)>
+            ><li class="item-menu" onclick="handleClick(Payments)">
               <i class="fa-solid fa-money-bill"></i>Payments
             </li></a
           >
           <a href="#"
-            ><li class="item-menu" onclick="handleClick(Hire)>
+            ><li class="item-menu" onclick="handleClick(Hire)">
              <i class="fa-solid fa-calendar-days"></i>Hire
             </li></a
           >
@@ -32,7 +32,7 @@ return (`
             </li></a>
           >
         </nav>
-        <a href="#" onclick="alert('working')"
+        <a href="#" onclick="alert('Logout Flow')"
           ><div class="logout">
            <i class="fa-solid fa-sign-out"></i>Logout
           </div></a
