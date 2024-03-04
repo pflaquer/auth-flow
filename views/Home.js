@@ -1,4 +1,4 @@
-export function Home(){
+export default ()=>{
   return "Home";
 }
 
