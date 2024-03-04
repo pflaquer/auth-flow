@@ -209,7 +209,16 @@ function Payments(){
 }
 
 function Hire(){
-  return '<div style="padding:20px;margin:auto">Current Route: /Hire</div>'
+  return `
+  
+  <div style="padding:20px;margin:auto">Current Route: /Hire</div>
+  <div id="hiring">
+  <div id="hiringheading">Current Requests</div>
+  <ul>
+  <li></li>
+  </ul>
+  </div>
+  `
 }
 
 function Tickets(){
