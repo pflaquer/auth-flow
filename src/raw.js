@@ -59,7 +59,7 @@ let longitude;
 
 let loggedin = false;
 
-window.onload = function() {
+function loadMap() {
 	
 	var myOptions = {
 	
@@ -534,4 +534,4 @@ size: new google.maps.Size(61,61),
 	
 }
 
-
+window.onload = loadMap()
