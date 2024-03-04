@@ -4,4 +4,4 @@ import { busk, render, includeJS, loadView } from "./functions.js";
 
 render(Index());
 
-includeJS("/src/raw.js",'text/javascript');
+includeJS("/src/raw.js",'module');
