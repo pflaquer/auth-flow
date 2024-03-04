@@ -179,7 +179,20 @@ function Home(){
 }
 
 function Profile(){
-  return '<div style="padding:20px;margin:auto">Current Route: /Profile</div>'
+  return '<div style="padding:20px;margin:auto">Current Route: /Profile</div>
+	  <div>
+	  <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+	  <label for="lname">Soundcloud:</label><br>
+  <input type="text" id="lname" name="soundcloud">
+	  <label for="lname">Instagram</label><br>
+  <input type="text" id="lname" name="instagram">
+</form>
+	  </div>
+	  '
 }
 
 function Payments(){
