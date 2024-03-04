@@ -204,7 +204,8 @@ function Payments(){
   return `
   <div style="padding:20px;margin:auto">Current Route: /Payments</div>
   <div id="qrcode" style="padding:20px;margin:5;">
-  <img src=${qr}></img>
+  <img src=${qr}></img><br>
+  <code>Your Payment QR Code</code>
   `
 }
 
