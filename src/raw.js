@@ -1,4 +1,4 @@
-import Home from "../views/Home.js";
+import Homie from "../views/Home.js";
 
 let user;
 let events;
