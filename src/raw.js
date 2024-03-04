@@ -179,7 +179,8 @@ function Home(){
 }
 
 function Profile(){
-  return '<div style="padding:20px;margin:auto">Current Route: /Profile</div>
+  return `
+  <div style="padding:20px;margin:auto">Current Route: /Profile</div>
 	  <div>
 	  <form>
   <label for="fname">First name:</label><br>
@@ -192,7 +193,7 @@ function Profile(){
   <input type="text" id="lname" name="instagram">
 </form>
 	  </div>
-	  '
+	  `
 }
 
 function Payments(){
