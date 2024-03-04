@@ -194,6 +194,7 @@ function Profile(){
   <input type="text" id="soundcloud" name="soundcloud"><br>
 	  <label for="lname">Venmo/PayPal</label><br>
   <input type="text" id="paymentid" name="paymentid"><br>
+  <button type="submit">Save</button>
 </form>
 	  </div>
 	  `
