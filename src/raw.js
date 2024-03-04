@@ -186,11 +186,11 @@ function Profile(){
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-	  <label for="lname">Soundcloud:</label><br>
-  <input type="text" id="lname" name="soundcloud">
+  <input type="text" id="lname" name="lname"><br>
+	  <label for="soundcloud">Soundcloud:</label><br>
+  <input type="text" id="soundcloud" name="soundcloud"><br>
 	  <label for="lname">Instagram</label><br>
-  <input type="text" id="lname" name="instagram">
+  <input type="text" id="instagram" name="instagram"><br>
 </form>
 	  </div>
 	  `
