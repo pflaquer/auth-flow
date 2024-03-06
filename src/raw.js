@@ -179,7 +179,7 @@ function Home(){
   return '<div style="padding:20px;margin:auto">Current Route: /Home</div>'
 }
 
-function Profile(){
+export function Profile(){
   return `
   <div style="padding:20px;margin:auto">Current Route: /Profile</div>
 	  <div>
