@@ -1,4 +1,4 @@
-import handleClick from './raw.js'
+import app from './raw.js'
 function Index(){
 return (`
 <main class="main-box">
