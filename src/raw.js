@@ -1,5 +1,5 @@
 //import Homie from "../views/Home.js";
-export function default(){
+export function app(){
 let user;
 let events;
 let btns = document.getElementById("pulse");
