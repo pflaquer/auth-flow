@@ -1,5 +1,5 @@
 //import Homie from "../views/Home.js";
-function app(){
+/*function app(){*/
 let user;
 let events;
 let btns = document.getElementById("pulse");
@@ -536,6 +536,7 @@ size: new google.maps.Size(61,61),
 }
 
 window.onload = loadMap()
-}
+/*}
 
 export default app;
+*/
