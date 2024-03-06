@@ -169,7 +169,7 @@ let counter = 0;
       
     });
 */
-function handleClick(route){
+export function handleClick(route){
   //alert(JSON.stringify(e))
   view.innerHTML = route();
 }
