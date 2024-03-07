@@ -545,5 +545,6 @@ margin:auto;
   display:flex;
   border-style:solid;
   border-color:0FFF50;
-  border-width:.5px;
+  border-width:.3px;
+  border-radius:5px;
 }
