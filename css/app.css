@@ -542,4 +542,8 @@ padding:20px;
 margin:auto;
   background:black;
   color:white;
+  height:100%;
+  border-style:solid;
+  border-color:green;
+  border-width:.5px;
 }
