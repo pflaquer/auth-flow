@@ -181,8 +181,8 @@ function Home(){
 
 function Profile(){
   return `
-  <div style="padding:20px;margin:auto">Current Route: /Profile</div>
-	  <div>
+  <div class="views2">Current Route: /Profile</div>
+	  <div class="views2">
 	  <form>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
