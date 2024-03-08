@@ -553,6 +553,6 @@ margin:auto;
 
 
 @keyframes dynamicborder {
-  from {background-color: red;}
-  to {background-color: yellow;}
+  from {border-color: skyblue;}
+  to {border-color: yellow;}
 }
