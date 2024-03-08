@@ -478,8 +478,10 @@ a:link {
   }
   .main {
     border-style:solid;
-    border-color:yellow;
+    /*border-color:yellow;*/
     border-width:10px;
+    animation-name:dynamicborder;
+    animation-duration:4s;
   }
   .list-events {
     display: block;
@@ -547,4 +549,10 @@ margin:auto;
   border-color:0FFF50;
   border-width:.3px;
   border-radius:5px;
+}
+
+
+@keyframes dynamicborder {
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
