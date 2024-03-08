@@ -19,7 +19,8 @@ animation-fill-mode: forwards;
   margin-top: -5%;
   background-color:red;
 border-radius:50%;
-
+justify-content:center;
+  text-align:center;
   color:white;
   width:16px;
   height:16px;
