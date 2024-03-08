@@ -173,7 +173,7 @@ let counter = 0;
 */
 function handleClick(route){
   //alert(JSON.stringify(e))
-  view.innerHTML = route();
+  document.getElementById("map").innerHTML = route();
 }
 
 function Home(){
