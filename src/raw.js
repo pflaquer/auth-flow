@@ -176,7 +176,7 @@ function handleClick(route){
 
 function Home(){
 	loadMap()
-  return '<div style="padding:20px;margin:auto">Current Route: /Home</div>'
+  //return '<div style="padding:20px;margin:auto">Current Route: /Home</div>'
 }
 
 function Profile(){
