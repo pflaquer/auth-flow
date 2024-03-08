@@ -13,6 +13,13 @@ animation-iteration-count: 1;
 animation-fill-mode: forwards;
 }
 
+.smoothfade {
+animation: fadeInAnimation ease 1500ms;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
