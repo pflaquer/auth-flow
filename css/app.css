@@ -6,8 +6,20 @@
 }
 
 body {
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-    font-family: "Satoshi", sans-serif;
+background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+font-family: "Satoshi", sans-serif;
+animation: fadeInAnimation ease 3s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .head-title {
