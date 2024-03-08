@@ -10,11 +10,13 @@ let venues = []
 let userimg = localStorage.getItem(1);
 user = {
 img:'https://raw.githubusercontent.com/emnatkins/cdn-codepen/main/default.jpeg',
-  genre:'Rock'
+  genre:'Rock',
+	instagram:'http://www.instagram.com/pxdr0',
+	soundcloud:'http://www.soundcloud.com/pxdr0'
 }
 
 user.img = userimg;
-document.getElementById("profileimg").setAttribute('src',userimg)
+document.getElementById("profileimg").setAttribute('src',user.img)
 class venue{
   constructor(name,description,img){
     this.name = name;
