@@ -74,7 +74,9 @@ const { Map } = google.maps.importLibrary("maps");
 
 let buskers = [
 	{lat: 40.6958, lng: -73.9171},
-	{lat: 40.6960, lng: -73.9120}
+	{lat: 40.6960, lng: -73.9120},
+	{lat: 40.6969, lng: -73.9124},
+	{lat: 40.6970, lng: -73.9127}
 
 ];
   
