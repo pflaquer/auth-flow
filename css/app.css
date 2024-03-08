@@ -15,8 +15,8 @@ animation-fill-mode: forwards;
 
 .badge{
   position: relative;
- margin-left: 10%;
-  margin-top: -10%;
+ margin-left: 5%;
+  margin-top: -5%;
   background-color:red;
 border-radius:50%;
 
