@@ -556,4 +556,5 @@ margin:auto;
 @keyframes dynamicborder {
   from {border-color: skyblue;}
   to {border-color: yellow;}
+  to {border-color: skyblue;}
 }
