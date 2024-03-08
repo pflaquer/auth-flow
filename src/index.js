@@ -28,7 +28,7 @@ return (`
           >
           <a href="#" 
             ><li class="item-menu" onclick="handleClick(Profile)">
-              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user"><span class="badge">2</span></i>
               Profile
             </li></a>
           >
