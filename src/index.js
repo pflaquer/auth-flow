@@ -67,8 +67,9 @@ return (`
         <div class="page-content">
       
           <div class="box-map-event">
-            <div id="view" class="view">
             <div class="map" id="map">
+            <div id="view" class="view">
+          
              
               <div class="box-search">
                 <img
