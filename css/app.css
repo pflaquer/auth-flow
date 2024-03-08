@@ -481,7 +481,8 @@ a:link {
     /*border-color:yellow;*/
     border-width:10px;
     animation-name:dynamicborder;
-    animation-duration:4s;
+    animation-duration:8s;
+    animation-iteration-count:infinite;
   }
   .list-events {
     display: block;
