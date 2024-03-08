@@ -23,7 +23,7 @@ return (`
           >
           <a href="#"
             ><li class="item-menu" onclick="handleClick(Hire)">
-             <i class="fa-solid fa-calendar-days"></i>Hire
+             <i class="fa-solid fa-calendar-days"></i>Hire <span class="badge">2</span>
             </li></a
           >
           <a href="#" 
