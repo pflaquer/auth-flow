@@ -7,7 +7,7 @@ return (`
         <nav class="menu-box">
            <div class="logo-type"><img src="https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/61/72/98/61729802-4c9f-4c99-e775-ae7a252275d3/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" class="logo"></img></div>
           <a href="#"
-            ><li class="item-menu" onclick="handleClick(Home)">
+            ><li class="item-menu" onclick="loadMap()">
               <i class="fas fa-search"></i>Events
             </li></a
           >
