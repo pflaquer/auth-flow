@@ -85,6 +85,7 @@ payload = atob(payload);
      console.log("Email: " + payload.email);
 document.getElementById("status").innerHTML = 'Successfully Logged In';
    document.getElementById("data").innerHTML = `<img src=${user.picture} class="photo"></img><br>${user.name}<br>${user.email}<br><button href="/app.html"><a href="/app" style="text-decoration:none;">Continue</a></button>` 
+    localStorage.clear();
     localStorage.setItem(1,user.picture);
     let userimg = localStorage.getItem(1);
     localStorage.setItem(2,payload.email);
