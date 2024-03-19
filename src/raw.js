@@ -4,6 +4,7 @@ let user;
 let events;
 let btns = document.getElementById("pulse");
 let useremail = localStorage.getItem(2);
+let username = localStorage.getItem(3);
 
 events = [];
 let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png'
