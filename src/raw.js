@@ -198,9 +198,9 @@ function Profile(){
 	  <label for="soundcloud">Soundcloud:</label><br>
   <input type="text" id="soundcloud" name="soundcloud" placeholder="${user.soundcloud}"><br>
 	  <label for="lname">Instagram</label><br>
-  <input type="text" id="instagram" name="instagram" placeholder="${user.instagram}><br>
+  <input type="text" id="instagram" name="instagram" placeholder="${user.instagram}"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
-  <input type="text" id="paymentid" name="paymentid" placeholder="${user.payment}><br>
+  <input type="text" id="paymentid" name="paymentid" placeholder="${user.payment}"><br>
   <button type="submit">Save</button>
 </form>
 	  </div>
