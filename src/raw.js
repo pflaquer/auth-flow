@@ -191,7 +191,7 @@ function Profile(){
 	  <div class="views2">
 	  <form>
   <label for="fname" placeholder="Name">Name</label><br>
-  <input type="text" id="fname" name="fname" placeholder="${username}><br>
+  <input type="text" id="fname" name="fname" placeholder="${username}"><br>
   <label for="lname">Email</label><br>
   <input type="text" id="lname" name="lname" placeholder="${useremail}"><br>
 	  <label for="soundcloud">Soundcloud:</label><br>
