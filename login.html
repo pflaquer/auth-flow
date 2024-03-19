@@ -87,7 +87,8 @@ document.getElementById("status").innerHTML = 'Successfully Logged In';
    document.getElementById("data").innerHTML = `<img src=${user.picture} class="photo"></img><br>${user.name}<br>${user.email}<br><button href="/app.html"><a href="/app" style="text-decoration:none;">Continue</a></button>` 
     localStorage.setItem(1,user.picture);
     let userimg = localStorage.getItem(1);
-    localStorage.setItem(2,user);
+    localStorage.setItem(2,payload.email);
+    let useremail = localStorage.getItem(2);
    //window.location = ‘https://auth-flow-rho.vercel.app/app.html’;
   }
 
