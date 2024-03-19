@@ -11,6 +11,7 @@ let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/ma
 let venues = []
 let userimg = localStorage.getItem(1);
 user = {
+	payment:'www.paypal.com/pxdr0',
 img:'https://raw.githubusercontent.com/emnatkins/cdn-codepen/main/default.jpeg',
   genre:'Rock',
 	instagram:'http://www.instagram.com/pxdr0',
