@@ -196,11 +196,11 @@ function Profile(){
   <label for="lname">Email</label><br>
   <input type="text" id="lname" name="lname" placeholder="${useremail}"><br>
 	  <label for="soundcloud">Soundcloud:</label><br>
-  <input type="text" id="soundcloud" name="soundcloud"><br>
+  <input type="text" id="soundcloud" name="soundcloud" placeholder="${user.soundcloud}"><br>
 	  <label for="lname">Instagram</label><br>
-  <input type="text" id="instagram" name="instagram"><br>
+  <input type="text" id="instagram" name="instagram" placeholder="${user.instagram}><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
-  <input type="text" id="paymentid" name="paymentid"><br>
+  <input type="text" id="paymentid" name="paymentid" placeholder="${user.payment}><br>
   <button type="submit">Save</button>
 </form>
 	  </div>
