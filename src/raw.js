@@ -191,7 +191,7 @@ function Profile(){
   <label for="fname" placeholder="Name">Name</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Email</label><br>
-  <input type="text" id="lname" name="lname" placeholder=${localStorage.getItem(2.email)}><br>
+  <input type="text" id="lname" name="lname" placeholder="${localStorage.getItem(2.email)}"><br>
 	  <label for="soundcloud">Soundcloud:</label><br>
   <input type="text" id="soundcloud" name="soundcloud"><br>
 	  <label for="lname">Instagram</label><br>
