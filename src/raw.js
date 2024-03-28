@@ -181,10 +181,17 @@ function handleClick(route){
   document.getElementById("map").innerHTML = route();
 }
 
+function updateProfile(){
+	user.name = document.getElementById("name").value;
+	//loop thru all elements
+	alert('Profile Updated!');
+}
 function Home(){
 	loadMap()
   //return '<div style="padding:20px;margin:auto">Current Route: /Home</div>'
 }
+
+
 
 function Profile(){
   return `
@@ -201,7 +208,7 @@ function Profile(){
   <input type="text" id="instagram" name="instagram" placeholder="${user.instagram}"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
   <input type="text" id="paymentid" name="paymentid" placeholder="${user.payment}"><br>
-  <button type="submit">Save</button>
+  <button type="submit" onclick="updateProfile()>Save</button>
 </form>
 	  </div>
 	  `
