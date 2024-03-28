@@ -524,6 +524,7 @@ size: new google.maps.Size(61,61),
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="32px" height="32px" href="https://www.instagram.com"></img>  
 <img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="32px" href="https://soundcloud.com" height="32px"></img>
   `
+	//for each link, render icon...
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
     ariaLabel: "Uluru",
