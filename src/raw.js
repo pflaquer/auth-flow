@@ -6,7 +6,7 @@ let btns = document.getElementById("pulse");
 let useremail = localStorage.getItem(2);
 let username = localStorage.getItem(3);
 
-let state = {
+let currentState = {
 	isLoggedIn:null,
 	isBusking:null,
 	currentView:null
