@@ -6,11 +6,11 @@ let btns = document.getElementById("pulse");
 let useremail = localStorage.getItem(2);
 let username = localStorage.getItem(3);
 
-let currentState = {
+/*let currentState = {
 	isLoggedIn:null,
 	isBusking:null,
 	currentView:null
-}
+}*/
 
 
 events = [];
