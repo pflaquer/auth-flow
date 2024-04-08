@@ -8,7 +8,8 @@ let username = localStorage.getItem(3);
 
 let state = {
 	isLoggedIn:null,
-	isBusking:null
+	isBusking:null,
+	currentView:null
 }
 
 
