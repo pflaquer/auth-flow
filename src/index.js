@@ -63,7 +63,10 @@ return (`
             </div>
           </header>
           <h1 class="title-page">Discover the best events!</h1>
-          #Brooklyn #Queens #Manhattan #Bronx #StatenIsland
+          <!--
+          #Brooklyn #Queens #Manhattan #Bronx #StatenIsland 
+          Channels With Radios
+          -->
         </div>
         <div class="page-content">
       
