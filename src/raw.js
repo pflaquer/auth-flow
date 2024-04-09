@@ -268,7 +268,11 @@ document.querySelector("#navitem").forEach((x)=>{
 btns.onclick = (e)=>{
 //function busk(){
   //send()
-	if(state.currentView != Home()
+	if(state.currentView != Home()){
+		return null;
+		alert('You Can Not Busk!');
+	}
+
   btns.classList.toggle('button-ani');
   console.log(e);
   state = !state;
