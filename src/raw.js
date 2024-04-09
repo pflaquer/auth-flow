@@ -188,6 +188,7 @@ function handleClick(route){
   document.getElementById("map").innerHTML = route();
 	state.currentView = route;
 	console.log(state.currentView);
+	console.log(state);
 }
 
 function updateProfile(){
