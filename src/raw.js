@@ -186,6 +186,8 @@ let counter = 0;
 function handleClick(route){
   //alert(JSON.stringify(e))
   document.getElementById("map").innerHTML = route();
+	state.currentView = route;
+	console.log(state.currentView);
 }
 
 function updateProfile(){
@@ -194,7 +196,8 @@ function updateProfile(){
 	alert('Profile Updated!');
 }
 function Home(){
-	loadMap()
+	loadMap();
+	
   //return '<div style="padding:20px;margin:auto">Current Route: /Home</div>'
 }
 
@@ -265,6 +268,7 @@ document.querySelector("#navitem").forEach((x)=>{
 btns.onclick = (e)=>{
 //function busk(){
   //send()
+	if(state.currentView != Home()
   btns.classList.toggle('button-ani');
   console.log(e);
   state = !state;
