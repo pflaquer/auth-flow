@@ -63,6 +63,7 @@ return (`
             </div>
           </header>
           <h1 class="title-page">Discover the best events!</h1>
+          <p>#Brooklyn #Queens #Manhattan #Bronx #StatenIsland</p>
         </div>
         <div class="page-content">
       
