@@ -6,11 +6,11 @@ let btns = document.getElementById("pulse");
 let useremail = localStorage.getItem(2);
 let username = localStorage.getItem(3);
 
-/*let currentState = {
+let state = {
 	isLoggedIn:null,
 	isBusking:null,
 	currentView:null
-}*/
+}
 
 
 events = [];
@@ -107,7 +107,7 @@ icon: custommarker
 
 };
 
-let state = false;
+//let state = false;
 
 
 function broadcast(x){
