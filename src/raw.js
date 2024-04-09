@@ -269,7 +269,7 @@ btns.onclick = (e)=>{
 //function busk(){
   //send()
 	if(state.currentView != Home()){
-		return null;
+		//return null;
 		alert('You Can Not Busk!');
 	}
 
