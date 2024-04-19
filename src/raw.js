@@ -85,6 +85,9 @@ const { Map } = google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } =  google.maps.importLibrary("marker");
 	map = new google.maps.Map(document.getElementById("map"), myOptions);
 
+let dummytitles=['Artist: Lil Wayne, Genre: Hiphop, Soundcloud: www.soundcloud.com/lilwayne','Artist: Jason Aldean, Genre: Country, Soundcloud: www.soundcloud.com/jasonaldean','Artist: Diplo, Genre: EDM, Soundcloud: www.soundcloud.com/diplo'];
+let dummydata=[dummytitles];
+let count=0;
 let buskers = [
 	{lat: 40.6958, lng: -73.9171},
 	{lat: 40.6960, lng: -73.9120},
@@ -100,16 +103,16 @@ buskers.forEach((x)=>{
 		position: x,
 		map: map,
 		animation: google.maps.Animation.DROP,
-    title:'Artist: Lil Wayne, Genre: Hiphop, Soundcloud: www.soundcloud.com/lilwayne',
+    title:dummydata.dummytitles[count],
 icon: custommarker
 	});
 }
+		count++;
 );
 
 };
 
 //let state = false;
-
 
 function broadcast(x){
 if(state==true){
@@ -302,6 +305,7 @@ size: new google.maps.Size(61,61),
     type: "poly",
   };
   let contentString = `<img src=${user.img} class="userimg"></img><hr>
+  Type: ${user.type}<hr>
   Genre: ${user.genre}<hr>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="32px" height="32px"></img>  
 <img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="32px" href="https://soundcloud.com" height="32px"></img>
@@ -538,7 +542,7 @@ size: new google.maps.Size(61,61),
   };
   let contentString = `<img src=${user.img} class="userimg"></img><hr>
   Type: ${user.type}<hr>
-  Genre: ${user.genre},<hr>
+  Genre: ${user.genre}<hr>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="32px" height="32px" href="https://www.instagram.com"></img>  
 <img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="32px" href="https://soundcloud.com" height="32px"></img>
   `
