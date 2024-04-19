@@ -1,5 +1,11 @@
 //import app from './raw.js'
 function Index(){
+      if(!JWT){
+            return (`
+            USER NOT AUTHORIZED
+            `);
+      }
+      else
 return (`
 <main class="main-box">
       <aside class="sidebar">
