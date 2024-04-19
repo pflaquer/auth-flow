@@ -108,7 +108,7 @@ buskers.forEach((x)=>{
 icon: custommarker
 	});
 }
-		count++;
+	
 );
 
 };
