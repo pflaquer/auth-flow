@@ -85,8 +85,8 @@ const { Map } = google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } =  google.maps.importLibrary("marker");
 	map = new google.maps.Map(document.getElementById("map"), myOptions);
 
-let dummytitles=['Artist: Lil Wayne, Genre: Hiphop, Soundcloud: www.soundcloud.com/lilwayne','Artist: Jason Aldean, Genre: Country, Soundcloud: www.soundcloud.com/jasonaldean','Artist: Diplo, Genre: EDM, Soundcloud: www.soundcloud.com/diplo'];
-let dummydata=[dummytitles];
+//let dummytitles=['Artist: Lil Wayne, Genre: Hiphop, Soundcloud: www.soundcloud.com/lilwayne','Artist: Jason Aldean, Genre: Country, Soundcloud: www.soundcloud.com/jasonaldean','Artist: Diplo, Genre: EDM, Soundcloud: www.soundcloud.com/diplo'];
+//let dummydata=[dummytitles];
 let count=0;
 let buskers = [
 	{lat: 40.6958, lng: -73.9171},
@@ -103,7 +103,7 @@ buskers.forEach((x)=>{
 		position: x,
 		map: map,
 		animation: google.maps.Animation.DROP,
-    title:dummydata.dummytitles[count],
+    title:dummytitles[count],
 icon: custommarker
 	});
 }
