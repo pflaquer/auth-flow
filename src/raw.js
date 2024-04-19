@@ -34,7 +34,8 @@ class venue{
     this.img = img;
   }
 }
-  
+
+user.type='Music';
 let unionsquarepark = new venue('Union Square Park','Happening Little Park Located in Lower West Side','http://')
 
 
@@ -536,7 +537,8 @@ size: new google.maps.Size(61,61),
     type: "poly",
   };
   let contentString = `<img src=${user.img} class="userimg"></img><hr>
-  Genre: ${user.genre}<hr>
+  Type: ${user.type}<hr>
+  Genre: ${user.genre},<hr>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="32px" height="32px" href="https://www.instagram.com"></img>  
 <img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="32px" href="https://soundcloud.com" height="32px"></img>
   `
