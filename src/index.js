@@ -1,6 +1,7 @@
 //import app from './raw.js'
+let JWT;
 function Index(){
-      if(!JWT){
+      if(!JWT==1){
             return (`
             USER NOT AUTHORIZED
             `);
