@@ -12,7 +12,7 @@ let state = {
 	currentView:null
 }
 
-user.type='Music';
+
 
 events = [];
 let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png'
@@ -36,7 +36,7 @@ class venue{
   }
 }
 
-user.type='Music';
+
 let unionsquarepark = new venue('Union Square Park','Happening Little Park Located in Lower West Side','http://')
 
 
