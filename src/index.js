@@ -1,5 +1,6 @@
 //import app from './raw.js'
 let JWT;
+JWT=1;
 function Index(){
       if(!JWT==1){
             return (`
