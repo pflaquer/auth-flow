@@ -12,6 +12,7 @@ let state = {
 	currentView:null
 }
 
+user.type='Music';
 
 events = [];
 let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png'
