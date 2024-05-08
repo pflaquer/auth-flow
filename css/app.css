@@ -553,13 +553,18 @@ a:link {
   0% {
     transform: scale(1); }
   25% {
-    transform: scale(1.0625); }
+    transform: scale(1.0625);
+  filter: drop-shadow(1px 1px 2px red) invert(25%);}
   50% {
-    transform: scale(1.125); }
+    transform: scale(1.125);
+  filter: drop-shadow(2px 2px 3px red) invert(50%);}
   75% {
-    transform: scale(1.1875); }
+    transform: scale(1.1875);
+  filter: drop-shadow(3px 3px 4px red) invert(75%);}
   100% {
-    transform: scale(1.25); } }
+    transform: scale(1.25);
+    filter: drop-shadow(4px 4px 5px red) invert(100%);
+  } }
 
 .button-ani {
   animation: name 1000ms linear infinite;
