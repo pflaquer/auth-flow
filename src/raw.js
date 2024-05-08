@@ -16,7 +16,7 @@ let state = {
 
 events = [];
 //let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png'
-let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/mics.svg.png'
+let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/mic.svg.png'
 let venues = []
 let userimg = localStorage.getItem(1);
 user = {
