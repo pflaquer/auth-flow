@@ -554,16 +554,16 @@ a:link {
     transform: scale(1); }
   25% {
     transform: scale(1.0625);
-  filter: drop-shadow(1px 1px 2px red) invert(25%);}
+  filter: drop-shadow(2px 2px 3px red) invert(25%);}
   50% {
     transform: scale(1.125);
-  filter: drop-shadow(2px 2px 3px red) invert(50%);}
+  filter: drop-shadow(4px 4px 5px red) invert(50%);}
   75% {
     transform: scale(1.1875);
-  filter: drop-shadow(3px 3px 4px red) invert(75%);}
+  filter: drop-shadow(6px 6px 7px red) invert(75%);}
   100% {
     transform: scale(1.25);
-    filter: drop-shadow(4px 4px 5px red) invert(100%);
+    filter: drop-shadow(8px 8px 9px red) invert(100%);
   } }
 
 .button-ani {
