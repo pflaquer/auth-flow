@@ -578,3 +578,7 @@ window.onload = loadMap()
 
 export default app;
 */
+
+
+google.maps.event.addListener(marker,'mouseover',function(){$(".gm-style   div").addClass("markerClass")});                        
+google.maps.event.addListener(marker,'mouseout',function(){$(".gm-style div").removeClass("markerClass")});         
