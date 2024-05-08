@@ -595,3 +595,6 @@ margin:auto;
   to {border-color: yellow;}
   
 }
+
+#map .gm-style div {cursor: default !important;}
+#map .gm-style div.markerClass{cursor:pointer !important}
