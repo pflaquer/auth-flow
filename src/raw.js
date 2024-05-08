@@ -16,7 +16,8 @@ let state = {
 
 events = [];
 //let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png'
-let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/mic.svg.png'
+let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/mic.svg.png';
+let livemarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png';
 let venues = []
 let userimg = localStorage.getItem(1);
 user = {
@@ -530,7 +531,7 @@ function addMarker(){
   customMarker.src = user.img;
   const image = {
     
-    url:custommarker,
+    url:livemarker,
 size: new google.maps.Size(61,61),
     origin: new google.maps.Point(0, 0),
 
