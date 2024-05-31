@@ -1,7 +1,7 @@
 //import app from './raw.js'
 let JWT;
 JWT=1;
-let requests = 'Hire <span class="badge">NEW</span>'
+let requests = 'Hire <span class="badge">NEW!</span>'
 function Index(){
       if(!JWT==1){
             return (`
