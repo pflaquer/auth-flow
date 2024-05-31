@@ -1,6 +1,7 @@
 //import app from './raw.js'
 let JWT;
 JWT=1;
+let requests = 'Hire <span class="badge">NEW</span>'
 function Index(){
       if(!JWT==1){
             return (`
@@ -31,7 +32,7 @@ return (`
           >
           <a href="#"
             ><li class="item-menu" onclick="handleClick(Hire)">
-             <i class="fa-solid fa-calendar-days"></i>Hire <span class="badge">NEW</span>
+             <i class="fa-solid fa-calendar-days"></i>${requests}
             </li></a
           >
           <a href="#" 
