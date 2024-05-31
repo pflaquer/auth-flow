@@ -4,7 +4,7 @@ JWT=1;
 let requests = 'Hire <span class="badge">NEW</span>'
 let newrequests=false;
 if (newrequests = !true){
-requests=null;
+requests=`Hire <span class="badge">${null}</span>`
 }
 function Index(){
       if(!JWT==1){
