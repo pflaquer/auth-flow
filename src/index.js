@@ -6,8 +6,9 @@ let newrequests=false;
 let toggleState = (x)=>{
       x = !x;
 }
-alert(newrequests);
+
 toggleState(newrequests);
+alert(newrequests);
       
 if (newrequests == !true){
 requests=`Hire <span class="badge">${null}</span>`
