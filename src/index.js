@@ -2,7 +2,7 @@
 let JWT;
 JWT=1;
 let requests = 'Hire <span class="badge">NEW</span>'
-let newrequests=true;
+let newrequests=false;
 if (newrequests = !true){
 requests=null;
 }
