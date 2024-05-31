@@ -6,7 +6,7 @@ let newrequests=false;
 let toggleState = (x)=>{
       x = !x;
 }
-
+alert(newrequests);
 toggleState(newrequests);
       
 if (newrequests == !true){
