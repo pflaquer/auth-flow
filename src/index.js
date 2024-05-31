@@ -3,6 +3,11 @@ let JWT;
 JWT=1;
 let requests = 'Hire <span class="badge">NEW</span>'
 let newrequests=false;
+let toggleState = (x)=>{
+      x = !x;
+}
+      
+      
 if (newrequests == !true){
 requests=`Hire <span class="badge">${null}</span>`
 }
