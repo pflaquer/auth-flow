@@ -4,7 +4,7 @@ import NoAuth from "./noauth.js";
 
 import { busk, render, includeJS, loadView } from "./functions.js";
 
-if(authToken){
+if(localStorage.getItem(10) != null){
 render(Index());
 }
 else{
