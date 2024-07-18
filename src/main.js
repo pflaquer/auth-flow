@@ -1,6 +1,6 @@
 import Index from "./index.js";
 import Homie from "../views/Home.js"
-import NoAuth from "./NoAuth.js";
+import NoAuth from "./noauth.js";
 
 import { busk, render, includeJS, loadView } from "./functions.js";
 
