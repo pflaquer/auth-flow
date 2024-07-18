@@ -1,4 +1,6 @@
 //import app from './raw.js'
+import logout from './auth.js'
+
 let JWT;
 JWT=1;
 let requests = 'Hire <span class="badge">NEW</span>'
