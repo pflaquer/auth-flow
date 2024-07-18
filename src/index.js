@@ -55,7 +55,7 @@ return (`
             </li></a>
           >
         </nav>
-        <a href="#" onclick="alert('Logout Flow')"
+        <a href="#" onclick="logout()"
           ><div class="logout">
            <i class="fa-solid fa-sign-out"></i>Logout
           </div></a
