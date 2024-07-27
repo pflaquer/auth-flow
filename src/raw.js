@@ -255,6 +255,19 @@ function Hire(){
   `
 }
 
+function Requests(){
+  return `
+  
+  <div class="views2" style="padding:20px;margin:auto">Current Route: /Requests</div>
+  <div id="requests">
+  <div class="views2" id="hiringheading">Current Requests</div>
+  <ul>
+  <li></li>
+  </ul>
+  </div>
+  `
+}
+
 function Tickets(){
 /*let route = tickets
 */
