@@ -262,6 +262,7 @@ function Hire(){
 
   `
 	searchComponent();
+}
 
 
 function Requests(){
@@ -706,5 +707,4 @@ ${social}
 `
 }
 
-}
 }
