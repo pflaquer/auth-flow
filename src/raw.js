@@ -654,7 +654,6 @@ let avatarBox = document.querySelector('.avatar-box')
 let templateAvatar = document.querySelector('[data-template-avatar]')
 
 let input = document.querySelector('input')
-let data = ['pedro','jose','marissa','paul'];
 
 let sortedData = [];
 
