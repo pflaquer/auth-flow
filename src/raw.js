@@ -247,7 +247,11 @@ function Hire(){
   
   <div class="views2" style="padding:20px;margin:auto">Current Route: /Hire</div>
   <div id="hiring">
+  <!--
   <div class="views2" id="hiringheading">Current Requests</div>
+  -->
+
+  
   <ul>
   <li></li>
   </ul>
