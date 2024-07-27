@@ -756,7 +756,7 @@ let avatarBox = document.querySelector('.avatar-box')
 
 let templateAvatar = document.querySelector('[data-template-avatar]')
 
-let input = document.querySelector('input')
+let input = document.getElementById('user-search');
 
 let sortedData = [];
 
