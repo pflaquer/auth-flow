@@ -241,11 +241,13 @@ function Payments(){
   <code>Your Payment QR Code</code>
   `
 }
-
-function Hire(){
-	function testing(){
+function testing(){
 		alert('testing ok...');
 	}
+
+
+function Hire(){
+	
   return `
   
   <div class="views2" style="padding:20px;margin:auto">Current Route: /Hire</div>
