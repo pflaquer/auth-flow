@@ -243,7 +243,7 @@ function Payments(){
 }
 
 function Hire(){
-	searchComponent();
+	
   return `
   
   <div class="views2" style="padding:20px;margin:auto">Current Route: /Hire</div>
@@ -261,6 +261,7 @@ function Hire(){
 
 
   `
+	searchComponent();
 
 let users = [
   {
