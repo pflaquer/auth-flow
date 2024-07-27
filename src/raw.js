@@ -247,15 +247,18 @@ function Hire(){
   
   <div class="views2" style="padding:20px;margin:auto">Current Route: /Hire</div>
   <div id="hiring">
-  <!--
-  <div class="views2" id="hiringheading">Current Requests</div>
-  -->
 
-  
-  <ul>
-  <li></li>
-  </ul>
-  </div>
+
+<div class='box'>
+<input type='text' value='' placeholder='Enter name, lastname or id'>
+<h1 class='info-search'>
+</h1>
+</div>
+<div class='search-box-result'>  </div>
+<template data-template-avatar>
+</template>
+
+
   `
 }
 
