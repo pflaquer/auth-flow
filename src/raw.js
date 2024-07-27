@@ -250,7 +250,7 @@ function Hire(){
 
 
 <div class='box'>
-<input type='text' value='' placeholder='Enter name, lastname or id' oninput="alert('working')">
+<input type='text' value='' placeholder='Enter name, lastname or id' oninput="testing()">
 <h1 class='info-search'>
 </h1>
 </div>
@@ -329,6 +329,9 @@ input.oninput = ()=>{
     searchBoxResult.innerHTML += userCard(x.name,x.email,x.img,x.social+x.name)+"<br>"
   })
 }
+	function testing(){
+		alert('testing ok...');
+	}
 
 let userCard = (name,email,image,social)=>{
   return `
