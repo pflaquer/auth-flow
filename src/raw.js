@@ -609,7 +609,7 @@ google.maps.event.addListener(marker,'mouseout',function(){$(".gm-style div").re
 JULY 27
 */
 
-let user = {}
+
 let users = [
   {
     id:1,
