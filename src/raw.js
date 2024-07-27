@@ -250,7 +250,7 @@ function Hire(){
 
 
 <div class='box'>
-<input type='text' value='' placeholder='Enter name, lastname or id'>
+<input type='text' value='' placeholder='Enter name, lastname or id' oninput="alert('working')">
 <h1 class='info-search'>
 </h1>
 </div>
