@@ -1,0 +1,135 @@
+.box{ 
+
+  width:400px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:15px auto;
+  input{
+  padding:7px 5px;
+  width:300px;
+   border:none;
+    border-bottom:solid 1px black;
+    transition:0.1s linear;
+    &:focus{
+      font-size:20px;
+      outline:none;
+    }
+    
+    
+}
+}
+
+
+.avatar-box{
+  margin: 15px auto 25px auto;
+  position:relative;
+  transition:0.3s ease;
+  
+  
+  &:hover{
+    background-color:yellowgreen;
+    color:white;
+    border:solid 1px transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  &:hover>.avatar-text>.btn{
+    background-color:white;
+    color:black;
+  }
+    &:hover>.logo{
+    background-color:white;
+    color:black;
+      
+  }
+  &:hover>.avatar-pic:after{
+    border-color:white;
+    animation:anim 0.3s infinite linear;
+  }
+  width:clamp(100px,100vw,350px);
+  background-color:white;
+  border:solid 1px grey;
+  padding:25px 18px 18px 18px;
+  display:flex;
+  border-radius:15px;
+  flex-direction:column;
+  justify-content:space-between;
+ 
+  .avatar-text{
+    margin-top:25px;
+    width:100%;
+    text-align:center;
+    .name{
+      font-size:25px;
+    }
+    .email{
+      font-size:18px;
+    }
+    .btn{
+      padding:10px 45px;
+      margin-top:25px;
+      background-color:yellowgreen;
+      color:white;
+      transition:0.3s ease;
+       border:solid 2px transparent;
+      &:hover{
+        background-color:transparent;
+        border:solid 2px white;
+        padding:10px 45px;
+        color:white;
+       
+        
+      }
+      
+      
+    }
+  }
+}
+.avatar-pic{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  &:after{
+    position:absolute;
+    content:'';
+    height:110px;
+    width:110px;
+    border-radius:50%;
+    background-color:transparent;
+    animation: rotate 10s infinite;
+    transition:0.3s ease;
+    
+  border:5px dotted orangered;
+  
+    );
+}
+  
+    
+  }
+    img{
+      height:100px;
+      width:100px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+  }
+.search-box-result{
+  
+  padding:15px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:15px;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
