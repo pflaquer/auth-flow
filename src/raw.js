@@ -241,10 +241,6 @@ function Payments(){
   <code>Your Payment QR Code</code>
   `
 }
-function testing(){
-		alert('testing ok...');
-	}
-
 
 function Hire(){
 	
@@ -714,11 +710,8 @@ google.maps.event.addListener(marker,'mouseout',function(){$(".gm-style div").re
 
 
 
-/*
-JULY 27
 
-
-
+function searchComponent(){
 let users = [
   {
     id:1,
@@ -816,4 +809,4 @@ ${social}
 `
 }
 
-*/
+}
