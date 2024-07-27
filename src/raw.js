@@ -243,6 +243,9 @@ function Payments(){
 }
 
 function Hire(){
+	function testing(){
+		alert('testing ok...');
+	}
   return `
   
   <div class="views2" style="padding:20px;margin:auto">Current Route: /Hire</div>
@@ -329,9 +332,7 @@ input.oninput = ()=>{
     searchBoxResult.innerHTML += userCard(x.name,x.email,x.img,x.social+x.name)+"<br>"
   })
 }
-	function testing(){
-		alert('testing ok...');
-	}
+	
 
 let userCard = (name,email,image,social)=>{
   return `
