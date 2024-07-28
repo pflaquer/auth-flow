@@ -251,7 +251,7 @@ function Hire(){
 
 
 <div class='box'>
-<input type='text' value='' placeholder='Enter name, lastname or id' id="user-search">
+<input type='text' value='' placeholder='Enter name, lastname or id' id="user-search" onclick="searchComponent()>
 <h1 class='info-search'>
 </h1>
 </div>
@@ -261,7 +261,9 @@ function Hire(){
 
 
   `
-	searchComponent();
+	
+	  //searchComponent();
+	
 }
 
 
