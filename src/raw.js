@@ -5,7 +5,7 @@ let events;
 let btns = document.getElementById("pulse");
 let useremail = localStorage.getItem(2);
 let username = localStorage.getItem(3);
-let type = localStorage.getItem(3);
+let type = localStorage.getItem(4);
 //change this to a different number
 
 let state = {
