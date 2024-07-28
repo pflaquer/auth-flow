@@ -5,6 +5,8 @@ let events;
 let btns = document.getElementById("pulse");
 let useremail = localStorage.getItem(2);
 let username = localStorage.getItem(3);
+let type = localStorage.getItem(3);
+//change this to a different number
 
 let state = {
 	isLoggedIn:null,
@@ -216,6 +218,8 @@ function Profile(){
   <div class="views2 smoothfade">Current Route: /Profile</div>
 	  <div class="views2">
 	  <form>
+   <label for="fname" placeholder="Name">Account Type</label><br>
+  <input type="text" id="fname" name="fname" placeholder="${type}"><br>
   <label for="fname" placeholder="Name">Name</label><br>
   <input type="text" id="fname" name="fname" placeholder="${username}"><br>
   <label for="lname">Email</label><br>
