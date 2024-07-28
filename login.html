@@ -92,6 +92,8 @@ document.getElementById("status").innerHTML = 'Successfully Logged In';
     let useremail = localStorage.getItem(2);
     localStorage.setItem(3,payload.name);
     let username = localStorage.getItem(3);
+    let type = 'Busker';
+    localStorage.setItem(4,type);
     let authToken = Date.now().toString();
     localStorage.setItem(10,authToken);
    //window.location = ‘https://auth-flow-rho.vercel.app/app.html’;
