@@ -290,7 +290,7 @@ function Tickets(){
 }
 */
 
-let date,time,venue;
+let dat,tim,ven;
 date = 'Wed Feb 24 2024'
 time = '8:00PM'
 venue = 'Madison Square Garden'
@@ -307,10 +307,10 @@ fetch('https://app.ticketmaster.com/discovery/v2/events.json?classificationName=
 
       let newStr = `<div class="container">
       <div><h2>${x.name}<br>
-      ${venue}</h2><br><img src=${img} class="eventimg"></img>
-      <div class="centered">${date}
+      ${ven}</h2><br><img src=${img} class="eventimg"></img>
+      <div class="centered">${dat}
       <br>
-      ${time}
+      ${tim}
      </div>
       </div>`
      HTMLstr = HTMLstr+newStr
