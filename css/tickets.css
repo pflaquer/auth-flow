@@ -40,5 +40,7 @@ font-family:"courier-new",monospace;
 
 .ticketscontainer{
 background:white;
+  display:flex;
+  flex-direction:row;
 }
 
