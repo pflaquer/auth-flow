@@ -283,13 +283,51 @@ function Requests(){
   </div>
   `
 }
-
+/*
 function Tickets(){
-/*let route = tickets
-*/
+
   return '<div class="views2" style="padding:20px;margin:auto">Current Route: /Tickets</div>'
 }
+*/
 
+let date,time,venue;
+date = 'Wed Feb 24 2024'
+time = '8:00PM'
+venue = 'Madison Square Garden'
+  let HTMLstr;
+  HTMLstr ='';
+
+function retrieveData(){
+  {
+fetch('https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=345&apikey=2ud9ArdAhSfAI8wsXp5VTRBAGd1GirBj')
+.then(res=>res.json())
+.then(d=>d._embedded.events.forEach((x)=>{
+
+      let img = `${x.images[0].url}`
+
+      let newStr = `<div class="container">
+      <div><h2>${x.name}<br>
+      ${venue}</h2><br><img src=${img} class="eventimg"></img>
+      <div class="centered">${date}
+      <br>
+      ${time}
+     </div>
+      </div>`
+     HTMLstr = HTMLstr+newStr
+  document.activeElement.innerHTML = HTMLstr
+}))                                  
+  }
+  
+}
+
+
+retrieveData()
+
+function Tickets(){
+return `<div onload="retrieveData()">Loading...</div>`
+}
+
+	
 
 
 const view = document.getElementById("view");
