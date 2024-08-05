@@ -314,7 +314,7 @@ fetch('https://app.ticketmaster.com/discovery/v2/events.json?classificationName=
      </div>
       </div>`
      HTMLstr = HTMLstr+newStr
-  document.activeElement.innerHTML = HTMLstr
+  document.getElementById("ticketsview").innerHTML = HTMLstr
 }))                                  
   }
   
@@ -323,7 +323,7 @@ fetch('https://app.ticketmaster.com/discovery/v2/events.json?classificationName=
 
 
 function Tickets(){
-return `<div onload="retrieveData()">${retrieveData()}</div>`
+return `<div id="ticketsview">${retrieveData()}</div>`
 }
 
 	
