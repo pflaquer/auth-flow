@@ -17,7 +17,7 @@ body {
 
 .container{
   position:relative;
-  flex-wrap: wrap;
+  display:flex;
   overflow: hidden;
 }
 
@@ -42,8 +42,9 @@ font-family:"courier-new",monospace;
 
 .ticketscontainer{
 background:white;
-  display:flex;
+display:flex;
+  flex-direction:row;
 overflow: hidden;
-  flex-wrap: wrap;
+
 }
 
