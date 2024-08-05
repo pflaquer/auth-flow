@@ -291,9 +291,9 @@ function Tickets(){
 */
 
 let dat,tim,ven;
-date = 'Wed Feb 24 2024'
-time = '8:00PM'
-venue = 'Madison Square Garden'
+dat = 'Wed Feb 24 2024'
+tim = '8:00PM'
+ven = 'Madison Square Garden'
   let HTMLstr;
   HTMLstr ='';
 
