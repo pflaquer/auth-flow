@@ -6,7 +6,9 @@ Busk-It | Discover Live Music in NYC
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="styles3.css"/>
+      <link rel="stylesheet" href="dots.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+      
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
@@ -84,6 +86,23 @@ Busk-It | Discover Live Music in NYC
       -->
       <script src="index.js"></script>
   </script>
+      <script>
+      let colors = ['red','orange','blue','green']
+let i;
+i=0;
+function genDots(){
+  while(i<0xff)
+    i++;
+    setInterval(()=>{
+document.body.innerHTML += `<div class="particle" id="particle" style="position:absolute;top:${Math.random()*100}%;left:${Math.random()*100}%;opacity:${Math.random()*100};background-color:rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255});">`
+//document.getElementById("particle").style.backgroundColor = colors[i]
+},1000)
+}
+//
+
+genDots()
+
+      </script>
 
   </body>
 <footer>
