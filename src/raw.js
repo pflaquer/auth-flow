@@ -321,7 +321,6 @@ fetch('https://app.ticketmaster.com/discovery/v2/events.json?classificationName=
 }
 
 
-retrieveData()
 
 function Tickets(){
 return `<div onload="retrieveData()">Loading...</div>`
