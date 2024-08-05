@@ -1,0 +1,39 @@
+.eventimg {
+  width:128px;
+  height:128px;
+  border-radius:10px;
+  filter:drop-shadow(10px 5px 12px lightyellow);
+  
+}
+
+.eventimg:hover{
+  transform:scale(1.1);
+  filter:filter:drop-shadow(10px 5px 5px blue);
+}
+
+body {
+  text-align:center;
+}
+
+.container{
+  position:relative;
+}
+
+.centered {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:white;
+  color:black;
+  opacity:.8;
+}
+
+.centered:hover{
+  opacity:1;
+}
+
+h2 {
+font-family:"courier-new",monospace;  
+  font-weight:normal;
+}
