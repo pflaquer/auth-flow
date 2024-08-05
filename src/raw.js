@@ -323,7 +323,7 @@ fetch('https://app.ticketmaster.com/discovery/v2/events.json?classificationName=
 
 
 function Tickets(){
-return `<div onload="retrieveData()">Loading...</div>`
+return `<div onload="retrieveData()">${retrieveData()}</div>`
 }
 
 	
