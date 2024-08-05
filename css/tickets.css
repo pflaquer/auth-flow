@@ -42,5 +42,6 @@ font-family:"courier-new",monospace;
 background:white;
   display:flex;
   flex-direction:row;
+  overflow:hidden;
 }
 
