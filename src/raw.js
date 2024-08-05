@@ -305,7 +305,7 @@ fetch('https://app.ticketmaster.com/discovery/v2/events.json?classificationName=
 
       let img = `${x.images[0].url}`
 
-      let newStr = `<div class="container">
+      let newStr = `<div class="ticketscontainer">
       <div><h2>${x.name}<br>
       ${ven}</h2><br><img src=${img} class="eventimg"></img>
       <div class="centered">${dat}
