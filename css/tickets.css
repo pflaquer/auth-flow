@@ -18,7 +18,7 @@ body {
 .container{
   position:relative;
   flex-wrap: wrap;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .centered {
@@ -43,7 +43,7 @@ font-family:"courier-new",monospace;
 .ticketscontainer{
 background:white;
   display:flex;
-overflow: visible;
+overflow: hidden;
   flex-wrap: wrap;
 }
 
