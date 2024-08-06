@@ -15,11 +15,20 @@ body {
   text-align:center;
 }
 
-.container{
+/*.container{
   position:relative;
   width:100%;
   overflow: hidden;
 }
+*/
+
+.container{
+  margin:10px;
+  padding:5px;
+  position:relative;
+}
+
+
 
 .centered {
   position: absolute;
@@ -40,9 +49,41 @@ font-family:"courier-new",monospace;
   font-weight:normal;
 }
 
-.ticketscontainer{
+/*.ticketscontainer{
 display:flex;
 flex-wrap:wrap;
 width:100%;
   background:white;
 }
+*/
+
+
+.ticketscontainer{
+width:100%;
+height:250px;
+overflow:scroll;
+scrollbar-width:none;
+white-space: nowrap;
+  
+}
+
+
+.marquee {
+ 
+            text-align: center;
+  margin:0 auto;
+           
+            transform: translateY(100%);
+            /* Animate to the left */
+            animation: scroll-left 25s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateY(0%);
+            }
+
+            100% {
+                transform: translateY(-800%);
+            }
+        }
