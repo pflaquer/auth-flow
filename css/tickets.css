@@ -65,6 +65,7 @@ overflow:scroll;
 scrollbar-width:none;
 white-space: nowrap;
   background:white;
+  display:flex;
   
 }
 
