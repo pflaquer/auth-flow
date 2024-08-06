@@ -76,6 +76,7 @@ scrollbar-width:none;
 white-space: nowrap;
   background:white;
   display:flex;
+  flex-direction:column;
   
 }
 
