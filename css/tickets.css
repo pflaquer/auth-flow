@@ -27,6 +27,7 @@ body {
   padding:5px;
   position:relative;
   display:flex;
+  flex-direction:column;
 }
 
 .ticketcontainer{
@@ -34,6 +35,7 @@ body {
   padding:5px;
   position:relative;
   display:flex;
+  flex-direction:column;
 }
 
 
