@@ -306,7 +306,7 @@ if(i<10){
 	i++;
       let img = `${x.images[0].url}`
 
-      let newStr = `<div class="ticketscontainer">
+      let newStr = `<div class="ticketcontainer">
       <div><h2>${x.name}<br>
       ${ven}</h2><br><img src=${img} class="eventimg"></img>
       <div class="centered">${dat}
@@ -326,7 +326,7 @@ if(i<10){
 
 
 function Tickets(){
-return `<div id="ticketsview">${retrieveData()}</div>`
+return `<div id="ticketsview" class="ticketscontainer">${retrieveData()}</div>`
 }
 
 	
