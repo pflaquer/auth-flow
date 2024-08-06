@@ -313,6 +313,7 @@ if(i<10){
       <br>
       ${tim}
      </div>
+      </div>
       </div>`
      HTMLstr = HTMLstr+newStr
   document.getElementById("ticketsview").innerHTML = HTMLstr
