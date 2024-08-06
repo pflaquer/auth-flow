@@ -307,7 +307,7 @@ if(i<10){
 	i++;
       let img = `${x.images[0].url}`
 
-      let newStr = `<div class="ticketcontainer marquee">
+      let newStr = `<div class="ticketcontainer marquee moving-border">
       <div><h2>${x.name}<br>
       ${ven}</h2><br><img src=${img} class="eventimg"></img>
       <div class="centered">${dat}
