@@ -44,4 +44,5 @@ font-family:"courier-new",monospace;
 display:flex;
 flex-wrap:wrap;
 width:400vw;
+  background:white;
 }
