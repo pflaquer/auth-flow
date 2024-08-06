@@ -296,13 +296,14 @@ tim = '8:00PM'
 ven = 'Madison Square Garden'
   let HTMLstr;
   HTMLstr ='';
-
+let i=0;
 function retrieveData(){
   {
 fetch('https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=345&apikey=2ud9ArdAhSfAI8wsXp5VTRBAGd1GirBj')
 .then(res=>res.json())
 .then(d=>d._embedded.events.forEach((x)=>{
-
+if(i<10){
+	i++;
       let img = `${x.images[0].url}`
 
       let newStr = `<div class="ticketscontainer">
@@ -315,6 +316,7 @@ fetch('https://app.ticketmaster.com/discovery/v2/events.json?classificationName=
       </div>`
      HTMLstr = HTMLstr+newStr
   document.getElementById("ticketsview").innerHTML = HTMLstr
+}
 }))                                  
   }
   
