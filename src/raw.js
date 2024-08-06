@@ -326,7 +326,7 @@ if(i<10){
 
 
 function Tickets(){
-return `<div id="ticketsview" class="ticketscontainer">${retrieveData()}</div>`
+return `<div id="ticketsview" class="ticketscontainer views2">${retrieveData()}</div>`
 }
 
 	
