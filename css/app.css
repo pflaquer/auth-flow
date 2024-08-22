@@ -254,7 +254,7 @@ a:link {
   border-radius: 29px;
   background-size: cover;
   background-repeat: no-repeat;
-  /*filter:invert(100%);*/
+  filter:invert(20%);
 }
 
 .page-content {
