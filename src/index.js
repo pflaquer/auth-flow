@@ -3,7 +3,7 @@
 
 let JWT;
 JWT=1;
-let requests = 'Hire <span class="badge">NEW</span>'
+let requests = 'Requests <span class="badge">NEW</span>'
 let newrequests=true;
 /*let toggleState = (x)=>{
       x = true;
@@ -45,7 +45,7 @@ return (`
           >
           <a href="#"
             ><li class="item-menu" onclick="handleClick(Hire)">
-             <i class="fa-solid fa-music"></i>
+             <i class="fa-solid fa-music"></i>Hire
             </li></a
           >
           <a href="#"
