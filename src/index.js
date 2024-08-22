@@ -45,6 +45,11 @@ return (`
           >
           <a href="#"
             ><li class="item-menu" onclick="handleClick(Hire)">
+             <i class="fa-solid fa-music"></i>
+            </li></a
+          >
+          <a href="#"
+            ><li class="item-menu" onclick="handleClick(Requests)">
              <i class="fa-solid fa-calendar-days"></i>${requests}
             </li></a
           >
