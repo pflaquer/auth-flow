@@ -7,7 +7,7 @@ let useremail = localStorage.getItem(2);
 let username = localStorage.getItem(3);
 let type = localStorage.getItem(4);
 //change this to a different number
-let genreselect = ['Rock','HipHop','Country']
+let genreselect = ['Rock','HipHop','Country','Ska']
 let state = {
 	isLoggedIn:null,
 	isBusking:null,
