@@ -252,7 +252,7 @@ function updateProfile(){
 	alert('Profile Updated!');
 }
 function Home(){
-	loadMap(centerCoordinates.lat,centerCoordinates.lng,10);
+	loadMap(40.6958,-73.0060);
 	
   //return '<div style="padding:20px;margin:auto">Current Route: /Home</div>'
 }
