@@ -98,6 +98,7 @@ const { Map } = google.maps.importLibrary("maps");
 //let dummytitles=['Artist: Lil Wayne, Genre: Hiphop, Soundcloud: www.soundcloud.com/lilwayne','Artist: Jason Aldean, Genre: Country, Soundcloud: www.soundcloud.com/jasonaldean','Artist: Diplo, Genre: EDM, Soundcloud: www.soundcloud.com/diplo'];
 //let dummydata=[dummytitles];
 let count=0;
+	let randomuserimg = 'https://randomuser.me/api/portraits/med/men/'+parseInt(Math.random()*100)+'.jpg'
 let buskers = [
 	{lat: 40.6958+Math.random(), lng: -73.9171},
 	{lat: 40.6960, lng: -73.9120+Math.random()},
@@ -117,8 +118,8 @@ buskers.forEach((x)=>{
 icon: custommarker
 	});
 
-	//
-let contentString = `<div style="background:black;color:white;"><img src=${user.img} class="userimg"></img><hr>
+	//let contentString = `<div style="background:black;color:white;"><img src=${user.img} class="userimg"></img><hr>
+let contentString = `<div style="background:black;color:white;"><img src=${randomuserimg} class="userimg"></img><hr>
   Genre: ${user.genre}<hr>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="16px" height="16px"></img>  
 <img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="16px" href="https://soundcloud.com" height="16px"></img></div>
