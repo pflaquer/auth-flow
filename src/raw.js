@@ -95,6 +95,46 @@ const { Map } = google.maps.importLibrary("maps");
 //let dummydata=[dummytitles];
 let count=0;
 let buskers = [
+	{lat: 40.6958+Math.random(), lng: -73.9171},
+	{lat: 40.6960, lng: -73.9120+Math.random()},
+	{lat: 40.6969+Math.random(), lng: -73.9124},
+	{lat: 40.6970, lng: -73.9127+Math.random()}
+
+];
+  
+  //console.log(buskers)
+
+buskers.forEach((x)=>{
+	var sucursal1 = new google.maps.Marker({
+		position: x,
+		map: map,
+		animation: google.maps.Animation.DROP,
+    title:Math.random(),
+icon: custommarker
+	});
+}
+	
+);
+
+};
+/*
+function loadMap() {
+	
+	var myOptions = {
+	
+		center: new google.maps.LatLng(40.6958, -73.9120),
+		zoom: 13,
+		scrollwheel: false,
+		disableDefaultUI: true,
+	};
+const { Map } = google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } =  google.maps.importLibrary("marker");
+	map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+//let dummytitles=['Artist: Lil Wayne, Genre: Hiphop, Soundcloud: www.soundcloud.com/lilwayne','Artist: Jason Aldean, Genre: Country, Soundcloud: www.soundcloud.com/jasonaldean','Artist: Diplo, Genre: EDM, Soundcloud: www.soundcloud.com/diplo'];
+//let dummydata=[dummytitles];
+let count=0;
+let buskers = [
 	{lat: 40.6958, lng: -73.9171},
 	{lat: 40.6960, lng: -73.9120},
 	{lat: 40.6969, lng: -73.9124},
@@ -117,6 +157,7 @@ icon: custommarker
 );
 
 };
+*/
 
 //let state = false;
 
