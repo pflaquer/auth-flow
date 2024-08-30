@@ -257,7 +257,7 @@ function Home(){
   //return '<div style="padding:20px;margin:auto">Current Route: /Home</div>'
 }
 
-window.onload = loadMap();
+
 
 function Profile(){
   return `
@@ -800,3 +800,8 @@ ${social}
 }
 
 }
+
+
+window.addEventListener("load", (event) => {
+  loadMap();
+});
