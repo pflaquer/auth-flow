@@ -77,13 +77,17 @@ let latitude;
 let longitude;
 
 let loggedin = false;
-
-function loadMap() {
+let centerCoordinates = {
+		lat:40.6958,
+		lng:-73.9120
+	}
+function loadMap(lat,lng,zm) {
+	
 	
 	var myOptions = {
 	
-		center: new google.maps.LatLng(40.6958, -73.9120),
-		zoom: 13,
+		center: new google.maps.LatLng(lat,lng),
+		zoom: zm,
 		scrollwheel: false,
 		disableDefaultUI: true,
 	};
@@ -248,7 +252,7 @@ function updateProfile(){
 	alert('Profile Updated!');
 }
 function Home(){
-	loadMap();
+	loadMap(centerCoordinates.lat,centerCoordinates.lng,10);
 	
   //return '<div style="padding:20px;margin:auto">Current Route: /Home</div>'
 }
