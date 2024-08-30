@@ -87,9 +87,9 @@ function loadMap() {
 	var myOptions = {
 	
 		center: new google.maps.LatLng(40.6958,-73.9120),
-		zoom: 13,
+		zoom: 10,
 		scrollwheel: false,
-		disableDefaultUI: false,
+		disableDefaultUI: true,
 	};
 const { Map } = google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } =  google.maps.importLibrary("marker");
