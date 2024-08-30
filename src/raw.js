@@ -113,7 +113,7 @@ buskers.forEach((x)=>{
 		position: x,
 		map: map,
 		animation: google.maps.Animation.DROP,
-    title:Math.random(),
+    title:'ok',
 icon: custommarker
 	});
 }
