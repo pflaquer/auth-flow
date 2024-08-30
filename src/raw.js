@@ -118,10 +118,10 @@ icon: custommarker
 	});
 
 	//
-let contentString = `<img src=${user.img} class="userimg"></img><hr>
+let contentString = `<div style="background:black;color:white;"><img src=${user.img} class="userimg"></img><hr>
   Genre: ${user.genre}<hr>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="32px" height="32px"></img>  
-<img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="32px" href="https://soundcloud.com" height="32px"></img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="16px" height="16px"></img>  
+<img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="16px" href="https://soundcloud.com" height="16px"></img></div>
   `
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
