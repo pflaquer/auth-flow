@@ -7,7 +7,7 @@ let useremail = localStorage.getItem(2);
 let username = localStorage.getItem(3);
 let type = localStorage.getItem(4);
 //change this to a different number
-
+let genreselect = ['Rock','HipHop','Country']
 let state = {
 	isLoggedIn:null,
 	isBusking:null,
@@ -122,8 +122,9 @@ icon: custommarker
 	});
 
 	//let contentString = `<div style="background:black;color:white;"><img src=${user.img} class="userimg"></img><hr>
+	//Genre: ${user.genre}<hr>
 let contentString = `<div style="background:black;color:white;"><img src=${randomuserimg()} class="userimg"></img><hr>
-  Genre: ${user.genre}<hr>
+  Genre: ${genreselect[parseInt(Math.random()*3)]}<hr>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="16px" height="16px"></img>  
 <img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="16px" href="https://soundcloud.com" height="16px"></img></div>
   `
