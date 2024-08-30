@@ -79,15 +79,15 @@ let longitude;
 let loggedin = false;
 let centerCoordinates = {
 		lat:40.6958,
-		lng:-73.9120
+		lng:-73.9120,
 	}
-function loadMap(lat,lng,zm) {
+function loadMap(lat,lng) {
 	
 	
 	var myOptions = {
 	
 		center: new google.maps.LatLng(lat,lng),
-		zoom: zm,
+		zoom: 13,
 		scrollwheel: false,
 		disableDefaultUI: true,
 	};
