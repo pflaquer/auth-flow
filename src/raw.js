@@ -15,7 +15,7 @@ let state = {
 }
 
 let markericon = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/marker-';
-
+let performertype = ['music','guitar','singing'];
 
 events = [];
 //let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png'
