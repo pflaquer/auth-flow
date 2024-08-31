@@ -123,13 +123,22 @@ let buskers = [
   
   //console.log(buskers)
 
+
+	
 buskers.forEach((x)=>{
+let cmarker = {
+	//url:'https://cdn-icons-png.flaticon.com/512/481/481546.png',
+	url:markericon+performertype[parseInt(Math.random()*4)]+'.png',
+	scaledSize: new google.maps.Size(50, 50), // scaled size
+    
+};
+	
 	var sucursal1 = new google.maps.Marker({
 		position: x,
 		map: map,
 		animation: google.maps.Animation.DROP,
     title:x.lat.toString()+','+x.lng.toString(),
-icon: custommarker
+icon: cmarker
 	});
 
 	//let contentString = `<div style="background:black;color:white;"><img src=${user.img} class="userimg"></img><hr>
