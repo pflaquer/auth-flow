@@ -19,7 +19,8 @@ let state = {
 events = [];
 //let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png'
 //let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/mic.svg.png';
-let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/mic2.svg.png';
+//let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/mic2.svg.png';
+let custommarker = altmarker;
 //let livemarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png';
 
 let altmarker = 'https://cdn-icons-png.flaticon.com/512/481/481546.png'
