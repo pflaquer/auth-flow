@@ -117,7 +117,7 @@ buskers.forEach((x)=>{
 		position: x,
 		map: map,
 		animation: google.maps.Animation.DROP,
-    title:'ok',
+    title:x.lat.toString()+','+x.lng.toString(),
 icon: custommarker
 	});
 
