@@ -8,6 +8,15 @@ let username = localStorage.getItem(3);
 let type = localStorage.getItem(4);
 //change this to a different number
 let genreselect = ['Rock','HipHop','Country','Ska']
+class busker{
+	constructor(name,genre,type,soundcloud,instagram){
+		this.name = name;
+		this.genre = genre;
+		this.type = type;
+		this.soundcloud = soundcloud;
+		this.instagram = instagram;
+	}
+}
 let state = {
 	isLoggedIn:null,
 	isBusking:null,
