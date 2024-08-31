@@ -14,6 +14,7 @@ let state = {
 	currentView:null
 }
 
+let markericon = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/marker-';
 
 
 events = [];
@@ -21,7 +22,8 @@ events = [];
 //let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/mic.svg.png';
 //let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/mic2.svg.png';
 let altmarker = {
-	url:'https://cdn-icons-png.flaticon.com/512/481/481546.png',
+	//url:'https://cdn-icons-png.flaticon.com/512/481/481546.png',
+	url:markericon+'music.png',
 	scaledSize: new google.maps.Size(50, 50), // scaled size
     
 };
