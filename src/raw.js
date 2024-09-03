@@ -162,6 +162,8 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
     ariaLabel: "Uluru",
+	  maxWidth:300,
+	  maxHeight:300,
   });
 
 	sucursal1.addListener("click", () => {
