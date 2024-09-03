@@ -156,6 +156,8 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
   Genre: ${genreselect[parseInt(Math.random()*3)]}<hr>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="16px" height="16px"></img>  
 <img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="16px" href="https://soundcloud.com" height="16px"></img></div>
+<br>
+<button onclick="handleClick(hire)">Hire</button><button>&#9658;</button>
   `
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
