@@ -158,6 +158,10 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 <img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="16px" href="https://soundcloud.com" height="16px"></img></div>
 <br>
 <button onclick="handleClick(hire)">Hire</button><button>&#9658;</button>
+<br>
+<div class="soundcloud-wrapper" class="soundcloud">
+<iframe width="73px" height="73px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11072274&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+</div>
   `
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
