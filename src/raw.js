@@ -105,7 +105,7 @@ let centerCoordinates = {
 		lng:-73.9120,
 	}
 function loadMap() {
-	
+	document.getElementById("filterslot").innerHTML = buttonFilter();
 	
 	var myOptions = {
 	
