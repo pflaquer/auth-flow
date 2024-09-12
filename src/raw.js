@@ -1,5 +1,5 @@
 //import Homie from "../views/Home.js";
-function buttonFilter(x){
+function buttonFilter(genre){
 	return `<button>Filter</button>
  `
 }
