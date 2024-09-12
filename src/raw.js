@@ -1,5 +1,8 @@
 //import Homie from "../views/Home.js";
-
+function buttonFilter(){
+	return `<button>Filter</button>
+ `
+}
 let user;
 let events;
 let btns = document.getElementById("pulse");
