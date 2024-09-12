@@ -1,6 +1,11 @@
 //import Homie from "../views/Home.js";
 function buttonFilter(genre){
-	return `<div class="buttonFilter"><button>Filter</button></div>
+	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres">
+    <option value="Jazz">Jazz</option>
+    <option value="HipHop">HipHop</option>
+    <option value="Country">Country</option>
+    <option value="Pop">Pop</option>
+  </select></div>
  `
 }
 let user;
