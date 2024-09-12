@@ -309,6 +309,9 @@ let counter = 0;
     });
 */
 function handleClick(route){
+	if(state.currentView!=Map){
+		document.getElementById("filterslot").innerHTML = '';
+	}
   //alert(JSON.stringify(e))
   document.getElementById("map").innerHTML = route();
 	state.currentView = route;
