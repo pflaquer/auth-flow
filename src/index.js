@@ -100,6 +100,7 @@ return (`
           <div class="box-map-event">
             
             <div id="view" class="view">
+            <div id="filterslot"></div>
            <div class="map" id="map">
              
               <div class="box-search">
