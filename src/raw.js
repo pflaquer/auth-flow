@@ -160,7 +160,7 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 <button onclick="handleClick(hire)">Hire</button><button>&#9658;</button>
 <br>
 <div class="soundcloud-wrapper" class="soundcloud">
-<iframe width="73px" height="73px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11072274&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+<iframe width="73px" height="73px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11072274&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
 </div>
   `
   const infowindow = new google.maps.InfoWindow({
