@@ -1,13 +1,5 @@
 //import Homie from "../views/Home.js";
 
-function filterGenre(x){
-	alert('Map Updated!');
-x.forEach((z)=>{
-	//add to map
-	);
-	
-};
-};
 
 function buttonFilter(genre){
 	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='filterGenre(x)'>
