@@ -2,7 +2,7 @@
 
 function filterGenre(x){
 	alert('Map Updated!');
-x.forEach((z){
+x.forEach((z)=>{
 	//add to map
 	);
 	
