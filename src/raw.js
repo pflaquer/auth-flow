@@ -147,14 +147,8 @@ let buskers = [
 
 ];
   
-  //console.log(buskers)
-function filterGenre(x){
-	alert('Map Updated!');
-x.forEach((z){
-	//add to map
-	);
-	
-}
+
+
 	
 buskers.forEach((x)=>{
 let cmarker = {
