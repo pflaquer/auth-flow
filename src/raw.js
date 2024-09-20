@@ -9,7 +9,7 @@ x.forEach((z){
 }
 
 function buttonFilter(genre){
-	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='filterGenre()'>
+	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='filterGenre(x)'>
     <option value="Jazz">Jazz</option>
     <option value="HipHop">HipHop</option>
     <option value="Country">Country</option>
