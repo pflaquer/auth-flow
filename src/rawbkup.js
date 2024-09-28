@@ -1,10 +1,10 @@
 //import Homie from "../views/Home.js";
 /*function app(){*/
 let user;
-let events;
+let events =[];
 let btns = document.getElementById("pulse");
 
-events = [];
+
 let custommarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png'
 let venues = []
 let userimg = localStorage.getItem(1);
