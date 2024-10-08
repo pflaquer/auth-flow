@@ -314,7 +314,7 @@ const { Map } = google.maps.importLibrary("maps");
 	
 buskers.all.forEach((x)=>{
 let cmarker = {
-	//url:'https://cdn-icons-png.flaticon.com/512/481/481546.png',
+	
 	url:markericon+performertype[parseInt(Math.random()*4)]+'.png',
 	scaledSize: new google.maps.Size(50, 50), // scaled size
     
@@ -359,6 +359,21 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 }
 	
 );
+//
+function setMapOnAll(map) {
+  for (let i = 0; i < buskers.all.length; i++) {
+    buskers.all[i].setMap(map);
+  }
+}
+
+// Removes the markers from the map, but keeps them in the array.
+function hideMarkers() {
+  setMapOnAll(null);
+}
+
+	hideMarkers();
+//
+	
 
 };
 
