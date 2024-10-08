@@ -128,7 +128,7 @@ function randomGenre(){
   return genres[parseInt(genres.length*Math.random())]
 }
 
-function GENERATEBUSKERS{
+function GENERATEBUSKERS(){
 for(x=0;x<30;x++){
   let randomuser = {
     lat:40.6958+Math.random(),
