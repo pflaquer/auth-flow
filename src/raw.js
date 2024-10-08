@@ -128,6 +128,10 @@ function randomGenre(){
   return genres[parseInt(genres.length*Math.random())]
 }
 
+function randomuserimg(){
+		return 'https://randomuser.me/api/portraits/med/men/'+parseInt(Math.random()*100)+'.jpg'
+	}
+
 function GENERATEBUSKERS(){
 for(x=0;x<30;x++){
   let randomuser = {
