@@ -111,6 +111,8 @@ let centerCoordinates = {
 		lat:40.6958,
 		lng:-73.9120,
 	}
+
+/*
 function loadMap() {
 	document.getElementById("filterslot").innerHTML = buttonFilter();
 	
@@ -192,6 +194,8 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 );
 
 };
+
+*/
 /*
 function loadMap() {
 	
@@ -235,6 +239,89 @@ icon: custommarker
 */
 
 //let state = false;
+
+function loadMap() {
+	//latest version 10.8.24
+	document.getElementById("filterslot").innerHTML = buttonFilter();
+	
+	var myOptions = {
+	
+		center: new google.maps.LatLng(40.6958,-73.9120),
+		zoom: 10,
+		scrollwheel: false,
+		disableDefaultUI: true,
+	};
+const { Map } = google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } =  google.maps.importLibrary("marker");
+	map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+//let dummytitles=['Artist: Lil Wayne, Genre: Hiphop, Soundcloud: www.soundcloud.com/lilwayne','Artist: Jason Aldean, Genre: Country, Soundcloud: www.soundcloud.com/jasonaldean','Artist: Diplo, Genre: EDM, Soundcloud: www.soundcloud.com/diplo'];
+//let dummydata=[dummytitles];
+let count=0;
+	let randomuserimg = ()=>{
+		return 'https://randomuser.me/api/portraits/med/men/'+parseInt(Math.random()*100)+'.jpg'
+	}
+	
+let buskers = [
+	{lat: 40.6958+Math.random(), lng: -73.9171},
+	{lat: 40.6960, lng: -73.9120+Math.random()},
+	{lat: 40.6969+Math.random(), lng: -73.9124},
+	{lat: 40.6970, lng: -73.9127+Math.random()}
+
+];
+  
+
+
+	
+buskers.forEach((x)=>{
+let cmarker = {
+	//url:'https://cdn-icons-png.flaticon.com/512/481/481546.png',
+	url:markericon+performertype[parseInt(Math.random()*4)]+'.png',
+	scaledSize: new google.maps.Size(50, 50), // scaled size
+    
+};
+	
+	var sucursal1 = new google.maps.Marker({
+		position: x,
+		map: map,
+		animation: google.maps.Animation.DROP,
+    title:x.lat.toString()+','+x.lng.toString(),
+icon: cmarker
+	});
+
+	//let contentString = `<div style="background:black;color:white;"><img src=${user.img} class="userimg"></img><hr>
+	//Genre: ${user.genre}<hr>
+let contentString = `<div style="background:black;color:white;"><img src=${randomuserimg()} class="userimg"></img><hr>
+  Genre: ${genreselect[parseInt(Math.random()*3)]}<hr>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="16px" height="16px"></img>  
+<img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="16px" href="https://soundcloud.com" height="16px"></img></div>
+<br>
+<button onclick="handleClick(hire())">Hire</button><button>&#9658;</button>
+<br>
+<div class="soundcloud-wrapper" class="soundcloud">
+<iframe width="73px" height="73px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11072274&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+</div>
+  `
+  const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    ariaLabel: "Uluru",
+	  maxWidth:300,
+	  maxHeight:300,
+  });
+
+	sucursal1.addListener("click", () => {
+    infowindow.open({
+      anchor: sucursal1,
+      map,
+    });
+   });
+
+	//
+}
+	
+);
+
+};
 
 function broadcast(x){
 if(state==true){
