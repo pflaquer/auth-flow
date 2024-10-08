@@ -33,6 +33,17 @@ let state = {
 	currentView:null
 }
 
+let genres = ['rock','hiphop','classical','jazz'];
+let buskers = {
+  all:[],
+  jazz:[],
+  hiphop:[],
+  classical:[],
+  rock:[]
+}
+
+
+
 let markericon = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/assets/marker-';
 let performertype = ['music','guitar','microphone'];
 
@@ -112,6 +123,47 @@ let centerCoordinates = {
 		lng:-73.9120,
 	}
 
+
+function randomGenre(){
+  return genres[parseInt(genres.length*Math.random())]
+}
+
+function GENERATEBUSKERS{
+for(x=0;x<30;x++){
+  let randomuser = {
+    lat:40.6958+Math.random(),
+    lng:-73.9171+Math.random(),
+    genre:randomGenre(),
+    img:randomuserimg()
+  }
+  switch(randomuser.genre){
+    case 'jazz':
+      
+      
+      buskers.jazz.push(randomuser);
+      break;
+    case 'hiphop':
+     buskers.hiphop.push(randomuser);
+    case 'classical':
+      break;
+    case 'rock':
+      buskers.rock.push(randomuser);
+      break;
+	  case 'pop':
+		  buskers.pop.push(randomuser);
+		  break;
+      
+  }
+  
+buskers.all = buskers.jazz.concat(buskers.rock,buskers.classical,buskers.hiphop,buskers.pop)
+}
+}
+
+GENERATEBUSKERS();
+
+
+
+	
 /*
 function loadMap() {
 	document.getElementById("filterslot").innerHTML = buttonFilter();
@@ -238,7 +290,6 @@ icon: custommarker
 };
 */
 
-//let state = false;
 
 function loadMap() {
 	//latest version 10.8.24
@@ -255,25 +306,9 @@ const { Map } = google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } =  google.maps.importLibrary("marker");
 	map = new google.maps.Map(document.getElementById("map"), myOptions);
 
-//let dummytitles=['Artist: Lil Wayne, Genre: Hiphop, Soundcloud: www.soundcloud.com/lilwayne','Artist: Jason Aldean, Genre: Country, Soundcloud: www.soundcloud.com/jasonaldean','Artist: Diplo, Genre: EDM, Soundcloud: www.soundcloud.com/diplo'];
-//let dummydata=[dummytitles];
-let count=0;
-	let randomuserimg = ()=>{
-		return 'https://randomuser.me/api/portraits/med/men/'+parseInt(Math.random()*100)+'.jpg'
-	}
-	
-let buskers = [
-	{lat: 40.6958+Math.random(), lng: -73.9171},
-	{lat: 40.6960, lng: -73.9120+Math.random()},
-	{lat: 40.6969+Math.random(), lng: -73.9124},
-	{lat: 40.6970, lng: -73.9127+Math.random()}
-
-];
-  
-
 
 	
-buskers.forEach((x)=>{
+buskers.all.forEach((x)=>{
 let cmarker = {
 	//url:'https://cdn-icons-png.flaticon.com/512/481/481546.png',
 	url:markericon+performertype[parseInt(Math.random()*4)]+'.png',
