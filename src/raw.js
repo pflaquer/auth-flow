@@ -113,7 +113,7 @@ function toggleOfClass(element, ClassName) {
 
 
 var map = null;
-var buskers = [];
+//var buskers = [];
 let latitude;
 let longitude;
 
