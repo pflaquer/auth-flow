@@ -359,8 +359,8 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 
 //
 function setMapOnAll(map) {
-  for (let i = 0; i < buskers.all.length; i++) {
-    buskers.all[i].setMap(map);
+  for (let i = 0; i < buskers.jazz.length; i++) {
+    buskers.jazz[i].setMap(map);
   }
 }
 
@@ -369,7 +369,9 @@ function hideMarkers() {
   setMapOnAll(null);
 }
 
-	hideMarkers();
+	//hideMarkers();
+
+	setMapOnAll();
 //
 
 
