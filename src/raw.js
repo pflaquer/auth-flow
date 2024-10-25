@@ -21,6 +21,7 @@ function buttonFilter(genre){
 
 let markers;
 markers = [];
+markers.push(1);
 let user;
 let events;
 let btns = document.getElementById("pulse");
