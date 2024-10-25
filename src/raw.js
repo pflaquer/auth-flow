@@ -1,6 +1,6 @@
 //import Homie from "../views/Home.js";
 let markers;
-let genrefilter = 'jazz';
+let genrefilter = 'Country';
 markers = [];
 markers.push(1);
 /*
