@@ -1,5 +1,7 @@
 //import Homie from "../views/Home.js";
-
+let markers;
+markers = [];
+markers.push(1);
 function filterGenre(genre){
 	markers.all.forEach((x)=>{
     if(x.title!===genre){
@@ -21,9 +23,7 @@ function buttonFilter(genre){
 }
 
 let globalMap;
-let markers;
-markers = [];
-markers.push(1);
+
 let user;
 let events;
 let btns = document.getElementById("pulse");
