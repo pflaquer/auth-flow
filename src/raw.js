@@ -348,7 +348,8 @@ let cmarker = {
 icon: cmarker
 	});
 
-markers.push(Math.random()*Math.PI);
+//markers.push(Math.random()*Math.PI);
+	markers.push(sucursal1);
 //add newly formed marker to an array, you can access the array afterward.  Instead of creating array first and then running a for each to generate markers
 	//let contentString = `<div style="background:black;color:white;"><img src=${user.img} class="userimg"></img><hr>
 	//Genre: ${user.genre}<hr>
