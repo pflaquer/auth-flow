@@ -327,6 +327,8 @@ let cmarker = {
 	scaledSize: new google.maps.Size(50, 50), // scaled size
     
 };
+
+	
 	
 	var sucursal1 = new google.maps.Marker({
 		position: x,
@@ -335,7 +337,7 @@ let cmarker = {
     title:x.lat.toString()+','+x.lng.toString(),
 icon: cmarker
 	});
-
+//add newly formed marker to an array, you can access the array afterward.  Instead of creating array first and then running a for each to generate markers
 	//let contentString = `<div style="background:black;color:white;"><img src=${user.img} class="userimg"></img><hr>
 	//Genre: ${user.genre}<hr>
 let contentString = `<div style="background:black;color:white;"><img src=${randomuserimg()} class="userimg"></img><hr>
