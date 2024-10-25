@@ -1,16 +1,17 @@
 //import Homie from "../views/Home.js";
-/*
-function filterGenre(x){
-	buskers.all.forEach((y)=>{
-    if(y.title!=genre){
+
+function filterGenre(genre){
+	markers.all.forEach((x)=>{
+    if(x.title!===genre){
     x.map=null;
     }
     else{x.map=globalMap}
     
   })
-  */
+};
+  
 function buttonFilter(genre){
-	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!"+${markers[0]})'>
+	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!")+${markers}'>
     <option value="Jazz">Jazz</option>
     <option value="HipHop">HipHop</option>
     <option value="Country">Country</option>
@@ -19,6 +20,7 @@ function buttonFilter(genre){
  `
 }
 
+let globalMap;
 let markers;
 markers = [];
 markers.push(1);
@@ -321,6 +323,7 @@ function loadMap() {
 const { Map } = google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } =  google.maps.importLibrary("marker");
 	map = new google.maps.Map(document.getElementById("map"), myOptions);
+	globalMap = map;
 
 
 	
@@ -341,6 +344,8 @@ let cmarker = {
     title:x.lat.toString()+','+x.lng.toString(),
 icon: cmarker
 	});
+
+markers.push(Math.random()*Math.PI);
 //add newly formed marker to an array, you can access the array afterward.  Instead of creating array first and then running a for each to generate markers
 	//let contentString = `<div style="background:black;color:white;"><img src=${user.img} class="userimg"></img><hr>
 	//Genre: ${user.genre}<hr>
