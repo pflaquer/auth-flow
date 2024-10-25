@@ -1,5 +1,5 @@
 //import Homie from "../views/Home.js";
-
+/*
 function filterGenre(x){
 	buskers.all.forEach((y)=>{
     if(y.title!=genre){
@@ -8,6 +8,7 @@ function filterGenre(x){
     else{x.map=globalMap}
     
   })
+  */
 function buttonFilter(genre){
 	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='filterGenre(x)'>
     <option value="Jazz">Jazz</option>
