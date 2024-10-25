@@ -1,5 +1,6 @@
 //import Homie from "../views/Home.js";
 let markers;
+let genrefilter = 'jazz';
 markers = [];
 markers.push(1);
 /*
@@ -15,7 +16,7 @@ function filterGenre(genre){
   */
 
 function buttonFilter(genre){
-	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers); markers.forEach((x)=>{if(x.title!==genre){x.map=null;}
+	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers); markers.forEach((x)=>{if(x.title!==genrefilter){x.map=null;}
 else{x.map=globalMap}
     
   })'>
