@@ -343,7 +343,8 @@ let cmarker = {
 		position: x,
 		map: map,
 		animation: google.maps.Animation.DROP,
-    title:x.lat.toString()+','+x.lng.toString(),
+    //title:x.lat.toString()+','+x.lng.toString(),
+		title:genreselect[parseInt(Math.random()*Math.PI)]
 icon: cmarker
 	});
 
