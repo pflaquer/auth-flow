@@ -15,7 +15,7 @@ function filterGenre(genre){
   */
 
 function buttonFilter(genre){
-	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!")+${markers[5]};console.log(markers)'>
+	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers)'>
     <option value="Jazz">Jazz</option>
     <option value="HipHop">HipHop</option>
     <option value="Country">Country</option>
