@@ -2,6 +2,7 @@
 let markers;
 markers = [];
 markers.push(1);
+/*
 function filterGenre(genre){
 	markers.all.forEach((x)=>{
     if(x.title!===genre){
@@ -11,7 +12,8 @@ function filterGenre(genre){
     
   })
 };
-  
+  */
+
 function buttonFilter(genre){
 	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!")+${markers}'>
     <option value="Jazz">Jazz</option>
