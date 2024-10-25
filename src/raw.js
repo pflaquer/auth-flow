@@ -10,7 +10,7 @@ function filterGenre(x){
   })
   */
 function buttonFilter(genre){
-	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!")'>
+	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!"+${markers[]})'>
     <option value="Jazz">Jazz</option>
     <option value="HipHop">HipHop</option>
     <option value="Country">Country</option>
@@ -18,6 +18,9 @@ function buttonFilter(genre){
   </select></div>
  `
 }
+
+let markers;
+markers = [];
 let user;
 let events;
 let btns = document.getElementById("pulse");
