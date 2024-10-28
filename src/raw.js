@@ -345,7 +345,7 @@ let cmarker = {
 	
 	var sucursal1 = new google.maps.Marker({
 		position: x,
-		map: map,
+		map: null,
 		animation: google.maps.Animation.DROP,
     //title:x.lat.toString()+','+x.lng.toString(),
 		title:genreselect[parseInt(Math.random()*Math.PI)],
