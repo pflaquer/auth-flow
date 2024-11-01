@@ -16,9 +16,12 @@ function filterGenre(genre){
   */
 
 function buttonFilter(genre){
-	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers); markers.forEach((x)=>{if(x.title!==genrefilter){x.map=null;}
+	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers); markers.forEach((x)=>
+ {
+ /*if(x.title!==genrefilter){x.map=null;}
 else{x.map=globalMap}
-    
+    */
+    x.map=map;
   })'>
     <option value="Jazz">Jazz</option>
     <option value="HipHop">HipHop</option>
