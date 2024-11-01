@@ -340,6 +340,8 @@ let cmarker = {
 	scaledSize: new google.maps.Size(50, 50), // scaled size
     
 };
+
+	/*
 markers.push(new google.maps.Marker({
 		position: x,
 		map: map,
@@ -348,19 +350,20 @@ markers.push(new google.maps.Marker({
 		title:genreselect[parseInt(Math.random()*Math.PI)],
 icon: cmarker
 	}););
+
+ */
 	
-	
-	/*var sucursal1 = new google.maps.Marker({
+	var sucursal1 = new google.maps.Marker({
 		position: x,
-		map: map,
+		map: null,
 		animation: google.maps.Animation.DROP,
     //title:x.lat.toString()+','+x.lng.toString(),
 		title:genreselect[parseInt(Math.random()*Math.PI)],
 icon: cmarker
 	});
-*/
+
 //markers.push(Math.random()*Math.PI);
-	//markers.push(sucursal1);
+	markers.push(sucursal1);
 	//NOW generate the markers from this array
 //add newly formed marker to an array, you can access the array afterward.  Instead of creating array first and then running a for each to generate markers
 	//let contentString = `<div style="background:black;color:white;"><img src=${user.img} class="userimg"></img><hr>
