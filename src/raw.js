@@ -356,7 +356,7 @@ icon: cmarker
 
  */
 	
-	var sucursal1 = new google.maps.Marker({
+	new google.maps.Marker({
 		position: x,
 		map: map,
 		visible:true,
