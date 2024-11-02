@@ -393,7 +393,7 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 
 	markers[i].addListener("click", () => {
     infowindow.open({
-      anchor: sucursal1,
+      anchor: markers[i],
       map,
     });
    });
