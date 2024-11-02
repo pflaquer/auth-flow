@@ -358,7 +358,8 @@ icon: cmarker
 	
 	var sucursal1 = new google.maps.Marker({
 		position: x,
-		map: null,
+		map: map,
+		visible:true,
 		animation: google.maps.Animation.DROP,
     //title:x.lat.toString()+','+x.lng.toString(),
 		title:genreselect[parseInt(Math.random()*Math.PI)],
