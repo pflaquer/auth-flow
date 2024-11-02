@@ -391,7 +391,7 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 	  maxHeight:300,
   });
 
-	sucursal1.addListener("click", () => {
+	markers[i].addListener("click", () => {
     infowindow.open({
       anchor: sucursal1,
       map,
