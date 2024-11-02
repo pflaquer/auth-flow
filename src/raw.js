@@ -335,7 +335,7 @@ const { Map } = google.maps.importLibrary("maps");
 	globalMap = map;
 
 
-	
+	let i=0;
 buskers.all.forEach((x)=>{
 let cmarker = {
 	
@@ -355,8 +355,9 @@ icon: cmarker
 	}););
 
  */
-	
-	new google.maps.Marker({
+	let surcasal1;
+	markers[i]=surcasal1
+	markers[i]=new google.maps.Marker({
 		position: x,
 		map: map,
 		visible:true,
@@ -407,7 +408,7 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 );
 
 	
-
+i++;
 };
 
 function broadcast(x){
