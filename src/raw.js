@@ -361,7 +361,7 @@ icon: cmarker
 	//var surcasal1 = new google.maps.Marker({
 	markers[i]=new google.maps.Marker({
 		position: x,
-		map: map,
+		map: null,
 		visible:true,
 		animation: google.maps.Animation.DROP,
     //title:x.lat.toString()+','+x.lng.toString(),
