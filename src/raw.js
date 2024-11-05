@@ -22,6 +22,7 @@ function buttonFilter(genre){
 else{x.map=globalMap}
     */
     x.map=globalMap;
+    console.log(markers);
     //x.visible=true;
   })'>
     <option value="Jazz">Jazz</option>
