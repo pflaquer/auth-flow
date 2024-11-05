@@ -22,7 +22,7 @@ function buttonFilter(genre){
 else{x.map=globalMap}
     */
     x.map=globalMap;
-    x.visible=true;
+    //x.visible=true;
   })'>
     <option value="Jazz">Jazz</option>
     <option value="HipHop">HipHop</option>
@@ -361,7 +361,7 @@ icon: cmarker
 	//var surcasal1 = new google.maps.Marker({
 	markers[i]=new google.maps.Marker({
 		position: x,
-		map: null,
+		map: globalMap,
 		visible:true,
 		animation: google.maps.Animation.DROP,
     //title:x.lat.toString()+','+x.lng.toString(),
