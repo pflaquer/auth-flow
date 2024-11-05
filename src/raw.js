@@ -21,8 +21,8 @@ function buttonFilter(genre){
  /*if(x.title!==genrefilter){x.map=null;}
 else{x.map=globalMap}
     */
-    x.map=null;
-    x.visible=false;
+    x.map=map;
+    x.visible=true;
   })'>
     <option value="Jazz">Jazz</option>
     <option value="HipHop">HipHop</option>
