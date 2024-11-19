@@ -397,9 +397,10 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 //surcasal.addListener("click", () => {
 	markers[i].addListener("click", () => {
     infowindow.open({
-      anchor: markers[i],
+      //anchor: markers[i],
+	    anchor:marker,
 	    //anchor: surcasal1,
-      globalMap,
+      map,
     });
    });
 
