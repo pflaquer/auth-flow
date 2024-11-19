@@ -399,7 +399,7 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
     infowindow.open({
       anchor: markers[i],
 	    //anchor: surcasal1,
-      map,
+      globalMap,
     });
    });
 
