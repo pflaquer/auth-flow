@@ -15,7 +15,7 @@ function filterGenre(genre){
 };
   */
 function hireBusker(x){
-	document.getElementById("hiremodalslot").innerHTML = `<div style="width:300px;height:300px;text-align:center;background:black;">TESTING ${x} </div>`
+	document.getElementById("hiremodalslot").innerHTML = `<div style="width:300px;height:300px;text-align:center;background:white;border-radius:10px;border-style:solid;border-color:black;">TESTING ${x} </div>`
 }
 function buttonFilter(genre){
 	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers); markers.forEach((x)=>
