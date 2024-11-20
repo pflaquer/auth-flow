@@ -358,7 +358,7 @@ icon: cmarker
 
  */
 	let surcasal1;
-	markers[i]=surcasal1
+	//markers[i]=surcasal1
 	
 	//var surcasal1 = new google.maps.Marker({
 	markers[i]=new google.maps.Marker({
@@ -398,7 +398,7 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 	markers[i].addListener("click", () => {
     infowindow.open({
       //anchor: markers[i],
-	    anchor:marker,
+	    anchor:markers[i],
 	    //anchor: surcasal1,
       map,
     });
