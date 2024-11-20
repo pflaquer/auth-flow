@@ -14,7 +14,9 @@ function filterGenre(genre){
   })
 };
   */
-
+function hireBusker(x){
+	document.getElementById("hiremodal").innerHTML = `<div style="width:300px;height:300px;text-align:center;background:black;">TESTING ${x} </div>`
+}
 function buttonFilter(genre){
 	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers); markers.forEach((x)=>
  {
@@ -382,7 +384,7 @@ let contentString = `<div style="background:black;color:white;"><img src=${rando
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="16px" height="16px"></img>  
 <img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="16px" href="https://soundcloud.com" height="16px"></img></div>
 <br>
-<button onclick="handleClick(hire())">Hire</button><button>&#9658;</button>
+<button onclick="handleClick(hireBusker(1))">Hire</button><button>&#9658;</button>
 <br>
 <div class="soundcloud-wrapper" class="soundcloud">
 <iframe width="73px" height="73px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11072274&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
