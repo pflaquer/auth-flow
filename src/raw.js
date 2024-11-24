@@ -15,15 +15,32 @@ function filterGenre(genre){
 };
   */
 function hireBusker(){
-  //alert("Request Submitted!");
-	const modal = document.querySelector(".modal");
+  /*alert("Request Submitted!");
+	//const modal = document.querySelector(".modal");
 const modalContent = document.querySelector(".modal-content");
 
-//document.querySelector(".hirebtn").addEventListener("click", function() {
+document.querySelector(".hirebtn").addEventListener("click", function() {
   modal.style.display = "block";
   modalContent.classList.add("show");
-//});
+});
+*/
 
+
+	fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  body: JSON.stringify({
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => alert(json));
+
+	
 document.querySelector(".close").addEventListener("click", function() {
   modal.style.display = "none";
   modalContent.classList.remove("show");
