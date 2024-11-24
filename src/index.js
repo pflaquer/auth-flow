@@ -135,7 +135,7 @@ return `
   },
 })
   .then((response) => response.json())
-  .then((json) => alert(json));
+  .then((json) => alert(JSON.stringify(json));
 }
           
           ">Submit!</button>
