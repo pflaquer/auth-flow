@@ -7,8 +7,8 @@ return `
 
 
 .modal {
-  display: flex;
- 
+  display: none;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
@@ -18,7 +18,8 @@ return `
 
   .modal-content {
     position: fixed;
-    
+    top: -50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     margin: 25% auto;
@@ -42,11 +43,14 @@ return `
     }
 
     .modal-footer {
-      background-color: royalblue;
+      background-color: black;
       padding: 16px;
       color: #fff;
       text-align: end;
-      border-radius:5px;
+      border-radius:0px;
+      border-style:solid;
+      border-width:.3px;
+      border-color:yellow;
 
       button {
         padding: 8px 28px;
@@ -63,7 +67,7 @@ return `
 }
 
 .show {
-  animation: show 0.9s forwards ease-in;
+  animation: show 0.3s forwards ease-in;
 }
 @keyframes show {
   to {
