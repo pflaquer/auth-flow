@@ -26,14 +26,14 @@ function hireModal(){
 
 .hirebtn {
   padding: 12px 40px;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   background-color: #1e90ff;
   color: #fff;
   transition: 0.2s all;
   box-shadow: 9px 10px 38px -18px rgba(0, 0, 0, 1);
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
   
 
   &:hover {
@@ -142,7 +142,8 @@ function hireModal(){
     </div>
 
 <script>
-  const modal = document.querySelector(".modal");
+alert('loaded!');
+const modal = document.querySelector(".modal");
 const modalContent = document.querySelector(".modal-content");
 
 document.querySelector(".hirebtn").addEventListener("click", function() {
