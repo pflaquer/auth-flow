@@ -76,8 +76,7 @@ function hireModal(){
 
   .modal-content {
     position: fixed;
-    top: -50%;
-    left: 50%;
+    
     transform: translate(-50%, -50%);
     background-color: #fff;
     margin: 25% auto;
@@ -122,7 +121,7 @@ function hireModal(){
 }
 
 .show {
-  animation: show 0.3s forwards ease-in;
+  animation: show 0.9s forwards ease-in;
 }
 @keyframes show {
   to {
