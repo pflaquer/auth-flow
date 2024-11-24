@@ -26,29 +26,6 @@ return (`
 <main class="main-box">
 
 
-<!-- Modal -->
-    <div class="modal">
-      <!-- modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3>Hire Request <span class="close">&times;</span></h3>
-        </div>
-        <div class="modal-body">
-          <p>
-            <form>
-              <input type="text" placeholder="Name"></input>
-          <br>
-          <input type="date" placeholder="Event Date"></input>
-        <br>
-        <input type="time" placeholder="Time"></input>
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button onclick="hireBusker()">Submit!</button>
-        </div>
-      </div>
-    </div>
-
 
 
       <aside class="sidebar">
