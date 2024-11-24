@@ -27,10 +27,12 @@ return `
     border-radius: 4px;
 
     .modal-header {
-      background-color: skyblue;
+      background-color: black;
       padding: 10px 16px;
       color: #fff;
-      border-radius:10px;
+      border-radius:0px;
+      border-style:solid;
+      border-color:neongreen;
 
       .close {
         float: right;
@@ -50,7 +52,7 @@ return `
       border-radius:0px;
       border-style:solid;
       border-width:.3px;
-      border-color:yellow;
+      border-color:neongreen;
 
       button {
         padding: 8px 28px;
