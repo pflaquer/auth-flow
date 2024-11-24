@@ -116,7 +116,7 @@ function hireModal(){
   }
 }
 </style>
-    <a class="hirebtn">Hire Busker &#9995;</a>
+    <a class="hirebtn" value="1"onclick="hireBusker(this.value)">Hire Busker &#9995;</a>
 
     <!-- Modal -->
     <div class="modal">
