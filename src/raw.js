@@ -15,7 +15,26 @@ function filterGenre(genre){
 };
   */
 function hireBusker(){
-  alert("Request Submitted!");
+  //alert("Request Submitted!");
+	const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+
+//document.querySelector(".hirebtn").addEventListener("click", function() {
+  modal.style.display = "block";
+  modalContent.classList.add("show");
+//});
+
+document.querySelector(".close").addEventListener("click", function() {
+  modal.style.display = "none";
+  modalContent.classList.remove("show");
+});
+
+window.onclick = e => {
+  if (e.target == modal) {
+    modal.style.display = "none";
+    modalContent.classList.remove("show");
+  }
+};
 }
 
 function hireModal(){
