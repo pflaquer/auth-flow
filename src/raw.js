@@ -139,6 +139,60 @@ function hireModal(){
         </div>
       </div>
     </div>
+
+    
+    <a class="hirebtn">Open modal &#9995;</a>
+
+    <!-- Modal -->
+    <div class="modal">
+      <!-- modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Hire Request <span class="close">&times;</span></h3>
+        </div>
+        <div class="modal-body">
+          <p>
+            <form>
+              <input type="text" placeholder="Name"></input>
+          <br>
+          <input type="date" placeholder="Event Date"></input>
+        <br>
+        <input type="time" placeholder="Time"></input>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button onclick="hireBusker()">Submit!</button>
+        </div>
+      </div>
+    </div>
+
+<script>
+  const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+
+document.querySelector(".hirebtn").addEventListener("click", function() {
+  modal.style.display = "block";
+  modalContent.classList.add("show");
+});
+
+document.querySelector(".close").addEventListener("click", function() {
+  modal.style.display = "none";
+  modalContent.classList.remove("show");
+});
+
+window.onclick = e => {
+  if (e.target == modal) {
+    modal.style.display = "none";
+    modalContent.classList.remove("show");
+  }
+};
+
+
+/*function hireBusker(){
+  alert();
+}
+*/
+</script>
 `
 }
 function hireBusker(){
