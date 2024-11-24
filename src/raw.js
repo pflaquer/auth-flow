@@ -135,7 +135,7 @@ function hireModal(){
 }
 </style>
     <a class="hirebtn" value="1"onclick="hireBusker(this.value)">Hire Busker &#9995;</a>
-
+<!--
     <!-- Modal -->
     <div class="modal">
       <!-- modal content -->
@@ -158,7 +158,7 @@ function hireModal(){
         </div>
       </div>
     </div>
-
+-->
 <script>
 alert('loaded!');
 const modal = document.querySelector(".modal");
