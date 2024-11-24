@@ -72,12 +72,12 @@ return `
 
       button {
         padding: 8px 28px;
-        background-color: #fff;
-        color: #ff6348;
+        background-color: black;
+        color: #fff;
         font-size: 14px;
-        border: none;
         outline: none;
         border-radius: 3px;
+        border-color:yellow;
         cursor: pointer;
       }
     }
@@ -118,7 +118,7 @@ return `
           </p>
         </div>
         <div class="modal-footer">
-          <button onclick="hireBusker()">Submit!</button>
+          <button onclick="submitRequest()">Submit!</button>
         </div>
       </div>
     </div>
