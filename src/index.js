@@ -136,8 +136,8 @@ return `
 })
   .then((response) => response.json())
   .then((json) => alert('Request successful! Server returned '+JSON.stringify(json)));
- modal.style.display = "none";
-  modalContent.classList.remove("show");
+ //modal.style.display = "none";
+  //modalContent.classList.remove("show");
           
           ">Submit!</button>
         </div>
