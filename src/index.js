@@ -122,7 +122,7 @@ return `
           </p>
         </div>
         <div class="modal-footer">
-          <button onclick="function(){
+          <button onclick="()=>{
           fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
   body: JSON.stringify({
