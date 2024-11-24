@@ -1,6 +1,108 @@
 //import app from './raw.js'
 //import logout from './auth.js'
 
+function modalBox(){
+return `
+<style>
+
+
+.modal {
+  display: flex;
+ 
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+
+  .modal-content {
+    position: fixed;
+    
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    margin: 25% auto;
+    width: 25%;
+    border-radius: 4px;
+
+    .modal-header {
+      background-color: skyblue;
+      padding: 10px 16px;
+      color: #fff;
+      border-radius:10px;
+
+      .close {
+        float: right;
+        cursor: pointer;
+      }
+    }
+
+    .modal-body {
+      padding: 16px;
+    }
+
+    .modal-footer {
+      background-color: royalblue;
+      padding: 16px;
+      color: #fff;
+      text-align: end;
+      border-radius:5px;
+
+      button {
+        padding: 8px 28px;
+        background-color: #fff;
+        color: #ff6348;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.show {
+  animation: show 0.9s forwards ease-in;
+}
+@keyframes show {
+  to {
+    top: 0;
+  }
+}
+@media screen and (max-width: 638px) {
+  .modal-content {
+    margin: 50% auto !important;
+  }
+}
+</style>
+
+
+<!-- Modal -->
+    <div class="modal">
+      <!-- modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Hire Request <span class="close">&times;</span></h3>
+        </div>
+        <div class="modal-body">
+          <p>
+            <form>
+              <input type="text" placeholder="Name"></input>
+          <br>
+          <input type="date" placeholder="Event Date"></input>
+        <br>
+        <input type="time" placeholder="Time"></input>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button onclick="hireBusker()">Submit!</button>
+        </div>
+      </div>
+    </div>
+`
+}
+
 let JWT;
 JWT=1;
 let requests = 'Requests <span class="badge">NEW</span>'
@@ -100,6 +202,8 @@ return (`
           -->
         </div>
         <div class="page-content">
+
+${modalBox()}
       
           <div class="box-map-event">
             
