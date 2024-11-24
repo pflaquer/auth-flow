@@ -65,8 +65,8 @@ function hireModal(){
 }
 
 .modal {
-  display: none;
-  position: fixed;
+  display: flex;
+ 
   top: 0;
   left: 0;
   z-index: 1;
