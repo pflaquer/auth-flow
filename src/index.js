@@ -3,7 +3,7 @@
 
   
 function modalBox(){
-
+/*
 function submitRequest(){
 fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
@@ -20,7 +20,7 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
   .then((json) => alert(json));
 
 }
-
+*/
   
 return `
 <style>
