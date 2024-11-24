@@ -14,7 +14,9 @@ function filterGenre(genre){
   })
 };
   */
-
+function hireBusker(){
+  alert("Request Submitted!");
+}
 
 function hireModal(){
 
@@ -195,9 +197,7 @@ window.onclick = e => {
 </script>
 `
 }
-function hireBusker(){
-  alert("Request Submitted!);
-}
+
 function buttonFilter(genre){
 	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers); markers.forEach((x)=>
  {
