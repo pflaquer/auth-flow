@@ -48,7 +48,7 @@ function hireModal(){
 <style>
 
 .hirebtn {
-  padding: 12px 40px;
+  padding: 12px 12px;
   font-size: 14px;
   text-decoration: none;
   background-color: #1e90ff;
@@ -57,6 +57,7 @@ function hireModal(){
   box-shadow: 9px 10px 38px -18px rgba(0, 0, 0, 1);
   cursor: pointer;
   border-radius: 4px;
+  width:75%;
   
 
   &:hover {
