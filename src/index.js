@@ -122,11 +122,11 @@ return `
         <div class="modal-body">
           <p>
             <form id="form">
-              <input type="text" id="name" placeholder="Name"></input>
+              <input type="text" id="name" placeholder="Name" value="1"></input>
           <br>
-          <input type="date" id="eventdate" placeholder="Event Date"></input>
+          <input type="date" id="eventdate" placeholder="Event Date" value="1"></input>
         <br>
-        <input type="time" id="time" placeholder="Time"></input>
+        <input type="time" id="time" placeholder="Time" value="1"></input>
           </p>
         </div>
         ${formDat()}
