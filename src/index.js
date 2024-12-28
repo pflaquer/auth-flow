@@ -3,7 +3,7 @@
 
 
  let form = {};
-  form.name=1;
+  form.name=document.getElementById("name").value;
   form.data=1;
   form.time=1;
 
@@ -156,7 +156,7 @@ return `
         <div class="modal-body">
           <p>
             <form id="form">
-              <input type="text" id="name" placeholder="Name"></input>
+              <input type="text" id="formname" placeholder="Name"></input>
           <br>
           <input type="date" id="eventdate" placeholder="Event Date"></input>
         <br>
