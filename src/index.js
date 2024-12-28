@@ -152,7 +152,7 @@ return `
         <div class="modal-footer">
           <button onclick="
          
-          submitRequest();
+          ${submitRequest()};
           
           ">Submit!</button>
         </div>
