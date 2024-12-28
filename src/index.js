@@ -113,7 +113,7 @@ return `
         </div>
         <div class="modal-body">
           <p>
-            <form>
+            <form id="form">
               <input type="text" id="name" placeholder="Name"></input>
           <br>
           <input type="date" id="eventdate" placeholder="Event Date"></input>
@@ -126,9 +126,9 @@ return `
           fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
   body: JSON.stringify({
-    title: ${this.name.value},
-    body: ${this.date.value},
-    userId: ${this.time.value},
+    title: ${form.name.value},
+    body: ${form.date.value},
+    userId: ${form.time.value},
   }),
   headers: {
     'Content-type': 'application/json; charset=UTF-8',
