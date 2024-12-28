@@ -1,6 +1,12 @@
 //import app from './raw.js'
 //import logout from './auth.js'
 
+
+ let form = {};
+  form.name=1;
+  form.data=1;
+  form.time=1;
+
   function submitRequest(){
 
      fetch('https://jsonplaceholder.typicode.com/posts', {
@@ -39,11 +45,6 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 
   //let form = {name:1,data:1,time:1};
 
-
-  let form = {};
-  form.name=1;
-  form.data=1;
-  form.time=1;
 
 
 return `
