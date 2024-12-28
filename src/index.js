@@ -1,7 +1,22 @@
 //import app from './raw.js'
 //import logout from './auth.js'
 
-  
+  function submitRequest(){
+
+     fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  body: JSON.stringify({
+    title: ${form.name},
+    body: ${form.data},
+    userId: ${form.time},
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => alert('Request successful! Server returned '+JSON.stringify(json)));
+}
 function modalBox(){
 /*
 function submitRequest(){
@@ -134,21 +149,7 @@ return `
         <div class="modal-footer">
           <button onclick="
          
-          fetch('https://jsonplaceholder.typicode.com/posts', {
-  method: 'POST',
-  body: JSON.stringify({
-    title: ${form.name},
-    body: ${form.data},
-    userId: ${form.time},
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
-  .then((json) => alert('Request successful! Server returned '+JSON.stringify(json)));
- //modal.style.display = "none";
-  //modalContent.classList.remove("show");
+          submitRequest();
           
           ">Submit!</button>
         </div>
