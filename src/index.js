@@ -7,7 +7,7 @@
   form.data=1;
   form.time=1;
 
-  function submitRequest(){
+  function submitNewRequest(){
 
      fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
@@ -152,7 +152,7 @@ return `
         <div class="modal-footer">
           <button onclick="
          
-          ${submitRequest()};
+          ${submitNewRequest()};
           
           ">Submit!</button>
         </div>
