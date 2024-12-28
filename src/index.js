@@ -129,7 +129,7 @@ return `
         <input type="time" id="time" placeholder="Time" value="1"></input>
           </p>
         </div>
-        ${formDat()}
+ 
         <div class="modal-footer">
           <button onclick="${formDat()};
           fetch('https://jsonplaceholder.typicode.com/posts', {
