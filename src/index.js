@@ -26,7 +26,9 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 
 
   let form = {};
-  
+  form.name=1;
+  form.data=1;
+  form.time=1;
 
 
 return `
