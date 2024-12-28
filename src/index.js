@@ -126,9 +126,9 @@ return `
           fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
   body: JSON.stringify({
-    title: 'foo',
-    body: 'bar',
-    userId: 1,
+    title: ${this.title.value},
+    body: ${this.body.value},
+    userId: ${this.userid.value},
   }),
   headers: {
     'Content-type': 'application/json; charset=UTF-8',
