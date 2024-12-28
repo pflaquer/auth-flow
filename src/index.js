@@ -129,8 +129,9 @@ return `
         <input type="time" id="time" placeholder="Time"></input>
           </p>
         </div>
+        ${formDat()}
         <div class="modal-footer">
-          <button onclick="formDat();
+          <button onclick="${formDat()};
           fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
   body: JSON.stringify({
