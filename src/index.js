@@ -47,7 +47,22 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 
   //let form = {name:1,data:1,time:1};
 
+function submitNewRequest(){
 
+     fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  body: JSON.stringify({
+    title: form.name,
+    body: form.data,
+    userId: form.time,
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => alert('Request successful! Server returned '+JSON.stringify(json)));
+}
 
 return `
 <style>
@@ -152,7 +167,7 @@ return `
         <div class="modal-footer">
           <button onclick="
          
-          ${submitNewRequest()};
+          submitNewRequest();
           
           ">Submit!</button>
         </div>
