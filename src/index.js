@@ -3,7 +3,7 @@
 
 
  let form = {};
-  form.name=document.getElementById("name").value;
+  form.name=1;
   form.data=1;
   form.time=1;
 
