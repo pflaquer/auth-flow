@@ -22,8 +22,14 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 }
 */
 
-  let form = {name:1,data:1,time:1};
-  
+  //let form = {name:1,data:1,time:1};
+let formDat = ()=>{
+
+  let form = {};
+  form.name =document.getElementById("name").value;
+  form.name =document.getElementById("eventdate").value;
+  form.name =document.getElementById("time").value;
+};
 return `
 <style>
 
@@ -124,7 +130,7 @@ return `
           </p>
         </div>
         <div class="modal-footer">
-          <button onclick="let form = {name:1,data:1,time:1};
+          <button onclick="formDat();
           fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
   body: JSON.stringify({
