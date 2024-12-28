@@ -126,9 +126,9 @@ return `
           fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
   body: JSON.stringify({
-    title: ${form.name.value},
-    body: ${form.date.value},
-    userId: ${form.time.value},
+    title: ${form.name},
+    body: ${form.data},
+    userId: ${form.time},
   }),
   headers: {
     'Content-type': 'application/json; charset=UTF-8',
