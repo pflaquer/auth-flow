@@ -22,7 +22,7 @@
 })
   .then((response) => response.json())
   .then((json) => alert('Request successful! Server returned '+JSON.stringify(json)));
-}
+}}
 function modalBox(){
 /*
 function submitRequest(){
