@@ -166,8 +166,8 @@ return `
  
         <div class="modal-footer">
           <button onclick="
-         
-          submitNewRequest();
+         let newRequest = submitNewRequest();
+          newRequest();
           
           ">Submit!</button>
         </div>
