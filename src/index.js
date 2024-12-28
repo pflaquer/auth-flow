@@ -52,9 +52,9 @@ function submitNewRequest(){
      fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
   body: JSON.stringify({
-    title: form.name,
-    body: form.data,
-    userId: form.time,
+    title: ${form.name},
+    body: ${form.date},
+    userId: {form.time},
   }),
   headers: {
     'Content-type': 'application/json; charset=UTF-8',
