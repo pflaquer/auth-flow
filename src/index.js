@@ -156,11 +156,12 @@ return `
         <div class="modal-body">
           <p>
             <form id="form">
-              <input type="text" id="formname" placeholder="Name"></input>
+              <input type="text" id="formname" placeholder="Name" onchange="form.name=this.value"></input>
           <br>
           <input type="date" id="eventdate" placeholder="Event Date"></input>
         <br>
         <input type="time" id="time" placeholder="Time"></input>
+        </form>
           </p>
         </div>
  
