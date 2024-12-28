@@ -131,9 +131,7 @@ return `
  
         <div class="modal-footer">
           <button onclick="
-          form.name="1";
-          form.data="2";
-          form.time="3";
+         
           fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
   body: JSON.stringify({
