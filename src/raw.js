@@ -661,20 +661,30 @@ function Hire(){
 	
 }
 
+function renderList(list,target){
+  list.forEach((x)=>{
+    document.getElementById(target).innerHTML += x;
+  })
+}
+
+let requestslist = [1,2,3,4];
 
 function Requests(){
-
+setTimeout(renderList(requestslist,"requestslist"),500);
   return `
   
   <div class="views2" style="padding:20px;margin:auto">Current Route: /Requests</div>
   <div id="requests">
   <div class="views2" id="hiringheading">Current Requests</div>
-  <ul ="requestlist">
+  <ul ="requestslist">
 <li></li>
   </ul>
   </div>
   `
 }
+
+
+
 /*
 function Tickets(){
 
