@@ -663,13 +663,18 @@ function Hire(){
 
 
 function Requests(){
+
+	let requestslist = [1,2,3,4];
   return `
   
   <div class="views2" style="padding:20px;margin:auto">Current Route: /Requests</div>
   <div id="requests">
   <div class="views2" id="hiringheading">Current Requests</div>
-  <ul>
-  <li></li>
+  <ul ="requestlist">
+ ${requestslist.forEach((x)=>{
+	 this.innerHTML+=x;
+ }
+			}
   </ul>
   </div>
   `
