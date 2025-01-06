@@ -670,7 +670,7 @@ function renderList(list,target){
 let requestslist = [1,2,3,4];
 
 function Requests(){
-setTimeout(renderList(requestslist,"requestslist"),2000);
+//setTimeout(renderList(requestslist,"requestslist"),10000);
   return `
   
   <div class="views2" style="padding:20px;margin:auto">Current Route: /Requests</div>
