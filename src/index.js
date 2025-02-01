@@ -68,7 +68,7 @@ return `
 <style>
 
 .bottomnavbar {
-  display:none;
+  display:flex;
 }
 
 .modal {
