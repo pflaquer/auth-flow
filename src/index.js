@@ -146,6 +146,158 @@ return `
     margin: 50% auto !important;
   }
 }
+
+
+
+nav {
+            --binoculars-top-offset: 5px;
+            --items: 6;
+            --item-width: 90px;
+            --current-item: 0;
+            --enter-nav: 0;
+            /* --colorful: 0; */
+            position: relative;
+        }
+
+        nav .nav-inner,
+        nav .binoculars {
+            list-style: none;
+            display: flex;
+            white-space: nowrap;
+        }
+
+        nav .binoculars {
+            position: absolute;
+            left: 50%;
+            translate: -50% 0;
+            transform: translate(calc(var(--x) * var(--item-width)), calc(var(--y) * (var(--item-width) * .5)));
+            bottom: calc(100% + var(--binoculars-top-offset));
+            width: calc(var(--items) * var(--item-width));
+            height: 100%;
+            opacity: var(--enter-nav);
+            /* background-color: rgba(0 0 0 / .15); */
+            background-color: hsl(calc(10 + var(--current-item) * 50), 80%, calc(50% * var(--enter-nav)), max(.5, calc(var(--enter-nav) * 1)));
+
+            clip-path: inset(0 calc(100% - (var(--item-width) * (var(--current-item) + 1))) 0 calc(var(--item-width) * var(--current-item)) round 10px);
+            pointer-events: none;
+            transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
+
+        nav .binoculars li {
+            width: var(--item-width);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Poppins, sans-serif;
+            font-size: .85rem;
+            font-weight: 600;
+            color: rgba(0 0 0 / .8);
+        }
+
+
+        nav .nav-inner {
+            border-radius: 0px;
+            /* background-color: #fff; */
+            /* background-color: hsl(calc(10 + var(--current-item) * 50), 100%, max(90%, calc(80% * var(--enter-nav))), max(.5, calc(var(--enter-nav) * 1))); */
+            background-color: hsl(calc(10 + var(--current-item) * 50), 100%, max(calc(100% * (1 - var(--enter-nav))), calc(90% * var(--enter-nav))));
+            border: 1px solid rgba(0 0 0 / .15);
+            box-shadow: 0 10px 10px -5px rgba(0 0 0 / .15);
+            transition: background-color .3s;
+        }
+
+        nav .nav-inner li {
+            --item-hover: 0;
+            width: calc(var(--item-width));
+          width:100%;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: hsl(calc(10 + var(--i) * 50), 80%, calc(50% * var(--item-hover)), max(.5, calc(var(--item-hover) * 1)));
+            /* color: rgba(0 0 0 / max(.5, calc(var(--item-hover) * 1))); */
+            border-radius: 50%;
+            transition: color .3s;
+        }
+
+        nav .nav-inner li svg {
+            width: 45px;
+            padding: 5px;
+            aspect-ratio: 1;
+            fill: currentColor;
+            border-radius: 50%;
+            overflow: visible;
+            background-color: rgba(0 0 0 / calc(.15 * var(--item-hover)));
+            /* background-color: hsl(calc(10 + var(--i) * 50), 80%, calc(50% * var(--item-hover)), calc(var(--item-hover) * .15)); */
+            transition: background-color .3s;
+        }
+
+        nav .nav-inner li:hover {
+            --item-hover: 1;
+        }
+
+
+        .alien-link {
+            --alien-hover: 0;
+            color: slategray;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            width: 48px;
+            aspect-ratio: 1;
+            display: grid;
+            place-items: center;
+            opacity: calc(.8 + (.2 * var(--alien-hover)));
+            animation: app-start 5s linear 1 -2.5s;
+            z-index: 100;
+        }
+
+        @keyframes app-start {
+            to {
+                --alien-hover: 1;
+            }
+        }
+
+        .alien-link::after {
+            content: 'Click me !';
+            position: absolute;
+            top: calc(100% - 10px);
+            left: calc(100% - 10px);
+            width: 100px;
+            aspect-ratio: 2/1;
+            background-color: color-mix(in srgb, slategray, dodgerblue);
+            color: rgba(0 0 0 / .8);
+            border-radius: 0px 10px 10px 10px;
+            transform-origin: 0% 0%;
+            transform: rotate(-2deg) translate(calc((1 - var(--alien-hover)) * -10px), calc((1 - var(--alien-hover)) * -10px));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            white-space: nowrap;
+            font-size: 1rem;
+            font-family: monospace;
+            font-weight: 600;
+            opacity: var(--alien-hover);
+            transition: opacity .3s, transform .5s;
+        }
+
+        :where(.x-link, .alien-link, ):is(:hover, :focus-visible) {
+            --alien-hover: 1;
+        }
+
+        .alien-link svg {
+            width: 75%;
+        }
+
+
+.inView {
+  display:none;
+}
+
+
+
+
 </style>
 
 
