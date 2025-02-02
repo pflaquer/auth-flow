@@ -556,6 +556,8 @@ ${modalBox()}
         </div>
       </div>
       
+    </main>
+
 <!-- mobile nav bar starts here -->
 
 <div class="bottomnavbar">
@@ -653,8 +655,6 @@ ${modalBox()}
     </nav>
     </div>
 
-      
-    </main>
   `)
 }
 
