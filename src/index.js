@@ -67,6 +67,7 @@ function submitNewRequest(){
 return `
 <style>
 
+/*
 .bottomnavbar{
     display: none;
     position:fixed;
@@ -75,6 +76,8 @@ return `
     width:100%;
     
   }
+
+  */
 
 .modal {
   display: none;
