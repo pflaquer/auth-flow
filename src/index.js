@@ -68,11 +68,12 @@ return `
 <style>
 
 .bottomnavbar{
-    display: block;
+    display: none;
     position:fixed;
     bottom:0%;
     justify-content:center;
     width:100%;
+    
   }
 
 .modal {
