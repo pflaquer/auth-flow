@@ -1,11 +1,13 @@
 //import app from './raw.js'
 //import logout from './auth.js'
+/*
 function testfetch(){
  alert('Trying...');
  fetch('https://python-hello-world.vercel.app/api')
 .then(res=>res/json())
 .then(d=>console.log(d))
 };
+*/
 
  let form = {};
   form.name=1;
