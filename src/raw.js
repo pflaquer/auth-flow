@@ -643,29 +643,30 @@ function Gigs(){
 
 
   <div class="gig-card">
-    <img src="https://codingyaar.com/wp-content/uploads/chair-image.jpg" class="card-img-top" alt="...">
+    <img src=${randomuserimg()} class="userimg"></img><hr>
     <div class="card-body">
       <div class="text-section">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card's
-          content.</p>
+        <h5 class="card-title">Bushwick Bar</h5>
+        <p class="card-text">Looking for a DJ</p><br>
+	Date: May 30, 2025
       </div>
       <div class="cta-section">
-        <div>$129.00</div>
-        <a href="#" class="btn btn-light">Buy Now</a>
+        <div>$300</div>
+        <a href="#" class="btn btn-light">Inquire</a>
       </div>
     </div>
   </div>
-  <div class="card bg-light-subtle mt-4">
-    <img src="https://codingyaar.com/wp-content/uploads/chair-image.jpg" class="card-img-top" alt="...">
+<div class="gig-card">
+    <img src=${randomuserimg()} class="userimg"></img><hr>
     <div class="card-body">
       <div class="text-section">
-        <h5 class="card-title fw-bold">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card's content.</p>
+        <h5 class="card-title">LES Bar</h5>
+        <p class="card-text">Looking for an acoustic guitar performer for an event</p><br>
+	Date: May 30, 2025
       </div>
       <div class="cta-section">
-        <div>$129.00</div>
-        <a href="#" class="btn btn-dark">Buy Now</a>
+        <div>$450</div>
+        <a href="#" class="btn btn-light">Inquire</a>
       </div>
     </div>
   </div>
