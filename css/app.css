@@ -623,7 +623,6 @@ margin:auto;
 
 .gig-card{
   display:flex;
-  flex-direction:right;
   overflow:none;
   color:white;
   border-style:solid;
