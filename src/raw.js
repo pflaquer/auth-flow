@@ -660,12 +660,12 @@ function Gigs(){
     <img src=${randomuserimg()} class="userimg"></img><hr>
     <div class="card-body">
       <div class="text-section">
-        <h5 class="card-title">LES Bar</h5>
-        <p class="card-text">Looking for an acoustic guitar performer for an event</p><br>
-	Date: May 30, 2025
+        <h5 class="card-title">LES Restaurant</h5>
+        <p class="card-text">Looking for a singer</p><br>
+	Date: June 1, 2025
       </div>
       <div class="cta-section">
-        <div>$450</div>
+        <div>$375</div>
         <a href="#" class="btn btn-light">Inquire</a>
       </div>
     </div>
