@@ -631,14 +631,46 @@ function Gigs(){
   return `
   <div class="views2 smoothfade">Current Route: /Gigs</div>
 	  <div class="views2">
+
+   <!--
 	  <ul>
    <li><div class="gig-card">Event 1</div></li>
     <li><div class="gig-card">Event 2</div></li>
      <li><div class="gig-card">Event 3</div></li>
-      <li><div class="gig-card">Event 4</div></li>
-      <li><div class="gig-card">Event 5</div></li>
-      </ul>
+ 
 	  </div>
+-->
+
+
+  <div class="gig-card">
+    <img src="https://codingyaar.com/wp-content/uploads/chair-image.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <div class="text-section">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card's
+          content.</p>
+      </div>
+      <div class="cta-section">
+        <div>$129.00</div>
+        <a href="#" class="btn btn-light">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-light-subtle mt-4">
+    <img src="https://codingyaar.com/wp-content/uploads/chair-image.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <div class="text-section">
+        <h5 class="card-title fw-bold">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card's content.</p>
+      </div>
+      <div class="cta-section">
+        <div>$129.00</div>
+        <a href="#" class="btn btn-dark">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+   
 	  `
 }
 
