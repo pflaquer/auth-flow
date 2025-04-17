@@ -630,8 +630,8 @@ margin:auto;
   border-width:1px;
   border-color:white;
   width:256px;
-  height:128px;
-  padding:5px;
+  height:256px;
+  padding:20px;
   background:black;
   border-radius:2px;
   
@@ -672,6 +672,7 @@ ul{
 .inquire-btn{
   background:green;
   width:96px;
-  height:48px;
+  height:24px;
   color:white;
+  border-radius:3px;
 }
