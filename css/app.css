@@ -628,3 +628,7 @@ margin:auto;
   width:100px;
   height50px;
 }
+
+ul{
+  list-style:none;
+}
