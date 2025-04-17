@@ -619,3 +619,12 @@ margin:auto;
 
 #map .gm-style div {cursor: default !important;}
 #map .gm-style div.markerClass{cursor:pointer !important}
+
+
+.gig-card{
+  background:white;
+  border-style:solid;
+  border-color:white;
+  width:100px;
+  height50px;
+}
