@@ -622,11 +622,12 @@ margin:auto;
 
 
 .gig-card{
-  background:white;
+  color:white;
   border-style:solid;
   border-color:white;
   width:100px;
-  height50px;
+  height:50px;
+  padding:5px;
 }
 
 ul{
