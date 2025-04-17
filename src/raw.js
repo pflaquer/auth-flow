@@ -651,8 +651,8 @@ function Gigs(){
 	Date: May 30, 2025
       </div>
       <div class="cta-section">
-        <div>$300</div>
-        <a href="#" class="btn btn-light">Inquire</a>
+        <div>Payment: $300</div>
+        <a href="#" class="inquire-btn">Inquire</a>
       </div>
     </div>
   </div>
@@ -665,8 +665,8 @@ function Gigs(){
 	Date: June 1, 2025
       </div>
       <div class="cta-section">
-        <div>$375</div>
-        <a href="#" class="btn btn-light">Inquire</a>
+        <div>Payment: $375</div>
+        <a href="#" class="inquire-btn">Inquire</a>
       </div>
     </div>
   </div>
