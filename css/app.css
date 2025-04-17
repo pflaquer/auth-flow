@@ -670,3 +670,7 @@ li{
 .inquire-btn:hover{
   opacity:4;
 }
+
+a:link {
+  color: black;
+}
