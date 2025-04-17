@@ -588,7 +588,8 @@ ${modalBox()}
             <li>Menu</li>
         </ul>
         <ul class="nav-inner">
-            <li onclick="fetch('https://api.github.com/users/pflaquer').then(res=>res.json()).then(d=>console.log(d))">
+            <!--<li onclick="fetch('https://api.github.com/users/pflaquer').then(res=>res.json()).then(d=>console.log(d))">-->
+          <li onclick="loadMap()">
                 <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                     <g id="SVGRepo_iconCarrier">
                         <g id="Layer_2" data-name="Layer 2">
