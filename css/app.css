@@ -641,6 +641,5 @@ ul{
   list-style:none;
   display:flex;
   flex-direction:right;
-  overflow:none;
-  flex-wrap: wrap;
+  
 }
