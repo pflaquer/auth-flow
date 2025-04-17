@@ -652,7 +652,7 @@ function Gigs(){
       </div>
       <div class="">
         <div>Payment: $300</div><br>
-        <button class="inquire-btn">Inquire</button>
+        <button class="inquire-btn"><a href="sms:9175555555>Inquire</a></button>
       </div>
     </div>
   </div>
@@ -668,7 +668,7 @@ function Gigs(){
       </div>
       <div class="">
         <div>Payment: $375</div><br>
-        <button class="inquire-btn">Inquire</button>
+        <button class="inquire-btn"><a href="sms:9175555555>Inquire</a></button>
       </div>
     </div>
   </div>
