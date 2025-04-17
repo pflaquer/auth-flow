@@ -650,7 +650,7 @@ ${modalBox()}
                 </svg>
             </li>
             <!--<li onclick="fetch('https://python-hello-world.vercel.app/api').then(res=>res.json()).then(d=>console.log(d));">-->
-            <li onclick="handleClick("Payments")>
+            <li onclick="handleClick("Payments")">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_iconCarrier">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -660,7 +660,7 @@ ${modalBox()}
                 </svg>
             </li>
             <!--<li onclick="testfetch()">-->
-            <li onclick="handleClick("Hire")
+            <li onclick="handleClick("Hire")">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_iconCarrier">
                         <path d="M5 7H19" stroke="currentColor" stroke-width="3" stroke-linecap="round"
