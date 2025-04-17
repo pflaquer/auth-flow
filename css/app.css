@@ -634,6 +634,7 @@ margin:auto;
   padding:5px;
   background:black;
   border-radius:2px;
+  
 }
 
 ul{
@@ -641,4 +642,5 @@ ul{
   display:flex;
   flex-direction:right;
   overflow:none;
+  flex-wrap: wrap;
 }
