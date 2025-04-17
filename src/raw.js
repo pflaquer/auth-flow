@@ -650,7 +650,7 @@ function Gigs(){
         <p class="card-text">Looking for a DJ</p><br>
 	Date: May 30, 2025
       </div>
-      <div class="cta-section">
+      <div class="">
         <div>Payment: $300</div><br>
         <button class="inquire-btn">Inquire</button>
       </div>
@@ -664,7 +664,7 @@ function Gigs(){
         <p class="card-text">Looking for a singer</p><br>
 	Date: June 1, 2025
       </div>
-      <div class="cta-section">
+      <div class="">
         <div>Payment: $375</div><br>
         <button class="inquire-btn">Inquire</button>
       </div>
