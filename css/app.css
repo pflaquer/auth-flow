@@ -648,9 +648,13 @@ margin:auto;
 
 ul{
   list-style:none;
-  display:flex;
   
   
+  
+}
+
+li{
+  list-style:none;
 }
 
 
