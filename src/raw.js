@@ -641,7 +641,7 @@ function Gigs(){
 	  </div>
 -->
 
-
+<li>
   <div class="gig-card">
     <img src=${randomuserimg()} class="userimg"></img><hr>
     <div class="card-body">
@@ -656,6 +656,8 @@ function Gigs(){
       </div>
     </div>
   </div>
+  </li>
+  <li>
 <div class="gig-card">
     <img src=${randomuserimg()} class="userimg"></img><hr>
     <div class="card-body">
@@ -670,6 +672,7 @@ function Gigs(){
       </div>
     </div>
   </div>
+  </li>
 
    
 	  `
