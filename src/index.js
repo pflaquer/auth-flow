@@ -586,6 +586,7 @@ ${modalBox()}
             <li>E-books</li>
             <li>Account</li>
             <li>Menu</li>
+            <li>Logout</li>
         </ul>
         <ul class="nav-inner">
             <!--<li onclick="fetch('https://api.github.com/users/pflaquer').then(res=>res.json()).then(d=>console.log(d))">-->
@@ -625,7 +626,7 @@ ${modalBox()}
                     </g>
                 </svg>
             </li>
-            <li>
+            <li onclick="handleClick(Requests)">>
                 <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
                     fill="#000000">
@@ -641,7 +642,7 @@ ${modalBox()}
                     </g>
                 </svg>
             </li>
-            <li>
+            <li onclick="handleClick(Payments)">
                 <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_iconCarrier">
                         <path d="M5 0C3.34315 0 2 1.34315 2 3V13C2 14.6569 3.34315 16 5 16H14V14H4V12H14V0H5Z"
@@ -650,7 +651,7 @@ ${modalBox()}
                 </svg>
             </li>
             <!--<li onclick="fetch('https://python-hello-world.vercel.app/api').then(res=>res.json()).then(d=>console.log(d));">-->
-            <li onclick="handleClick(Payments)">
+            <li onclick="handleClick(Profile)">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_iconCarrier">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -660,7 +661,7 @@ ${modalBox()}
                 </svg>
             </li>
             <!--<li onclick="testfetch()">-->
-            <li onclick="handleClick(Hire)">
+            <li onclick="logout()">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_iconCarrier">
                         <path d="M5 7H19" stroke="currentColor" stroke-width="3" stroke-linecap="round"
