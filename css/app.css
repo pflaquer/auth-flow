@@ -622,6 +622,7 @@ margin:auto;
 
 
 .gig-card{
+  display:flex;
   color:white;
   border-style:solid;
   border-color:white;
@@ -633,4 +634,5 @@ margin:auto;
 
 ul{
   list-style:none;
+  
 }
