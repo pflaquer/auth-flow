@@ -627,7 +627,7 @@ margin:auto;
   overflow:none;
   color:white;
   border-style:solid;
-  border-width:3px;
+  border-width:1px;
   border-color:white;
   width:256px;
   height:128px;
@@ -637,6 +637,15 @@ margin:auto;
   
 }
 
+.card-body{
+  background:white;
+  color:black;
+}
+
+.text-section{
+  color:black;
+}
+
 ul{
   list-style:none;
   display:flex;
@@ -644,3 +653,16 @@ ul{
   
 }
 
+
+.cta-section {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cta-section .btn {
+  padding: 0.3em 0.5em;
+  /* color: #696969; */
+}
