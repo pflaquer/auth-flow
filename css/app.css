@@ -631,7 +631,7 @@ margin:auto;
   border-color:white;
   width:256px;
   height:256px;
-  padding:20px;
+  padding:40px;
   background:black;
   border-radius:2px;
   
@@ -655,24 +655,15 @@ ul{
 }
 
 
-.cta-section {
-  max-width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  
-}
-
-.cta-section .btn {
-  padding: 0.3em 0.5em;
-  /* color: #696969; */
-}
-
 .inquire-btn{
   background:green;
   width:96px;
   height:24px;
   color:white;
   border-radius:3px;
+  border-color:lightyellow;
+}
+
+.inquire-btn:hover{
+  opacity:4;
 }
