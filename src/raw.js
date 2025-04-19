@@ -677,9 +677,9 @@ function Gigs(){
    
 	  `
 }
-let venmolink ="https://venmo.com/?txn=pay&audience=friends&recipients="+${useremail}
+
   function initQR(){
-	  new QRCode(document.getElementById("qrcodes"), venmolink);
+	  new QRCode(document.getElementById("qrcodes"), `https://venmo.com/?txn=pay&audience=friends&recipients=${useremail}`);
   };
 
 function Payments(){
