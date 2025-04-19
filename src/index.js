@@ -575,7 +575,7 @@ ${modalBox()}
               <p class="discraption-event">
                 Live Acoustic Performance
               </p>
-              <a href="#" class="get-event">FREE EVENT</a>
+              <a href="http://www.eventbrite.com" target="_blank" class="get-event">FREE EVENT</a>
             </div>
           </div>
         </div>
