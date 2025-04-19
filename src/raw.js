@@ -694,6 +694,8 @@ function Payments(){
 <div id="qrcodes"></div>
 
   <code>Your Payment QR Code</code>
+  <br>
+  <div style="background:white;">Current Balance: $371.82</div>
     
   `
 }
