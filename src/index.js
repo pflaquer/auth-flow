@@ -563,13 +563,17 @@ ${modalBox()}
               <div class="date-event">August 22nd, 8:00 PM</div>
               <h2 class="title-event">Tyler Myers</h2>
               <div class="location-event">
-                <img
+                <!--<img
                   src="https://raw.githubusercontent.com/emnatkins/cdn-codepen/main/gOQRaMY/location.svg"
-                />
+                />-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg>
                 Brooklyn, USA
               </div>
               <p class="discraption-event">
-                "Live Acoustic Performance.
+                Live Acoustic Performance
               </p>
               <a href="#" class="get-event">FREE EVENT</a>
             </div>
