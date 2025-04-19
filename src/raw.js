@@ -689,7 +689,7 @@ function Payments(){
 	return `
   <div class="views2 smoothfade" style="padding:20px;margin:auto">Current Route: /Payments</div>
   <!--<div class="views2" id="qrcode" style="padding:20px;margin:5;">-->
-  <!--<img src=${qr}></img><br>-->
+  <img src=${qr}></img><br>
   <div id="qrcodes"></div>
 
 
