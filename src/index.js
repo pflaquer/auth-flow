@@ -569,7 +569,7 @@ ${modalBox()}
                 Brooklyn, USA
               </div>
               <p class="discraption-event">
-                "{{Event Description Goes Here}}.
+                "Live Acoustic Performance.
               </p>
               <a href="#" class="get-event">FREE EVENT</a>
             </div>
