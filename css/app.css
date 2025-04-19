@@ -674,3 +674,9 @@ li{
 a:link {
   color: black;
 }
+
+#qrcodes {
+  width:160px;
+  height:160px;
+  margin-top:15px;
+}
