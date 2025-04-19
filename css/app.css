@@ -676,7 +676,8 @@ a:link {
 }
 
 #qrcodes {
-  width:160px;
-  height:160px;
+  width:128px;
+  height:128px;
   margin-top:15px;
+  border-radius:2px !important;
 }
