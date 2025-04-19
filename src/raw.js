@@ -676,7 +676,7 @@ function Gigs(){
 
    
 	  `
-}
+};
 
   function initQR(){
 	  new QRCode(document.getElementById("qrcodes"), `https://venmo.com/?txn=pay&audience=friends&recipients=${useremail}`);
@@ -688,8 +688,8 @@ function Payments(){
 
 	return `
   <div class="views2 smoothfade" style="padding:20px;margin:auto">Current Route: /Payments</div>
-  <!--<div class="views2" id="qrcode" style="padding:20px;margin:5;">-->
-  <img src=${qr}></img><br>
+  <!--<div class="views2" id="qrcode" style="padding:20px;margin:5;">
+  <img src=${qr}></img><br>-->
   <div id="qrcodes"></div>
 
 
