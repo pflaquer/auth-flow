@@ -460,7 +460,7 @@ return (`
               />
             </div>
           </header>
-          <h1 class="title-page">Discover the best events!</h1>
+          <h1 class="title-page" id="headlinefull">Discover the best events!</h1>
           <!--
           #Brooklyn #Queens #Manhattan #Bronx #StatenIsland 
           Channels With Radios
