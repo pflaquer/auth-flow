@@ -163,6 +163,10 @@ return `
   .title-page{
   visibility:hidden;
 }
+.page-content{
+position:absolute;
+top:10px;
+}
 
 
 
