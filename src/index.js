@@ -164,7 +164,7 @@ return `
   visibility:hidden;
 }
 .page-content{
-position:absolute;
+position:relative;
 top:10px;
 }
 
