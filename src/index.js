@@ -149,7 +149,7 @@ return `
 }
 
 .show {
-  animation: show 0.3s forwards ease-in;
+  animation: show 0.2s forwards ease-in;
 }
 @keyframes show {
   to {
@@ -160,6 +160,8 @@ return `
   .modal-content {
     margin: 50% auto !important;
   }
+  .title-page{
+  visibility:hidden;
 }
 
 
