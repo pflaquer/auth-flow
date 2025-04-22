@@ -9,6 +9,75 @@ function testfetch(){
 };
 */
 
+
+let eventsListHTML = ()=>{
+ return `
+  <a href="#"
+                ><article class="event-li">
+                  <div class="picture">
+                    <img
+                      src="https://thumb.spokesman.com/ZaJ5v4lWgbUdTHaeOWOisXuGbb4=/1200x800/smart/media.spokesman.com/photos/2020/05/27/2c_With_Love_Benefit_Concert.JPG.jpg"
+                      alt="Stephanie B"
+                    />
+                    <div class="event-li-date">8:00 PM</div>
+                  </div>
+                  <div class="box-info-event">
+                    <h2 class="event-li-title">Stephanie B</h2>
+                    <div class="event-li-location">February 20th, Union Sqe</div>
+                  </div>
+                </article></a
+              >
+              <a href="#"
+                ><article class="event-li">
+                  <div class="picture">
+                    <img
+                      src="https://raw.githubusercontent.com/emnatkins/cdn-codepen/main/gOQRaMY/event-2.jpg"
+                      alt="Rey"
+                    />
+                    <div class="event-li-date">7:00 PM</div>
+                  </div>
+                  <div class="box-info-event">
+                    <h2 class="event-li-title">Emily Diaz</h2>
+                    <div class="event-li-location">March 1st, Astoria</div>
+                  </div>
+                </article></a
+              >
+              <a href="#"
+                ><article class="event-li">
+                  <div class="picture">
+                    <img
+                      src="https://thumb.spokesman.com/kEfGcmB37IpCH6gvl4giw11vDYM=/2500x2500/smart/media.spokesman.com/photos/2020/05/27/refly_Music_Festival_-_Day_2.JPG_pjLcipd.jpg"
+                      alt="James Henry"
+                    />
+                    <div class="event-li-date">9:00 PM</div>
+                  </div>
+                  <div class="box-info-event">
+                    <h2 class="event-li-title">James Henry</h2>
+                    <div class="event-li-location">April 2nd, Riverside Park</div>
+                  </div>
+                </article></a
+              >
+              <a href="#"
+                ><article class="event-li">
+                  <div class="picture">
+                    <img
+                      src="https://www.wearetheguard.com/sites/default/files/pictures/13-best-indie-artists-2018-influencers-choice-noah-slee.jpg"
+                      alt="Juan Gutierrez"
+                    />
+                    <div class="event-li-date">8:00 PM</div>
+                  </div>
+                  <div class="box-info-event">
+                    <h2 class="event-li-title">John Juan</h2>
+                    <div class="event-li-location">March 4th, Bronx </div>
+                  </div>
+                </article></a
+              >
+            </div>
+          </div>
+          `
+};
+
+ 
  let form = {};
   form.name=1;
   form.data=1;
@@ -501,7 +570,7 @@ ${modalBox()}
             </div>
             </div>
             <div class="list-events">
-              <a href="#"
+              <!--<a href="#"
                 ><article class="event-li">
                   <div class="picture">
                     <img
@@ -563,6 +632,7 @@ ${modalBox()}
               >
             </div>
           </div>
+          -->
           <div class="event">
             <img
               src="https://raw.githubusercontent.com/emnatkins/cdn-codepen/main/gOQRaMY/event-banner.png"
