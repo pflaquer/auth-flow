@@ -1,5 +1,5 @@
 function NoAuth(){
-
+document.body.style.backgroundColor="white";
             return (`
             <html>
             <body style="background:white;">
