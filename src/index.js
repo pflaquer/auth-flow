@@ -168,6 +168,10 @@ position:relative;
 top:10px;
 }
 
+.bottomnavbar{
+display:flex;
+}
+
 
 
 nav {
