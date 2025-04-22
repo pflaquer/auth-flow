@@ -80,7 +80,7 @@ return `
     position:fixed;
     bottom:0%;
     justify-content:center;
-    width:600px;
+    width:100%;
     
   }
 
@@ -169,7 +169,7 @@ top:10px;
 }
 
 .bottomnavbar{
-display:flex;
+display:block;
 }
 
 
