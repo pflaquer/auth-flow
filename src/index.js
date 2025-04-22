@@ -80,7 +80,7 @@ return `
     position:fixed;
     bottom:0%;
     justify-content:center;
-    width:100vw;
+    width:600px;
     
   }
 
