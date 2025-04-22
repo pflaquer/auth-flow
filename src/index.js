@@ -570,6 +570,7 @@ ${modalBox()}
             </div>
             </div>
             <div class="list-events">
+            ${eventsListHTML()}
               <!--<a href="#"
                 ><article class="event-li">
                   <div class="picture">
