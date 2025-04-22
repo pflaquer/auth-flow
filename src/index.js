@@ -84,7 +84,7 @@ return `
     
   }
 
-  */
+  
 
 .modal {
   display: none;
