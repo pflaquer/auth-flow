@@ -86,6 +86,8 @@ return `
 
   /*
 
+  */
+
 .modal {
   display: none;
   position: fixed;
