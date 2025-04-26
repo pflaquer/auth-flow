@@ -28,7 +28,8 @@ function filterGenre(genre){
     const app = firebase.initializeApp(firebaseConfig);
    const db = firebase.firestore(app,"buskitv2");
 
-
+  const docRef = db.collection('markers')
+console.log(decRef);
 function hireBusker(){
   //alert("Request Submitted!");
 	const modal = document.querySelector(".modal");
