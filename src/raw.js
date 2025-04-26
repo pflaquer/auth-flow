@@ -14,6 +14,21 @@ function filterGenre(genre){
   })
 };
   */
+
+ const firebaseConfig = {
+      apiKey: "AIzaSyCYFXrxtMjO2nlpsspIFxX1d2YovJJAHzg",
+    authDomain: "buskitv2.firebaseapp.com",
+    projectId: "buskitv2",
+    storageBucket: "buskitv2.firebasestorage.app",
+    messagingSenderId: "317559494128",
+    appId: "1:317559494128:web:43ab1f124decf85782f935"
+    };
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+   const db = firebase.firestore(app,"buskitv2");
+
+
 function hireBusker(){
   //alert("Request Submitted!");
 	const modal = document.querySelector(".modal");
