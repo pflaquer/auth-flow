@@ -28,7 +28,7 @@ setTimeout(()=>{
     const app = firebase.initializeApp(firebaseConfig);
    const db = firebase.firestore(app,"buskitv2");
 
-   console.log(db.collection('markers'));
+   console.log(db.collection('markers').get());
 
 },3000);
 function hireBusker(){
