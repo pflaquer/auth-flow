@@ -489,7 +489,7 @@ icon: cmarker
 icon: cmarker
 	});
 
-	markers.push(surcasal1);
+	this.markers.push(surcasal1);
 
 //markers.push(Math.random()*Math.PI);
 	//markers.push(sucursal1);
