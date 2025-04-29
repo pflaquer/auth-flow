@@ -14,7 +14,7 @@ function filterGenre(genre){
   })
 };
   */
-console.log(localStorage.getItem("AppData"));
+console.log(localStorage.getItem(20));
  const firebaseConfig = {
       apiKey: "AIzaSyCYFXrxtMjO2nlpsspIFxX1d2YovJJAHzg",
     authDomain: "buskitv2.firebaseapp.com",
