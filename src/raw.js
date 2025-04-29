@@ -436,6 +436,8 @@ icon: custommarker
 
 
 function loadMap() {
+
+	let markersarray = [];
 	//latest version 10.8.24
 	document.getElementById("filterslot").innerHTML = buttonFilter();
 	
@@ -489,7 +491,7 @@ icon: cmarker
 icon: cmarker
 	});
 
-	this.markers.push(surcasal1);
+	markersarray.push(surcasal1);
 
 //markers.push(Math.random()*Math.PI);
 	//markers.push(sucursal1);
