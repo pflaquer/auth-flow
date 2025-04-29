@@ -1,4 +1,10 @@
 //import Homie from "../views/Home.js";
+
+let DEV_MODE;
+
+DEV_MODE = window.prompt('Choose Your Mode');
+
+
 let markers;
 let genrefilter = 'Country';
 markers = [];
@@ -294,7 +300,10 @@ buskers.all = buskers.jazz.concat(buskers.rock,buskers.classical,buskers.hiphop,
 }
 }
 
-GENERATEBUSKERS();
+
+if(DEV_MODE!=1){
+	GENERATEBUSKERS();
+};
 
 
 
@@ -444,12 +453,13 @@ const { Map } = google.maps.importLibrary("maps");
 
 
 	let i=0;
+	if(DEV_MODE!=1){
 buskers.all.forEach((x)=>{
 let cmarker = {
 	
 	url:markericon+performertype[parseInt(Math.random()*4)]+'.png',
 	scaledSize: new google.maps.Size(50, 50), // scaled size
-    
+}
 };
 
 	/*
