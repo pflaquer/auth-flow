@@ -2,7 +2,7 @@
 
 let DEV_MODE;
 
-DEV_MODE = parseInt(window.prompt('Choose Your Mode 1 or 2'));
+DEV_MODE = parseInt(window.prompt('Choose Your Mode 0 or 1'));
 
 
 let markers;
