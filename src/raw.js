@@ -453,13 +453,13 @@ const { Map } = google.maps.importLibrary("maps");
 
 
 	let i=0;
-	if(DEV_MODE==1){
+	//if(DEV_MODE==1){
 buskers.all.forEach((x)=>{
 let cmarker = {
 	
 	url:markericon+performertype[parseInt(Math.random()*4)]+'.png',
 	scaledSize: new google.maps.Size(50, 50), // scaled size
-}
+//}
 };
 
 	/*
