@@ -455,12 +455,14 @@ const { Map } = google.maps.importLibrary("maps");
 	let i=0;
 	//if(DEV_MODE==1){
 buskers.all.forEach((x)=>{
+	
 let cmarker = {
 	
 	url:markericon+performertype[parseInt(Math.random()*4)]+'.png',
 	scaledSize: new google.maps.Size(50, 50), // scaled size
 //}
 };
+	
 
 	/*
 markers.push(new google.maps.Marker({
@@ -486,6 +488,8 @@ icon: cmarker
 		title:genreselect[parseInt(Math.random()*Math.PI)],
 icon: cmarker
 	});
+
+	markers.push(surcasal1);
 
 //markers.push(Math.random()*Math.PI);
 	//markers.push(sucursal1);
@@ -533,6 +537,8 @@ surcasal1.addListener("click", () => {
 	
 i++;
 };
+
+console.log(markers);
 
 function broadcast(x){
 if(state==true){
