@@ -2,7 +2,7 @@
 
 let DEV_MODE;
 
-DEV_MODE = window.prompt('Choose Your Mode');
+DEV_MODE = parseInt(window.prompt('Choose Your Mode 1 or 2'));
 
 
 let markers;
@@ -453,7 +453,7 @@ const { Map } = google.maps.importLibrary("maps");
 
 
 	let i=0;
-	if(DEV_MODE!=1){
+	if(DEV_MODE==1){
 buskers.all.forEach((x)=>{
 let cmarker = {
 	
