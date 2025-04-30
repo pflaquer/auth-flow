@@ -183,9 +183,11 @@ const docRef = db.collection('users').doc(UID);
                     if (docSnap.exists) {
                         const userData = docSnap.data();
                         console.log('User Exists:',userData);
+		    }
 else{
 	setUserFirestore(UID);
 };
+		};
 let genreselect = ['Rock','HipHop','Country','Ska']
 class busker{
 	constructor(name,genre,type,soundcloud,instagram){
