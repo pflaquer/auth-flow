@@ -168,6 +168,7 @@ let UID = btoa(useremail);
 console.log(UID);
 //check if doc exists, if not, create it
 function setUserFirestore(x){
+	console.log('creating new user document..');
 	db.collection('users').doc(x).set({
                 email: useremail,
                username:username
@@ -175,7 +176,16 @@ function setUserFirestore(x){
             });
 	console.log('Successfully Added...');
 }
-setUserFirestore(UID);
+
+const docRef = db.collection('users').doc(UID);
+            docRef.get()
+                .then((docSnap) => {
+                    if (docSnap.exists) {
+                        const userData = docSnap.data();
+                        console.log('User Exists:',userData);
+else{
+	setUserFirestore(UID);
+};
 let genreselect = ['Rock','HipHop','Country','Ska']
 class busker{
 	constructor(name,genre,type,soundcloud,instagram){
