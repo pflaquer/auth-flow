@@ -9,6 +9,48 @@ function testfetch(){
 };
 */
 
+/*
+
+url = 'https://raw.githubusercontent.com/pflaquer/auth-flow/refs/heads/main/src/events.json'
+function buildHTML(max){
+  
+fetch(url)
+.then(res=>res.json())
+.then(d=>{
+  d.forEach(x=>{
+i++;
+    if(i<max){
+    HTMLString=HTMLString+`<a href="#"
+                ><article class="event-li">
+                  <div class="picture">
+                    <img
+                      src=${x.img}
+                      
+                    />
+                    <div class="event-li-date">${x.date}</div>
+                  </div>
+                  <div class="box-info-event">
+                    <h2 class="event-li-title">${x.artist}</h2>
+                    <div class="event-li-location">${x.location}</div>
+                  </div>
+                </article></a
+              >`
+  };
+let renderedHTML = HTMLString
+console.log(HTMLString)
+document.body.innerHTML = `
+
+<div id="event-cards"></div>`
+document.getElementById("list-events").innerHTML = renderedHTML
+});
+
+
+});
+}
+buildHTML(6)
+
+
+*/
 
 let eventsListHTML = ()=>{
  return `
