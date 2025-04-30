@@ -552,7 +552,7 @@ return (`
             </li></a>
           >
         </nav>
-        <a href="#" onclick="logout()"
+        <a href="#" onclick="()=>{localStorage.clear();alert('logged out');}"
           ><div class="logout">
            <i class="fa-solid fa-sign-out"></i>Logout
           </div></a
