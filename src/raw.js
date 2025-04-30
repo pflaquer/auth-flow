@@ -4,7 +4,8 @@ let DEV_MODE;
 
 DEV_MODE = parseInt(window.prompt('Choose Your Mode 0 or 1'));
 
-
+let UID = localStorage.getItem("UID");
+console.log(UID);
 let markers;
 let genrefilter = 'Country';
 markers = [];
