@@ -187,7 +187,7 @@ const docRef = db.collection('users').doc(UID);
 else{
 	setUserFirestore(UID);
 };
-		};
+		});
 let genreselect = ['Rock','HipHop','Country','Ska']
 class busker{
 	constructor(name,genre,type,soundcloud,instagram){
