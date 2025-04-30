@@ -35,14 +35,14 @@ console.log(localStorage.getItem("UID"));
     messagingSenderId: "317559494128",
     appId: "1:317559494128:web:43ab1f124decf85782f935"
     };
-setTimeout(()=>{
+//setTimeout(()=>{
     // Initialize Firebase
     const app = firebase.initializeApp(firebaseConfig);
    const db = firebase.firestore(app,"buskitv2");
 
    console.log(db.collection('markers').get());
 
-},3000);
+//},3000);
 function hireBusker(){
   //alert("Request Submitted!");
 	const modal = document.querySelector(".modal");
