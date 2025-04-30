@@ -20,7 +20,7 @@ function filterGenre(genre){
   })
 };
   */
-console.log(localStorage.getItem(20));
+console.log(localStorage.getItem(20..name));
 console.log(JSON.stringify(localStorage.getItem(21)));
  const firebaseConfig = {
       apiKey: "AIzaSyCYFXrxtMjO2nlpsspIFxX1d2YovJJAHzg",
