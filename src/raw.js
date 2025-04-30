@@ -162,7 +162,19 @@ let type = localStorage.getItem(4);
 
 //change this to a different number
 let UID = btoa(useremail);
+
+
 console.log(UID);
+//check if doc exists, if not, create it
+function setUserFirestore(){
+	db.collection('users').doc(UID).set({
+                email: useremail,
+               username:username
+                
+            });
+	console.log('Successfully Added...');
+}
+setUserFireStore();
 let genreselect = ['Rock','HipHop','Country','Ska']
 class busker{
 	constructor(name,genre,type,soundcloud,instagram){
