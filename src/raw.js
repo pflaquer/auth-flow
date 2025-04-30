@@ -5,6 +5,9 @@ let DEV_MODE;
 DEV_MODE = parseInt(window.prompt('Choose Your Mode 0 or 1'));
 
 //if localStorage.getItem(session.isActive)
+let APP ={
+	isAuthorized:true;
+}
 
 let markers;
 let genrefilter = 'Country';
