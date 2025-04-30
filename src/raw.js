@@ -3,7 +3,9 @@
 let DEV_MODE;
 
 DEV_MODE = parseInt(window.prompt('Choose Your Mode 0 or 1'));
-
+let userObj = {
+	newRequests:false
+}
 //if localStorage.getItem(session.isActive)
 let APP ={
 	isAuthorized:true,
