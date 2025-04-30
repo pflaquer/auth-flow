@@ -167,15 +167,15 @@ let UID = btoa(useremail);
 
 console.log(UID);
 //check if doc exists, if not, create it
-function setUserFirestore(){
-	db.collection('users').doc(UID).set({
+function setUserFirestore(x){
+	db.collection('users').doc(x).set({
                 email: useremail,
                username:username
                 
             });
 	console.log('Successfully Added...');
 }
-setUserFireStore();
+setUserFirestore(UID);
 let genreselect = ['Rock','HipHop','Country','Ska']
 class busker{
 	constructor(name,genre,type,soundcloud,instagram){
