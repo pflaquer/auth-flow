@@ -7,9 +7,10 @@ DEV_MODE = parseInt(window.prompt('Choose Your Mode 0 or 1'));
 //if localStorage.getItem(session.isActive)
 let APP ={
 	isAuthorized:true,
-	sessionID:null
+	sessionID:localStorage.getItem(10)
 }
 
+console.log(APP);
 let markers;
 let genrefilter = 'Country';
 markers = [];
