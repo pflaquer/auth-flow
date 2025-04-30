@@ -6,7 +6,8 @@ DEV_MODE = parseInt(window.prompt('Choose Your Mode 0 or 1'));
 
 //if localStorage.getItem(session.isActive)
 let APP ={
-	isAuthorized:true;
+	isAuthorized:true,
+	sessionID:null
 }
 
 let markers;
