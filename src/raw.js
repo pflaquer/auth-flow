@@ -4,8 +4,8 @@ let DEV_MODE;
 
 DEV_MODE = parseInt(window.prompt('Choose Your Mode 0 or 1'));
 
-let UID = localStorage.getItem("UID");
-console.log(Object.keys(UID));
+
+
 let markers;
 let genrefilter = 'Country';
 markers = [];
@@ -151,12 +151,15 @@ let globalMap;
 
 let user;
 let events;
+
 let btns = document.getElementById("pulse");
 let useremail = localStorage.getItem(2);
 let username = localStorage.getItem(3);
 let type = localStorage.getItem(4);
-console.log(useremail);
+
 //change this to a different number
+let UID = btoa(useremail);
+console.log(UID);
 let genreselect = ['Rock','HipHop','Country','Ska']
 class busker{
 	constructor(name,genre,type,soundcloud,instagram){
