@@ -12,6 +12,16 @@ let APP ={
 	sessionID:localStorage.getItem(10)
 }
 
+/*
+function updateProf(){
+	uxelements.forEach((x)=>{
+			if(x.value!=user.x.value)
+	db.collection('users').doc(user.UID).update({
+		x.id:x.vlaue
+				
+	});
+};
+*/
 console.log(APP);
 let markers;
 let genrefilter = 'Country';
@@ -174,7 +184,11 @@ function setUserFirestore(x){
 	console.log('creating new user document..');
 	db.collection('users').doc(x).set({
                 email: useremail,
-               username:username
+               username:username,
+		venmo:'',
+		instagram:'',
+		soundcloud:'',
+		type:'user'
                 
             });
 	console.log('Successfully Added...');
