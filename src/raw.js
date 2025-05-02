@@ -706,8 +706,8 @@ function Profile(){
 	  <label for="lname">Instagram</label><br>
   <input type="text" id="instagram" name="instagram" placeholder="${user.instagram}"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
-  <input type="text" id="paymentid" name="paymentid" placeholder="${user.payment}"><br>
-  <button type="submit" onclick="updateProfile()>Save</button>
+  <input type="text" id="paymentid" name="paymentid" placeholder="${user.payment}">
+  <button onclick="updateProfile()>Save</button>
 </form>
 	  </div>
 	  `
