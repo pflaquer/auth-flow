@@ -709,6 +709,8 @@ function Profile(){
   <input type="text" id="paymentid" name="paymentid" placeholder="${user.payment}">
   <button onclick="updateProfile()>Save</button><a>TESTING</a>
 </form>
+ <button onclick="updateProfile()>Save</button><a>TESTING</a><br>
+ <a>testing</a>
 	  </div>
 	  `
 }
