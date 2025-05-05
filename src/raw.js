@@ -715,7 +715,7 @@ function Profile(){
    <br>
 
 </form>
-<a>TESTING</a>
+ <button onclick="updateProfile()>Save</button><a>TESTING</a>
 
 
 	  </div>
