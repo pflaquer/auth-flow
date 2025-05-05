@@ -698,7 +698,7 @@ function Profile(){
   return `
   <div class="views2 smoothfade">Current Route: /Profile</div>
 	  <div class="views2">
-	  <!--<form>-->
+	  <form>
    <label for="fname" placeholder="Name">Account Type</label><br>
   <input type="text" id="ftype" name="ftype" placeholder="${type}"><br>
   <label for="fname" placeholder="Name">Name</label><br>
@@ -711,11 +711,11 @@ function Profile(){
   <input type="text" id="instagram" name="finstagram" placeholder="${user.instagram}"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
   <input type="text" id="paymentid" name="fpayment" placeholder="${user.payment}"><br>
-   <button onclick="updateProfile()>Save</button>
+   <button onclick="updateProfile()" type="button">Save</button>
    <br>
 
-<!--</form>-->
- <button onclick="updateProfile()>Save</button><a>TESTING</a>
+</form>
+
 
 
 	  </div>
