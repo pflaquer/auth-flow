@@ -714,7 +714,7 @@ function Profile(){
 
 </form>
 <br>
- <button onclick="updateProfile()>Save</button>
+ <a><button onclick="updateProfile()>Save</button></a>
 
 	  </div>
 	  `
