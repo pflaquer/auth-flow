@@ -678,7 +678,7 @@ function handleClick(route){
 }
 
 function updateProfile(){
-	alert(document.getElementById("views2");
+	alert(document.getElementById("views2"));
 	
 	user.name = document.getElementById("fname").value;
 	user.type = document.getElementById("ftype").value;
