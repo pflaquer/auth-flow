@@ -679,7 +679,7 @@ function handleClick(route){
 
 function updateProfile(){
 	user.name = document.getElementById("fname").value;
-	user.type = document.getElementBydId("ftype").value;
+	user.type = document.getElementById("ftype").value;
 	user.soundcloud = document.getElementById("fsoundcloud").value;
 	user.instagram = document.getElementById("finstagram").value;
 	user.payment = document.getElementById("fpayment").value;
