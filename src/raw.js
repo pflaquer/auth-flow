@@ -712,9 +712,10 @@ function Profile(){
 	  <label for="paymentid">Venmo/PayPal</label><br>
   <input type="text" id="paymentid" name="fpayment" placeholder="${user.payment}"><br>
    <button onclick="updateProfile()>Save</button>
+   <br>
 
 </form>
-
+<a>TESTING</a>
 
 
 	  </div>
