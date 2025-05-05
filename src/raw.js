@@ -679,6 +679,7 @@ function handleClick(route){
 
 function updateProfile(){
 	user.name = document.getElementById("fname").value;
+	user.type = document.getElementBydId("ftype").value;
 	user.soundcloud = document.getElementById("fsoundcloud").value;
 	user.instagram = document.getElementById("finstagram").value;
 	user.payment = document.getElementById("fpayment").value;
@@ -706,11 +707,11 @@ function Profile(){
   <label for="lname">Email</label><br>
   <input type="text" id="femail" name="femail" placeholder="${useremail}"><br>
 	  <label for="soundcloud">Soundcloud:</label><br>
-  <input type="text" id="soundcloud" name="fsoundcloud" placeholder="${user.soundcloud}"><br>
+  <input type="text" id="fsoundcloud" name="fsoundcloud" placeholder="${user.soundcloud}"><br>
 	  <label for="lname">Instagram</label><br>
-  <input type="text" id="instagram" name="finstagram" placeholder="${user.instagram}"><br>
+  <input type="text" id="finstagram" name="finstagram" placeholder="${user.instagram}"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
-  <input type="text" id="paymentid" name="fpayment" placeholder="${user.payment}"><br>
+  <input type="text" id="fpaymentid" name="fpaymentid" placeholder="${user.payment}"><br>
    <button onclick="updateProfile()" type="button">Save</button>
    <br>
 
