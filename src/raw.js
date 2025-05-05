@@ -678,6 +678,8 @@ function handleClick(route){
 }
 
 function updateProfile(){
+	alert(document.getElementById("views2");
+	
 	user.name = document.getElementById("fname").value;
 	user.type = document.getElementById("ftype").value;
 	user.soundcloud = document.getElementById("fsoundcloud").value;
@@ -696,19 +698,10 @@ function Home(){
 
 
 function Profile(){
-	function updateProfile2(){
-	user.name = document.getElementById("fname").value;
-	user.type = document.getElementById("ftype").value;
-	user.soundcloud = document.getElementById("fsoundcloud").value;
-	user.instagram = document.getElementById("finstagram").value;
-	user.payment = document.getElementById("fpayment").value;
-	//now update the entire object and send to firestore
-	//loop thru all elements
-	alert('Profile Updated!');
-}
+
   return `
   <div class="views2 smoothfade">Current Route: /Profile</div>
-	  <div class="views2">
+	  <div class="views2" id="views2">
 	  <form>
    <label for="fname" placeholder="Name">Account Type</label><br>
   <input type="text" id="ftype" name="ftype" placeholder="${type}" value="0"><br>
@@ -722,7 +715,7 @@ function Profile(){
   <input type="text" id="finstagram" name="finstagram" placeholder="${user.instagram}" value="0"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
   <input type="text" id="fpaymentid" name="fpaymentid" placeholder="${user.payment}" value="0"><br>
-   <button onclick="updateProfile2()" type="button">Save</button>
+   <button onclick="updateProfile()" type="button">Save</button>
    <br>
 
 </form>
