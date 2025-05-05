@@ -678,7 +678,11 @@ function handleClick(route){
 }
 
 function updateProfile(){
-	user.name = document.getElementById("name").value;
+	user.name = document.getElementById("fname").value;
+	user.soundcloud = document.getElementById("fsoundcloud").value;
+	user.instagram = document.getElementById("finstagram").value;
+	user.payment = document.getElementById("fpayment").value;
+	//now update the entire object and send to firestore
 	//loop thru all elements
 	alert('Profile Updated!');
 }
@@ -696,21 +700,21 @@ function Profile(){
 	  <div class="views2">
 	  <form>
    <label for="fname" placeholder="Name">Account Type</label><br>
-  <input type="text" id="fname" name="fname" placeholder="${type}"><br>
+  <input type="text" id="ftype" name="ftype" placeholder="${type}"><br>
   <label for="fname" placeholder="Name">Name</label><br>
   <input type="text" id="fname" name="fname" placeholder="${username}"><br>
   <label for="lname">Email</label><br>
-  <input type="text" id="lname" name="lname" placeholder="${useremail}"><br>
+  <input type="text" id="femail" name="femail" placeholder="${useremail}"><br>
 	  <label for="soundcloud">Soundcloud:</label><br>
-  <input type="text" id="soundcloud" name="soundcloud" placeholder="${user.soundcloud}"><br>
+  <input type="text" id="soundcloud" name="fsoundcloud" placeholder="${user.soundcloud}"><br>
 	  <label for="lname">Instagram</label><br>
-  <input type="text" id="instagram" name="instagram" placeholder="${user.instagram}"><br>
+  <input type="text" id="instagram" name="finstagram" placeholder="${user.instagram}"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
-  <input type="text" id="paymentid" name="paymentid" placeholder="${user.payment}">
-  <button onclick="updateProfile()>Save</button><a>TESTING</a>
+  <input type="text" id="paymentid" name="fpayment" placeholder="${user.payment}">
+ 
 </form>
- <button onclick="updateProfile()>Save</button><a>TESTING</a><br>
- <a>testing</a>
+ <button onclick="updateProfile()>Save</button>
+
 	  </div>
 	  `
 }
