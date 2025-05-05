@@ -701,17 +701,17 @@ function Profile(){
 	  <div class="views2">
 	  <form>
    <label for="fname" placeholder="Name">Account Type</label><br>
-  <input type="text" id="ftype" name="ftype" placeholder="${type}"><br>
+  <input type="text" id="ftype" name="ftype" placeholder="${type}" value="0"><br>
   <label for="fname" placeholder="Name">Name</label><br>
-  <input type="text" id="fname" name="fname" placeholder="${username}"><br>
+  <input type="text" id="fname" name="fname" placeholder="${username}" value="0"><br>
   <label for="lname">Email</label><br>
-  <input type="text" id="femail" name="femail" placeholder="${useremail}"><br>
+  <input type="text" id="femail" name="femail" placeholder="${useremail}" value="0"><br>
 	  <label for="soundcloud">Soundcloud:</label><br>
-  <input type="text" id="fsoundcloud" name="fsoundcloud" placeholder="${user.soundcloud}"><br>
+  <input type="text" id="fsoundcloud" name="fsoundcloud" placeholder="${user.soundcloud}" value="0"><br>
 	  <label for="lname">Instagram</label><br>
-  <input type="text" id="finstagram" name="finstagram" placeholder="${user.instagram}"><br>
+  <input type="text" id="finstagram" name="finstagram" placeholder="${user.instagram}" value="0"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
-  <input type="text" id="fpaymentid" name="fpaymentid" placeholder="${user.payment}"><br>
+  <input type="text" id="fpaymentid" name="fpaymentid" placeholder="${user.payment}" value="0"><br>
    <button onclick="updateProfile()" type="button">Save</button>
    <br>
 
