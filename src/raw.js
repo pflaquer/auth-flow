@@ -711,11 +711,11 @@ function Profile(){
   <input type="text" id="instagram" name="finstagram" placeholder="${user.instagram}"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
   <input type="text" id="paymentid" name="fpayment" placeholder="${user.payment}"><br>
-   <a><button onclick="updateProfile()>Save</button>
+   <button onclick="updateProfile()>Save</button>
 
 </form>
-<br>
- <a><button onclick="updateProfile()>Save</button></a><a>TESTING</a>
+
+
 
 	  </div>
 	  `
