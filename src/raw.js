@@ -685,7 +685,7 @@ function updateProfile(){
 	user.type = document.getElementById("ftype").value;
 	user.soundcloud = document.getElementById("fsoundcloud").value;
 	user.instagram = document.getElementById("finstagram").value;
-	user.payment = document.getElementById("fpayment").value;
+	user.payment = document.getElementById("fpaymentid").value;
 	//now update the entire object and send to firestore
 	//loop thru all elements
 	alert('Profile Updated!');
@@ -720,7 +720,7 @@ function Profile(){
    <br>
 
 </form>
-<input type="text" id="inputtesting" value="0">Testing</input>
+
 
 
 
