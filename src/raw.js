@@ -678,9 +678,8 @@ function handleClick(route){
 }
 
 function updateProfile(){
-	alert(document.getElementById("views2"));
-	document.getElementById("inputtesting").value;
-	user.name=document.getElementById("inputtesting").value;
+	
+	user.name = document.getElementById("inputtesting").value;
 	user.name = document.getElementById("fname").value;
 	user.type = document.getElementById("ftype").value;
 	user.soundcloud = document.getElementById("fsoundcloud").value;
