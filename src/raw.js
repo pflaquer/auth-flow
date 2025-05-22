@@ -704,7 +704,7 @@ function Profile(){
 	  <div class="views2" id="views2">
 	  <form>
    <label for="fname" placeholder="Name">Account Type</label><br>
-<select id="accounttype" name="accounttype" style="width:200px;">
+<select id="accounttype" name="accounttype" style="width:192px;">
   <option value="Busker">Busker</option>
   <option value="Listener">Fan</option>
 </select> 
