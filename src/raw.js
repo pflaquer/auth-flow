@@ -751,9 +751,9 @@ function Profile(){
   <label for="lname">Email</label><br>
   <input type="text" id="femail" name="femail" placeholder="${useremail}"><br>
 	  <label for="soundcloud">Soundcloud:</label><br>
-  <input type="text" id="fsoundcloud" name="fsoundcloud" placeholder="${userdat.soundcloud} value="${userData.soundcloud}"><br>
+  <input type="text" id="fsoundcloud" name="fsoundcloud" placeholder="${userdat.soundcloud} value="${userdat.soundcloud}"><br>
 	  <label for="lname">Instagram</label><br>
-  <input type="text" id="finstagram" name="finstagram" placeholder="${userdat.instagram}" value="${userData.soundcloud}"><br>
+  <input type="text" id="finstagram" name="finstagram" placeholder="${userdat.instagram}" value="${userdat.soundcloud}"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
   <input type="text" id="fpaymentid" name="fpaymentid" placeholder="${user.payment}"><br>
    <button onclick="updateProfile()" type="button">Save</button>
