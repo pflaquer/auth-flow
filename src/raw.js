@@ -688,6 +688,7 @@ function updateProfile(){
 	//now update the entire object and send to firestore
 	//loop thru all elements
 	alert('Profile Updated!');
+	console.log(user);
 }
 function Home(){
 	loadMap();
