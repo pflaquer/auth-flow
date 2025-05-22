@@ -689,6 +689,14 @@ function updateProfile(){
 	//loop thru all elements
 	alert('Profile Updated!');
 	console.log(user);
+	db.collection('users').doc(UID).update(user)
+	then(() => {
+    console.log('User document updated successfully.');
+  })
+  .catch((error) => {
+    console.error('Error updating user document:', error);
+  });
+	
 }
 function Home(){
 	loadMap();
