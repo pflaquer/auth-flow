@@ -502,6 +502,12 @@ requests=`Hire <span class="badge">${null}</span>`
 function Index(){
       if(!JWT==1){
             return (`
+            <style>
+            body{
+            background:white;
+            font-family:monospace;
+            }
+            </style>
             USER NOT AUTHORIZED
             `);
       }
