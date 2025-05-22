@@ -558,7 +558,7 @@ return (`
             </li></a>
           >
         </nav>
-        <a href="#" onclick="localStorage.clear();alert('logged out');"
+        <a href="#" onclick="localStorage.clear();alert('logged out');window.location.href = 'https://www.busk-it.com'"
           ><div class="logout">
            <i class="fa-solid fa-sign-out"></i>Logout
           </div></a
