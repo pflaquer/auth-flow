@@ -705,9 +705,10 @@ function Profile(){
 	  <form>
    <label for="fname" placeholder="Name">Account Type</label><br>
 <select id="accounttype" name="accounttype">
-  <option value="Busker">Volvo</option>
-  <option value="Listener">Saab</option>
+  <option value="Busker">Busker</option>
+  <option value="Listener">Fan</option>
 </select> 
+<br>
   <!--<input type="text" id="ftype" name="ftype" placeholder="${type}"><br>-->
   <label for="fname" placeholder="Name">Name</label><br>
   <input type="text" id="fname" name="fname" placeholder="${username}"><br>
