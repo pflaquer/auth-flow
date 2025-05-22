@@ -1,7 +1,7 @@
 //import Homie from "../views/Home.js";
 
 let DEV_MODE;
-
+/*
 db.collection(users).doc(UID).get()
   .then((doc) => {
     if (doc.exists) {
@@ -14,6 +14,7 @@ db.collection(users).doc(UID).get()
   }).catch((error) => {
     console.error("Error getting document:", error);
   });
+  */
 
 //DEV_MODE = parseInt(window.prompt('Choose Your Mode 0 or 1'));
 DEV_MODE = 0;
