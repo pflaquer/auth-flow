@@ -194,7 +194,7 @@ let UID = btoa(useremail);
 console.log(UID);
 //check if doc exists, if not, create it
 function setUserFirestore(x){
-	console.log('creating new user document..');
+	console.log('creating new user document and associated marker..');
 	db.collection('users').doc(x).set({
                 email: useremail,
                username:username,
@@ -204,6 +204,16 @@ function setUserFirestore(x){
 		type:'user'
                 
             });
+	db.collection('markers').doc(x).set({
+                email: useremail,
+               username:username,
+		venmo:'',
+		instagram:'',
+		soundcloud:'',
+		type:'user'
+                
+            });
+	
 	console.log('Successfully Added...');
 }
 
