@@ -681,7 +681,6 @@ function handleClick(route){
 function updateProfile(){
 	
 	user.name = document.getElementById("fname").value;
-	user.name = document.getElementById("fname").value;
 	user.type = document.getElementById("ftype").value;
 	user.soundcloud = document.getElementById("fsoundcloud").value;
 	user.instagram = document.getElementById("finstagram").value;
@@ -705,7 +704,7 @@ function Profile(){
 	  <div class="views2" id="views2">
 	  <form>
    <label for="fname" placeholder="Name">Account Type</label><br>
-<select id="accounttype" name="accounttype" style="width:192px;">
+<select id="ftype" name="ftype" style="width:192px;">
   <option value="Busker">Busker</option>
   <option value="Listener">Fan</option>
 </select> 
