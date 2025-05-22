@@ -7,7 +7,7 @@ db.collection(users).doc(UID).get()
     if (doc.exists) {
       const data = doc.data();
       console.log("Document data:", data);
-	    console.log(data);
+	    alert(data);
     } else {
       console.log("No such document!");
     }
