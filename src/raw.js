@@ -708,7 +708,7 @@ function Profile(){
   <option value="Busker">Volvo</option>
   <option value="Listener">Saab</option>
 </select> 
-  !<--<input type="text" id="ftype" name="ftype" placeholder="${type}"><br>-->
+  <!--<input type="text" id="ftype" name="ftype" placeholder="${type}"><br>-->
   <label for="fname" placeholder="Name">Name</label><br>
   <input type="text" id="fname" name="fname" placeholder="${username}"><br>
   <label for="lname">Email</label><br>
