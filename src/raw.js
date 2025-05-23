@@ -3,6 +3,7 @@ let userdat;
 let DEV_MODE;
 let routes =['Home'];
 let currentroute = routes[0]; 
+//new requests... user object has .requests with array number. if that number doesn't match the requests document number, then no new. if it does then new...
 /*
 db.collection(users).doc(UID).get()
   .then((doc) => {
