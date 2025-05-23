@@ -719,7 +719,7 @@ function updateProfile(){
 	alert('Profile Updated!');
 	console.log(user);
 	db.collection('users').doc(UID).update(user)
-	then(() => {
+	.then(() => {
     console.log('User document updated successfully.');
   })
   .catch((error) => {
