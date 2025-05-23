@@ -860,7 +860,12 @@ function Hire(){
 <div class='search-box-result'>  </div>
 <template data-template-avatar>
 </template>
-
+<script>
+const urlParams = new URLSearchParams(window.location.hash);
+const myParam = urlParams.get('paramName'); // Replace 'paramName' with the actual parameter name
+console.log(urlParams.toString());
+document.getElementById("user-search").value=urlParams.toString();
+</script>
 
   `
 	
