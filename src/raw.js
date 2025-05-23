@@ -845,7 +845,11 @@ function Payments(){
 }
 
 function Hire(){
-	
+	const urlParams = new URLSearchParams(window.location.hash);
+const myParam = urlParams.get('paramName'); // Replace 'paramName' with the actual parameter name
+//console.log(urlParams.toString());
+	let userstring = urlParams.toString();
+;
   return `
   
   <div class="views2" style="padding:20px;margin:auto">Current Route: /Hire</div>
@@ -853,19 +857,14 @@ function Hire(){
 
 
 <div class='box'>
-<input type='text' value='' placeholder='Enter name, lastname or id' id="user-search" onclick="searchComponent()">
+<input type='text' value='${userstring}' placeholder='Enter name, lastname or id' id="user-search" onclick="searchComponent()">
 <h1 class='info-search'>
 </h1>
 </div>
 <div class='search-box-result'>  </div>
 <template data-template-avatar>
 </template>
-<script>
-const urlParams = new URLSearchParams(window.location.hash);
-const myParam = urlParams.get('paramName'); // Replace 'paramName' with the actual parameter name
-console.log(urlParams.toString());
-document.getElementById("user-search").value=urlParams.toString();
-</script>
+
 
   `
 	
