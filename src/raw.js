@@ -1,6 +1,8 @@
 //import Homie from "../views/Home.js";
 let userdat;
 let DEV_MODE;
+let routes =['Home'];
+let currentroute = routes[0]; 
 /*
 db.collection(users).doc(UID).get()
   .then((doc) => {
