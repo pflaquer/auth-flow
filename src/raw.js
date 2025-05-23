@@ -736,7 +736,7 @@ function Home(){
 function Profile(){
 
   return `
-  <div class="views2 smoothfade">Current Route: /Profile</div>
+  <div class="views2 smoothfade">Current Route: / ${currentroute}</div>
 	  <div class="views2" id="views2">
 	  <form>
    <label for="fname" placeholder="Name">Account Type</label><br>
@@ -751,7 +751,7 @@ function Profile(){
   <label for="lname">Email</label><br>
   <input type="text" id="femail" name="femail" placeholder="${useremail}"><br>
 	  <label for="soundcloud">Soundcloud:</label><br>
-  <input type="text" id="fsoundcloud" name="fsoundcloud" placeholder="${userdat.soundcloud} value="${userdat.soundcloud}"><br>
+  <input type="text" id="fsoundcloud" name="fsoundcloud" placeholder="${userdat.soundcloud}" value="${userdat.soundcloud}"><br>
 	  <label for="lname">Instagram</label><br>
   <input type="text" id="finstagram" name="finstagram" placeholder="${userdat.instagram}" value="${userdat.soundcloud}"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
