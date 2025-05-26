@@ -623,6 +623,8 @@ i++;
 };
 let livemarkers =[];
 console.log(markers);
+function getLiveData(){
+	console.log('running...');
 db.collection('markers').get()
   .then(querySnapshot => {
     const documents = [];
@@ -632,11 +634,14 @@ db.collection('markers').get()
       documents.push({ id: doc.id, ...data }); // Store the document ID and data
     });
     // Now you have the 'documents' array with the data
-    console.log(documents);
+    console.log('Live Data:
+		,documents);
   })
   .catch(error => {
     console.error("Error getting documents: ", error);
   });
+}
+getLiveData();
 function broadcast(x){
 if(state==true){
   x = new google.maps.Marker({
