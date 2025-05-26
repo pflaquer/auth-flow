@@ -621,9 +621,22 @@ surcasal1.addListener("click", () => {
 	
 i++;
 };
-
+let livemarkers =[];
 console.log(markers);
-
+db.collection('markers').get()
+  .then(querySnapshot => {
+    const documents = [];
+    querySnapshot.forEach(doc => {
+      // Process each document
+      const data = doc.data();
+      documents.push({ id: doc.id, ...data }); // Store the document ID and data
+    });
+    // Now you have the 'documents' array with the data
+    console.log(documents);
+  })
+  .catch(error => {
+    console.error("Error getting documents: ", error);
+  });
 function broadcast(x){
 if(state==true){
   x = new google.maps.Marker({
