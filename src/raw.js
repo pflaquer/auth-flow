@@ -997,8 +997,19 @@ document.querySelector("#navitem").forEach((x)=>{
 
 
 function busk(){
-	alert('working!');
+	//alert('working!');
+	btns.classList.toggle('button-ani');
+	if(user.isActive!==false){
+		user.isActive=true;
+		console.log('You Are Now Busking!);
+			    }
+	addBusker();
+	
 };
+
+function addBusker(){
+	alert('Adding To Map');
+}
 
 /*
 btns.onclick = (e)=>{
