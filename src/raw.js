@@ -1094,7 +1094,6 @@ markersCollectionRef.onSnapshot(snapshot => {
 }
 
 
-globalMarkers['testdoc'].setMap(null);
 	
 detectChanges();
 
