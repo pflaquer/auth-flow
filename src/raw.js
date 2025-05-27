@@ -641,7 +641,7 @@ db.collection('markers').get()
 			  livemarkers.push(x);
 		  }
 	  }
-	  console.log('Markers with geo data and isActive true',livemarkers);
+	  //console.log('Markers with geo data and isActive true',livemarkers);
   })
   .catch(error => {
     console.error("Error getting documents: ", error);
