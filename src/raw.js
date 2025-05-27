@@ -994,12 +994,18 @@ document.querySelector("#navitem").forEach((x)=>{
   x.onclick = alert('Clicked')
 })
 */
-
+function renderBuskState(){
+	if(user.isActive==true){
+		btns.classList.toggle('button-ani');
+		console.log('Currently Busking');
+	}
+}
+renderBuskState();
 
 function busk(){
 	
 	
-	if(user.isActive!==false){
+	if(user.isActive==false){
 		btns.classList.toggle('button-ani');
 		user.isActive=true;
 		console.log('You Are Now Busking! Coordinates:',latitude,longitude);
