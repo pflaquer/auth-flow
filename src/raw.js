@@ -1036,7 +1036,8 @@ db.collection('markers').doc(UID).update(markerData)
 	else{
 		user.isActive=false;
 		console.log('Busking Ended');
-		btns.classList.toggle('button-ani');
+		btns.classList.toggle('button-ani-paused');
+		
 		removeBusker();
 	}
 	
