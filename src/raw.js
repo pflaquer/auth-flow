@@ -759,8 +759,9 @@ function updateProfile(){
 	//now update the entire object and send to firestore
 	//loop thru all elements
 	alert('Profile Updated!');
+	user = userdat;
 	console.log(user);
-	db.collection('users').doc(UID).update(user)
+	db.collection('users').doc(UID).update(userdat)
 	.then(() => {
     console.log('User document updated successfully.');
   })
