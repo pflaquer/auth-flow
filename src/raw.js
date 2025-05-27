@@ -1012,7 +1012,7 @@ function busk(){
 		id:UID
 };
 	map.setCenter(new google.maps.LatLng(markerData.lat, markerData.lng)); // Center on marker
-map.setZoom(8);
+map.setZoom(12);
 	//add to markers array
 	
 	if(user.isActive==false){
