@@ -640,12 +640,12 @@ db.collection('markers').get()
     console.log('Live Data All Markers:'
 		,documents);
 	  console.log(documents[0].isActive);
-	  //documents.forEach((x)=>{
-		 // if(x.lng !='' && x.lat !=''){
-		//	  livemarkers.push(x);
-		//  }
-	 // }
-	  //console.log('Markers with geo data and isActive true',livemarkers);
+	  documents.forEach((x)=>{
+		 if(x.isActive==true){
+		livemarkers.push(x);
+		}
+	 }
+	  console.log('Markers with geo data and isActive true',livemarkers);
   })
   .catch(error => {
     console.error("Error getting documents: ", error);
