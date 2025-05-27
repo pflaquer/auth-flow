@@ -634,7 +634,7 @@ db.collection('markers').get()
       documents.push({ id: doc.id, ...data }); // Store the document ID and data
     });
     // Now you have the 'documents' array with the data
-    console.log('Live Data:
+    console.log('Live Data:'
 		,documents);
   })
   .catch(error => {
