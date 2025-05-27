@@ -799,7 +799,7 @@ function Profile(){
 	  <label for="lname">Instagram</label><br>
   <input type="text" id="finstagram" name="finstagram" placeholder="${userdat.instagram}" value="${userdat.soundcloud}"><br>
 	  <label for="paymentid">Venmo/PayPal</label><br>
-  <input type="text" id="fpaymentid" name="fpaymentid" placeholder="${user.payment}"><br>
+  <input type="text" id="fpaymentid" name="fpaymentid" placeholder="${userdat.payment}"><br>
    <button onclick="updateProfile()" type="button">Save</button>
    <br>
 
