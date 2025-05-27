@@ -749,6 +749,12 @@ function handleClick(route){
 	console.log(state);
 }
 
+let markerData = {
+	lat:latitude,
+	lng:longitude,
+	title:window.prompt('Enter Title')
+};
+
 function updateProfile(){
 	
 	userdat.name = document.getElementById("fname").value;
@@ -1007,6 +1013,14 @@ function busk(){
 	
 	
 	if(user.isActive==false){
+db.collection('markers').doc(UID).update(markerData)
+	.then(() => {
+    console.log('Users Marker document updated successfully.');
+  })
+  .catch((error) => {
+    console.error('Error updating user document:', error);
+  });
+		
 		user.isActive=true;
 		btns.classList.toggle('button-ani');
 		
