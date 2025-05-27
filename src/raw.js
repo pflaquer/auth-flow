@@ -1100,8 +1100,9 @@ markersCollectionRef.onSnapshot(snapshot => {
     } 
     */
    // else if (change.type === 'removed') {
-	  else if (doc.isActive===false) {
+	  else if (change.type === 'modified' && doc.isActive===false) {
       // Remove the marker
+		  console.log('Marker Modified to False');
       const marker = markers[docId];
       marker.setMap(null);
       delete markers[docId];
