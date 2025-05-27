@@ -643,7 +643,7 @@ documents.forEach((x)=>{
 if(x.isActive==true){
 livemarkers.push(x);
 	let marker = new google.maps.Marker({
-		position: {lat: x.lat, lng: -x.lng},
+		position: {lat: parseInt(x.lat), lng: parseInt(x.lng)},
     
 		map: map,
 		animation: google.maps.Animation.DROP,
