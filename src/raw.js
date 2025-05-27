@@ -1004,6 +1004,7 @@ function busk(){
 		user.isActive=true;
 		console.log('You Are Now Busking! Coordinates:',latitude,longitude);
 		addBusker();
+		console.log(user);
 			    }
 	else{
 		user.isActive==false;
