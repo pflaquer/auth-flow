@@ -530,6 +530,8 @@ function loadMap() {
 		zoom: 10,
 		scrollwheel: false,
 		disableDefaultUI: true,
+		zoomControl:true,
+		
 	};
 const { Map } = google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } =  google.maps.importLibrary("marker");
