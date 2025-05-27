@@ -1006,8 +1006,9 @@ function busk(){
 	
 	
 	if(user.isActive==false){
-		btns.classList.toggle('button-ani');
 		user.isActive=true;
+		btns.classList.toggle('button-ani');
+		
 		console.log('You Are Now Busking! Coordinates:',latitude,longitude);
 		addBusker();
 		console.log(user);
