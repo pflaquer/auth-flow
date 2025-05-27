@@ -1077,11 +1077,11 @@ markersCollectionRef.onSnapshot(snapshot => {
   snapshot.docChanges().forEach(change => {
     const data = change.doc.data();
     const docId = change.doc.id;
-
+const activeState = change.doc.isActive;
     if (change.type === 'added' | change.type === 'modified') {
       // Create and add a new marker
 	    console.log(data);
-	    if(doc.isActive==true){
+	    if(activeState==true){
       const marker = new google.maps.Marker({
         position: { lat: parseFloat(data.lat), lng: parseFloat(data.lng) },
         map: globalMap, // Replace 'map' with your map instance
@@ -1100,7 +1100,7 @@ markersCollectionRef.onSnapshot(snapshot => {
     } 
     */
    // else if (change.type === 'removed') {
-	  else if (change.type === 'modified' && doc.isActive===false) {
+	  else if (change.type === 'modified' && activeState==false) {
       // Remove the marker
 		  console.log('Marker Modified to False');
       const marker = markers[docId];
