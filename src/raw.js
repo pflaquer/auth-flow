@@ -1030,7 +1030,7 @@ db.collection('markers').doc(UID).update(markerData)
 	else{
 		user.isActive=false;
 		console.log('Busking Ended');
-		btns.classList.toggle('button-ani');
+		btns.classList.toggle('');
 		removeBusker();
 	}
 	
@@ -1044,6 +1044,47 @@ function addBusker(){
 function removeBusker(){
 	alert('Removing from Map');
 };
+
+
+//onchange listener
+
+function detectChanges(){
+
+const markersCollectionRef = db.collection('markers'); // Replace 'your_collection' with the name of your collection
+
+// Listen for real-time updates
+markersCollectionRef.onSnapshot(snapshot => {
+  snapshot.docChanges().forEach(change => {
+    const data = change.doc.data();
+    const docId = change.doc.id;
+console.log(data);
+    if (change.type === 'added' | change.type === 'modified') {
+      // Create and add a new marker
+      const marker = new google.maps.Marker({
+        position: { lat: data.latitude, lng: data.longitude },
+        map: map, // Replace 'map' with your map instance
+        id: docId // Store the document ID for later use
+      }); 
+      markers[docId] = marker; // Store the marker in an object or array
+    } 
+    /*else if (change.type === 'modified') {
+      // Update the existing marker's position
+      const marker = markers[docId];
+      marker.setPosition({ lat: data.latitude, lng: data.longitude });
+    } 
+    */else if (change.type === 'removed') {
+      // Remove the marker
+      const marker = markers[docId];
+      marker.setMap(null);
+      delete markers[docId];
+    }
+  });
+});
+
+	
+	
+
+
 
 /*
 btns.onclick = (e)=>{
