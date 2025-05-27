@@ -1057,9 +1057,10 @@ markersCollectionRef.onSnapshot(snapshot => {
   snapshot.docChanges().forEach(change => {
     const data = change.doc.data();
     const docId = change.doc.id;
-console.log(data);
+
     if (change.type === 'added' | change.type === 'modified') {
       // Create and add a new marker
+	    console.log(data);
       const marker = new google.maps.Marker({
         position: { lat: data.latitude, lng: data.longitude },
         map: map, // Replace 'map' with your map instance
