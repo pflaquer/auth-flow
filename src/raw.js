@@ -1062,7 +1062,7 @@ markersCollectionRef.onSnapshot(snapshot => {
       // Create and add a new marker
 	    console.log(data);
       const marker = new google.maps.Marker({
-        position: { lat: parseFloat(data.latitude), lng: parseFloat(data.longitude) },
+        position: { lat: parseFloat(data.lat), lng: parseFloat(data.lng) },
         map: globalMap, // Replace 'map' with your map instance
         id: docId // Store the document ID for later use
       }); 
