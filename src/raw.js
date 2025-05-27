@@ -1080,10 +1080,11 @@ console.log(data);
     }
   });
 });
+}
 
 	
 	
-
+detectChanges();
 
 
 /*
