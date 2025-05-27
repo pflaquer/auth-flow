@@ -1016,7 +1016,7 @@ function busk(){
 		console.log(user);
 			    }
 	else{
-		user.isActive==false;
+		user.isActive=false;
 		console.log('Busking Ended');
 		btns.classList.toggle('button-ani');
 		removeBusker();
