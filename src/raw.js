@@ -995,9 +995,11 @@ document.querySelector("#navitem").forEach((x)=>{
 })
 */
 function renderBuskState(){
+	console.log(user);
 	if(user.isActive==true){
 		btns.classList.toggle('button-ani');
 		console.log('Currently Busking');
+		
 	}
 }
 renderBuskState();
