@@ -6,7 +6,7 @@ let userdat;
 let DEV_MODE;
 let routes =['Home'];
 let currentroute = routes[0]; 
-console.log('testing user object',user);
+
 //new requests... user object has .requests with array number. if that number doesn't match the requests document number, then no new. if it does then new...
 /*
 db.collection(users).doc(UID).get()
@@ -1449,3 +1449,5 @@ ${social}
 window.addEventListener("load", (event) => {
   loadMap();
 });
+
+console.log('testing user object',user);
