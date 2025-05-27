@@ -1450,5 +1450,4 @@ ${social}
 window.addEventListener("load", (event) => {
   loadMap();
 });
-user = userdat;
-console.log('testing user object',userdat);
+
