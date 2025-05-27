@@ -749,11 +749,7 @@ function handleClick(route){
 	console.log(state);
 }
 
-let markerData = {
-	lat:latitude,
-	lng:longitude,
-	title:window.prompt('Enter Title')
-};
+
 
 function updateProfile(){
 	
@@ -1010,7 +1006,10 @@ function renderBuskState(){
 renderBuskState();
 user.isActive=false;
 function busk(){
-	
+	let markerData = {
+	lat:latitude,
+	lng:longitude
+};
 	
 	if(user.isActive==false){
 db.collection('markers').doc(UID).update(markerData)
