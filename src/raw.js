@@ -631,16 +631,18 @@ db.collection('markers').get()
     querySnapshot.forEach(doc => {
       // Process each document
       const data = doc.data();
+	    if(doc.lng !='' && doc.lat !=''){
       documents.push({ id: doc.id, ...data }); // Store the document ID and data
+	    }
     });
     // Now you have the 'documents' array with the data
     console.log('Live Data All Markers:'
 		,documents);
-	  documents.forEach((x)=>{
-		  if(x.lng !='' && x.lat !=''){
-			  livemarkers.push(x);
-		  }
-	  }
+	  //documents.forEach((x)=>{
+		 // if(x.lng !='' && x.lat !=''){
+		//	  livemarkers.push(x);
+		//  }
+	 // }
 	  //console.log('Markers with geo data and isActive true',livemarkers);
   })
   .catch(error => {
