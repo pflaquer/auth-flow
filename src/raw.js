@@ -1081,6 +1081,7 @@ markersCollectionRef.onSnapshot(snapshot => {
     if (change.type === 'added' | change.type === 'modified') {
       // Create and add a new marker
 	    console.log(data);
+	    if(doc.isActive==true){
       const marker = new google.maps.Marker({
         position: { lat: parseFloat(data.lat), lng: parseFloat(data.lng) },
         map: globalMap, // Replace 'map' with your map instance
@@ -1091,13 +1092,15 @@ markersCollectionRef.onSnapshot(snapshot => {
 	    console.log(markers);
 	    
     } 
+    }
     /*else if (change.type === 'modified') {
       // Update the existing marker's position
       const marker = markers[docId];
       marker.setPosition({ lat: data.latitude, lng: data.longitude });
     } 
     */
-    else if (change.type === 'removed') {
+   // else if (change.type === 'removed') {
+	  else if (doc.isActive===false) {
       // Remove the marker
       const marker = markers[docId];
       marker.setMap(null);
