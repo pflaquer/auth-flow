@@ -6,6 +6,7 @@ let userdat;
 let DEV_MODE;
 let routes =['Home'];
 let currentroute = routes[0]; 
+let globalMarkers = [];
 
 //new requests... user object has .requests with array number. if that number doesn't match the requests document number, then no new. if it does then new...
 /*
@@ -1072,6 +1073,7 @@ markersCollectionRef.onSnapshot(snapshot => {
         id: docId // Store the document ID for later use
       }); 
       markers[docId] = marker; // Store the marker in an object or array
+	    globalMarkers[docId] = marker;
 	    console.log(markers);
 	    
     } 
@@ -1092,7 +1094,7 @@ markersCollectionRef.onSnapshot(snapshot => {
 }
 
 
-markers['testdoc'].setMap(null);
+globalMarkers['testdoc'].setMap(null);
 	
 detectChanges();
 
