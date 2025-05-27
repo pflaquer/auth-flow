@@ -1002,7 +1002,7 @@ function renderBuskState(){
 	}
 }
 renderBuskState();
-
+user.isActive=false;
 function busk(){
 	
 	
