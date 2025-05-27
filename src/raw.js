@@ -1007,12 +1007,12 @@ renderBuskState();
 user.isActive=false;
 function busk(){
 	let markerData = {
-	lat:parseInt(latitude),
-	lng:parseInt(longitude)
+	lat:parseFloat(latitude),
+	lng:parseFloat(longitude)
 };
 	
 	if(user.isActive==false){
-db.collection('markers').doc('testdoc').update(markerData)
+db.collection('markers').doc(UID).update(markerData)
 	.then(() => {
     console.log('Users Marker document updated successfully.');
   })
