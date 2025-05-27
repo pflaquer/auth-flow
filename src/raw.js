@@ -1012,7 +1012,7 @@ function busk(){
 };
 	
 	if(user.isActive==false){
-db.collection('markers').doc(UID).update(markerData)
+db.collection('markers').doc('testdoc').update(markerData)
 	.then(() => {
     console.log('Users Marker document updated successfully.');
   })
