@@ -1005,6 +1005,7 @@ function renderBuskState(){
 }
 renderBuskState();
 user.isActive=false;
+map.set
 function busk(){
 	let markerData = {
 	lat:parseFloat(latitude),
@@ -1079,7 +1080,8 @@ markersCollectionRef.onSnapshot(snapshot => {
       const marker = markers[docId];
       marker.setPosition({ lat: data.latitude, lng: data.longitude });
     } 
-    */else if (change.type === 'removed') {
+    */
+    else if (change.type === 'removed') {
       // Remove the marker
       const marker = markers[docId];
       marker.setMap(null);
@@ -1089,9 +1091,11 @@ markersCollectionRef.onSnapshot(snapshot => {
 });
 }
 
-	
+
+markers['testdoc'].setMap(null);
 	
 detectChanges();
+
 
 
 /*
