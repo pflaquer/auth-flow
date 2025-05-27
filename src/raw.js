@@ -1008,8 +1008,12 @@ user.isActive=false;
 function busk(){
 	let markerData = {
 	lat:parseFloat(latitude),
-	lng:parseFloat(longitude)
+	lng:parseFloat(longitude),
+		id:UID
 };
+	map.setCenter(new google.maps.LatLng(markerData.lat, markerData.lng)); // Center on marker
+map.setZoom(8);
+	//add to markers array
 	
 	if(user.isActive==false){
 db.collection('markers').doc(UID).update(markerData)
@@ -1067,6 +1071,8 @@ markersCollectionRef.onSnapshot(snapshot => {
         id: docId // Store the document ID for later use
       }); 
       markers[docId] = marker; // Store the marker in an object or array
+	    console.log(markers);
+	    
     } 
     /*else if (change.type === 'modified') {
       // Update the existing marker's position
