@@ -997,25 +997,31 @@ document.querySelector("#navitem").forEach((x)=>{
 
 
 function busk(){
-	//alert('working!');
+	
 	
 	if(user.isActive!==false){
 		btns.classList.toggle('button-ani');
 		user.isActive=true;
 		console.log('You Are Now Busking! Coordinates:',latitude,longitude);
+		addBusker();
 			    }
 	else{
 		user.isActive==false;
 		console.log('Busking Ended');
 		btns.classList.toggle('button-ani');
+		removeBusker();
 	}
-	addBusker();
+	
 	
 };
 
 function addBusker(){
 	alert('Adding To Map');
 }
+
+function removeBusker(){
+	alert('Removing from Map');
+};
 
 /*
 btns.onclick = (e)=>{
