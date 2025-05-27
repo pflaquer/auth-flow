@@ -998,11 +998,17 @@ document.querySelector("#navitem").forEach((x)=>{
 
 function busk(){
 	//alert('working!');
-	btns.classList.toggle('button-ani');
+	
 	if(user.isActive!==false){
+		btns.classList.toggle('button-ani');
 		user.isActive=true;
 		console.log('You Are Now Busking! Coordinates:',latitude,longitude);
 			    }
+	else{
+		user.isActive==false;
+		console.log('Busking Ended');
+		btns.classList.toggle('button-ani');
+	}
 	addBusker();
 	
 };
