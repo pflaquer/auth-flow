@@ -1007,8 +1007,8 @@ renderBuskState();
 user.isActive=false;
 function busk(){
 	let markerData = {
-	lat:latitude,
-	lng:longitude
+	lat:parseInt(latitude),
+	lng:parseInt(longitude)
 };
 	
 	if(user.isActive==false){
