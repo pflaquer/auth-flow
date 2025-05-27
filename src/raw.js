@@ -631,9 +631,9 @@ db.collection('markers').get()
     querySnapshot.forEach(doc => {
       // Process each document
       const data = doc.data();
-	    if(doc.isActive==true){
+	    console.log(doc.isActive)
       documents.push({ id: doc.id, ...data }); // Store the document ID and data
-	    }
+	    
     });
     // Now you have the 'documents' array with the data
     console.log('Live Data All Markers:'
