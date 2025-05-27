@@ -1,4 +1,4 @@
-import test from "./functions/test.js";
+//import test from "./functions/test.js";
 //import Homie from "../views/Home.js";
 
 
@@ -23,7 +23,7 @@ db.collection(users).doc(UID).get()
   */
 
 //DEV_MODE = parseInt(window.prompt('Choose Your Mode 0 or 1'));
-test();
+//test();
 DEV_MODE = 0;
 let userObj = {
 	newRequests:false
