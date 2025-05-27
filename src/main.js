@@ -12,4 +12,4 @@ else{
 render(NoAuth());
 }
 
-includeJS("/src/raw.js",'text/javascript');
+includeJS("/src/raw.js",'module');
