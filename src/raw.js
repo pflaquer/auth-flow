@@ -1005,7 +1005,7 @@ function renderBuskState(){
 }
 renderBuskState();
 user.isActive=false;
-map.set
+
 function busk(){
 	let markerData = {
 	lat:parseFloat(latitude),
