@@ -631,7 +631,7 @@ db.collection('markers').get()
     querySnapshot.forEach(doc => {
       // Process each document
       const data = doc.data();
-	    if(doc.lng !='' && doc.lat !=''){
+	    if(doc.isActive==true){
       documents.push({ id: doc.id, ...data }); // Store the document ID and data
 	    }
     });
