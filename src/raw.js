@@ -647,8 +647,8 @@ livemarkers.push(x);
     
 		map: map,
 		animation: google.maps.Animation.DROP,
-     icon: image,
-      shape: shape,
+     //icon: image,
+      //shape: shape,
 title:x.title
 	});
 }
