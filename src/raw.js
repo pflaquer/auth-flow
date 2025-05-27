@@ -642,6 +642,15 @@ console.log(documents[0].isActive);
 documents.forEach((x)=>{
 if(x.isActive==true){
 livemarkers.push(x);
+	let marker = new google.maps.Marker({
+		position: {lat: x.lat, lng: -x.lng},
+    
+		map: map,
+		animation: google.maps.Animation.DROP,
+     icon: image,
+      shape: shape,
+title:x.title
+	});
 }
 });
 	  console.log('Markers with geo data and isActive true',livemarkers);
