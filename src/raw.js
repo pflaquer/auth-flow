@@ -634,8 +634,14 @@ db.collection('markers').get()
       documents.push({ id: doc.id, ...data }); // Store the document ID and data
     });
     // Now you have the 'documents' array with the data
-    console.log('Live Data:'
+    console.log('Live Data All Markers:'
 		,documents);
+	  documents.forEach((x)=>{
+		  if(x.lng !='' && x.lat !=''){
+			  livemarkers.push(x);
+		  }
+	  }
+	  console.log('Markers with geo data and isActive true',livemarkers);
   })
   .catch(error => {
     console.error("Error getting documents: ", error);
