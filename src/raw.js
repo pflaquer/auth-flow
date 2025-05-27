@@ -1006,16 +1006,18 @@ function renderBuskState(){
 }
 renderBuskState();
 user.isActive=false;
-
+let googlemarkers = [];
 function busk(){
 	let markerData = {
 	lat:parseFloat(latitude),
 	lng:parseFloat(longitude),
+		isActive:true,
 		id:UID
 };
 	map.setCenter(new google.maps.LatLng(markerData.lat, markerData.lng)); // Center on marker
 map.setZoom(12);
 	//add to markers array
+	
 	
 	if(user.isActive==false){
 db.collection('markers').doc(UID).update(markerData)
@@ -1034,6 +1036,16 @@ db.collection('markers').doc(UID).update(markerData)
 		console.log(user);
 			    }
 	else{
+
+		db.collection('markers').doc(UID).update({lat:0,lng:0,isActive:false})
+	.then(() => {
+    console.log('Users Marker document updated successfully set to false.');
+  })
+  .catch((error) => {
+    console.error('Error updating user document:', error);
+  });
+
+		
 		user.isActive=false;
 		console.log('Busking Ended');
 		//btns.classList.toggle('button-ani-paused');
