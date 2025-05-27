@@ -751,15 +751,15 @@ function handleClick(route){
 
 function updateProfile(){
 	
-	user.name = document.getElementById("fname").value;
-	user.type = document.getElementById("ftype").value;
-	user.soundcloud = document.getElementById("fsoundcloud").value;
-	user.instagram = document.getElementById("finstagram").value;
-	user.payment = document.getElementById("fpaymentid").value;
+	userdat.name = document.getElementById("fname").value;
+	userdat.type = document.getElementById("ftype").value;
+	userdat.soundcloud = document.getElementById("fsoundcloud").value;
+	userdat.instagram = document.getElementById("finstagram").value;
+	userdat.payment = document.getElementById("fpaymentid").value;
 	//now update the entire object and send to firestore
 	//loop thru all elements
 	alert('Profile Updated!');
-	user = userdat;
+	//user = userdat;
 	//console.log(user);
 	db.collection('users').doc(UID).update(userdat)
 	.then(() => {
