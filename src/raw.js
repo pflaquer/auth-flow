@@ -1,4 +1,5 @@
 //import Homie from "../views/Home.js";
+import test from "./functions/test.js";
 let userdat;
 let DEV_MODE;
 let routes =['Home'];
