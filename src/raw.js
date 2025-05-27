@@ -637,14 +637,13 @@ db.collection('markers').get()
 	    
     });
     // Now you have the 'documents' array with the data
-    console.log('Live Data All Markers:'
-		,documents);
-	  console.log(documents[0].isActive);
-	  documents.forEach((x)=>{
-		 if(x.isActive==true){
-		livemarkers.push(x);
-		}
-	 }
+    console.log('Live Data All Markers:',documents);
+console.log(documents[0].isActive);
+documents.forEach((x)=>{
+if(x.isActive==true){
+livemarkers.push(x);
+}
+});
 	  console.log('Markers with geo data and isActive true',livemarkers);
   })
   .catch(error => {
