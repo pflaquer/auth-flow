@@ -488,7 +488,7 @@ function testfetch(){
 let JWT;
 JWT=1;
 let requests = 'Requests <span class="badge">NEW</span>'
-let newrequests=true;
+let newrequests=requestsState;
 /*let toggleState = (x)=>{
       x = true;
 }
