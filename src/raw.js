@@ -1081,7 +1081,7 @@ markersCollectionRef.onSnapshot(snapshot => {
 	  console.log(data.isActive);
 const activeState = change.doc.isActive;
     //if (change.type === 'added' | change.type === 'modified') {
-    if (change.type === 'modified') {
+    if (change.type === 'modified' & change.isActive==true) {
 	  // Create and add a new marker
 	    console.log(data);
 	    //if(activeState==true){
@@ -1103,7 +1103,7 @@ const activeState = change.doc.isActive;
     } 
     */
    // else if (change.type === 'removed') {
-	  else if (change.type == 'modified' && change.doc.isActive==false) {
+	  else if (change.type == 'modified' && change.isActive==false) {
       // Remove the marker
 		  console.log('Marker Modified to False...removing');
       const marker = markers[docId];
