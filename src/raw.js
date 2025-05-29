@@ -1077,6 +1077,7 @@ markersCollectionRef.onSnapshot(snapshot => {
   snapshot.docChanges().forEach(change => {
     const data = change.doc.data();
     const docId = change.doc.id;
+	  console.log(change.doc);
 const activeState = change.doc.isActive;
     //if (change.type === 'added' | change.type === 'modified') {
     if (change.type === 'modified' && activeState==true) {
