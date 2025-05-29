@@ -865,5 +865,5 @@ ${modalBox()}
 
   `)
 }
-let newrequests=requestsState;
+newrequests=requestsState;
 export default Index;
