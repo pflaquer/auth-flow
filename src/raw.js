@@ -1081,7 +1081,7 @@ const activeState = change.doc.isActive;
     if (change.type === 'added' | change.type === 'modified') {
       // Create and add a new marker
 	    console.log(data);
-	    if(activeState==true){
+	    //if(activeState==true){
       const marker = new google.maps.Marker({
         position: { lat: parseFloat(data.lat), lng: parseFloat(data.lng) },
         map: globalMap, // Replace 'map' with your map instance
@@ -1091,7 +1091,7 @@ const activeState = change.doc.isActive;
 	    globalMarkers[docId] = marker;
 	    console.log(markers);
 	    
-    } 
+   // } 
     }
     /*else if (change.type === 'modified') {
       // Update the existing marker's position
