@@ -488,7 +488,7 @@ function testfetch(){
 let JWT;
 JWT=1;
 let requests = 'Requests <span class="badge">NEW</span>'
-let newrequests=requestsState;
+let newrequests=false;
 /*let toggleState = (x)=>{
       x = true;
 }
@@ -865,5 +865,5 @@ ${modalBox()}
 
   `)
 }
-
+let newrequests=requestsState;
 export default Index;
