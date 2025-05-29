@@ -865,5 +865,5 @@ ${modalBox()}
 
   `)
 }
-newrequests=requestsState;
+
 export default Index;
