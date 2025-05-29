@@ -1100,7 +1100,7 @@ const activeState = change.doc.isActive;
     } 
     */
    // else if (change.type === 'removed') {
-	  else if (change.type === 'modified' && activeState==false) {
+	  else if (change.type === 'modified' && change.doc.isActive==false) {
       // Remove the marker
 		  console.log('Marker Modified to False');
       const marker = markers[docId];
