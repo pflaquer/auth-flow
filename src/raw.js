@@ -1078,8 +1078,9 @@ markersCollectionRef.onSnapshot(snapshot => {
     const data = change.doc.data();
     const docId = change.doc.id;
 const activeState = change.doc.isActive;
-    if (change.type === 'added' | change.type === 'modified') {
-      // Create and add a new marker
+    //if (change.type === 'added' | change.type === 'modified') {
+    if (change.type === 'modified' && activeState==true) {
+	  // Create and add a new marker
 	    console.log(data);
 	    //if(activeState==true){
       const marker = new google.maps.Marker({
