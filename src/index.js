@@ -497,7 +497,7 @@ toggleState(newrequests);
 alert(newrequests);
       */
 if (newrequests == !true){
-requests=`Hire <span class="badge">${null}</span>`
+requests=`Requests`
 }
 function Index(){
       if(!JWT==1){
