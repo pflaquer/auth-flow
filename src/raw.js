@@ -1090,6 +1090,16 @@ const activeState = change.doc.isActive;
         map: globalMap, // Replace 'map' with your map instance
         id: docId // Store the document ID for later use
       }); 
+	    marker.addListener("click", () => {
+	//markers[i].addListener("click", () => {
+    infowindow.open({
+      //anchor: markers[i],
+	    //anchor:markers[i],
+	    anchor: marker,
+      map,
+    });
+   });
+	    
 /*
 	    //content window and event listener
 contentString = `<div style="background:black;color:white;"><img src=${randomuserimg()} class="userimg"></img><hr>
