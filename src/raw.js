@@ -1107,16 +1107,18 @@ ${hireModal()}
   `
 
 	    
-const infowindow = new google.maps.InfoWindow({
+
+
+
+	    
+	    marker.addListener("click", () => {
+
+		    const infowindow = new google.maps.InfoWindow({
     content: contentstring,
     ariaLabel: "Uluru",
 	  maxWidth:300,
 	  maxHeight:300,
   });
-
-
-	    
-	    marker.addListener("click", () => {
 	
     infowindow.open({
       
