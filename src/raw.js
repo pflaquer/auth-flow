@@ -1090,15 +1090,23 @@ const activeState = change.doc.isActive;
         map: globalMap, // Replace 'map' with your map instance
         id: docId // Store the document ID for later use
       }); 
+const infowindow = new google.maps.InfoWindow({
+    content: 'test,
+    ariaLabel: "Uluru",
+	  maxWidth:300,
+	  maxHeight:300,
+  });
+
+	    
 	    marker.addListener("click", () => {
-	//markers[i].addListener("click", () => {
+	
     infowindow.open({
-      //anchor: markers[i],
-	    //anchor:markers[i],
+      
 	    anchor: marker,
       map,
     });
    });
+	    
 	    
 /*
 	    //content window and event listener
