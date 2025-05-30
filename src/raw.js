@@ -1090,9 +1090,9 @@ const activeState = change.doc.isActive;
         map: globalMap, // Replace 'map' with your map instance
         id: docId // Store the document ID for later use
       }); 
-
+/*
 	    //content window and event listener
-let contentString = `<div style="background:black;color:white;"><img src=${randomuserimg()} class="userimg"></img><hr>
+contentString = `<div style="background:black;color:white;"><img src=${randomuserimg()} class="userimg"></img><hr>
   Genre: ${genreselect[parseInt(Math.random()*3)]}<hr>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="16px" height="16px"></img>  
 <img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="16px" href="https://soundcloud.com" height="16px"></img></div>
@@ -1121,7 +1121,7 @@ marker.addListener("click", () => {
    });
 
 	    //end of content window and event listener
-	    
+	*/    
       markers[docId] = marker; // Store the marker in an object or array
 	    globalMarkers[docId] = marker;
 	    console.log(markers);
