@@ -1113,8 +1113,12 @@ ${hireModal()}
 	    
 	    marker.addListener("click", () => {
 
+
+
+		    
+
 		    const infowindow = new google.maps.InfoWindow({
-    content: contentstring,
+    content: contentString,
     ariaLabel: "Uluru",
 	  maxWidth:300,
 	  maxHeight:300,
