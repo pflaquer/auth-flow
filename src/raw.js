@@ -1091,7 +1091,7 @@ const activeState = change.doc.isActive;
         id: docId // Store the document ID for later use
       }); 
 const infowindow = new google.maps.InfoWindow({
-    content: 'test,
+    content: 'test',
     ariaLabel: "Uluru",
 	  maxWidth:300,
 	  maxHeight:300,
