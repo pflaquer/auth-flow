@@ -1090,8 +1090,23 @@ const activeState = change.doc.isActive;
         map: globalMap, // Replace 'map' with your map instance
         id: docId // Store the document ID for later use
       }); 
+//content window and event listener
+contentString = `<div style="background:black;color:white;"><img src=${randomuserimg()} class="userimg"></img><hr>
+  Genre: ${genreselect[parseInt(Math.random()*3)]}<hr>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="16px" height="16px"></img>  
+<img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="16px" href="https://soundcloud.com" height="16px"></img></div>
+<br>
+<!--<button onclick="handleClick(hireBusker(1))">Hire</button><button>&#9658;</button>-->
+${hireModal()}
+<br>
+<div class="soundcloud-wrapper" class="soundcloud">
+<iframe width="73px" height="73px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11072274&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+</div>
+  `
+
+	    
 const infowindow = new google.maps.InfoWindow({
-    content: 'test',
+    content: contentstring,
     ariaLabel: "Uluru",
 	  maxWidth:300,
 	  maxHeight:300,
@@ -1108,20 +1123,9 @@ const infowindow = new google.maps.InfoWindow({
    });
 	    
 	    
-/*
-	    //content window and event listener
-contentString = `<div style="background:black;color:white;"><img src=${randomuserimg()} class="userimg"></img><hr>
-  Genre: ${genreselect[parseInt(Math.random()*3)]}<hr>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="16px" height="16px"></img>  
-<img src="https://www.svgrepo.com/show/303135/soundcloud-logo.svg" width="16px" href="https://soundcloud.com" height="16px"></img></div>
-<br>
-<!--<button onclick="handleClick(hireBusker(1))">Hire</button><button>&#9658;</button>-->
-${hireModal()}
-<br>
-<div class="soundcloud-wrapper" class="soundcloud">
-<iframe width="73px" height="73px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11072274&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-</div>
-  `
+
+
+	    /*
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
     ariaLabel: "Uluru",
