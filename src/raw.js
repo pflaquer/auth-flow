@@ -1088,8 +1088,8 @@ const activeState = change.doc.isActive;
       const marker = new google.maps.Marker({
         position: { lat: parseFloat(data.lat), lng: parseFloat(data.lng) },
         map: globalMap, // Replace 'map' with your map instance
-        id: docId, // Store the document ID for later use
-	icon: altmarker
+        id: docId // Store the document ID for later use
+	//icon: altmarker
       }); 
 	
 //content window and event listener
