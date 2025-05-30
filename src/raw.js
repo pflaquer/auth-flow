@@ -1091,6 +1091,7 @@ const activeState = change.doc.isActive;
         id: docId, // Store the document ID for later use
 	icon: altmarker
       }); 
+	    /*
 //content window and event listener
 contentString = `<div style="background:black;color:white;"><img src=${randomuserimg()} class="userimg"></img><hr>
   Genre: ${genreselect[parseInt(Math.random()*3)]}<hr>
@@ -1112,6 +1113,7 @@ const infowindow = new google.maps.InfoWindow({
 	  maxWidth:300,
 	  maxHeight:300,
   });
+  */
 
 	    
 	    marker.addListener("click", () => {
