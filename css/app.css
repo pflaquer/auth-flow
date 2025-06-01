@@ -591,6 +591,7 @@ a:link {
   transition: ease 500ms; }
 .button-ani-paused {
   /*background-color: red;*/
+  animation: name 1000ms linear infinite;
  animation-play-state: paused; 
 }
 
