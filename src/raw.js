@@ -1014,8 +1014,7 @@ function busk(){
 		isActive:true,
 		id:UID
 };
-	map.setCenter(new google.maps.LatLng(markerData.lat, markerData.lng)); // Center on marker
-map.setZoom(12);
+	
 	//add to markers array
 	
 	
@@ -1023,6 +1022,8 @@ map.setZoom(12);
 db.collection('markers').doc(UID).update(markerData)
 	.then(() => {
     console.log('Users Marker document updated successfully.');
+		map.setCenter(new google.maps.LatLng(markerData.lat, markerData.lng)); // Center on marker
+map.setZoom(12);
   })
   .catch((error) => {
     console.error('Error updating user document:', error);
@@ -1050,6 +1051,8 @@ db.collection('markers').doc(UID).update(markerData)
 		console.log('Busking Ended');
 		//btns.classList.toggle('button-ani-paused');
 		btns.style.animationPlayState = 'paused';
+		map.setCenter(new google.maps.LatLng(40, -77)); // Center on marker
+map.setZoom(10);
 		
 		removeBusker();
 	}
