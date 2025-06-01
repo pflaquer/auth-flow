@@ -1030,8 +1030,8 @@ map.setZoom(12);
   });
 		
 		user.isActive=true;
-		btns.classList.toggle('button-ani');
-		
+		//btns.classList.toggle('button-ani');
+		btns.classList.add('button-ani');
 		console.log('You Are Now Busking! Coordinates:',latitude,longitude);
 		addBusker();
 		console.log(user);
@@ -1050,7 +1050,8 @@ map.setZoom(12);
 		user.isActive=false;
 		console.log('Busking Ended');
 		//btns.classList.toggle('button-ani-paused');
-		btns.style.animationPlayState = 'paused';
+		btns.classList.remove('button-ani');
+		//btns.style.animationPlayState = 'paused';
 		map.setCenter(new google.maps.LatLng(40, -77)); // Center on marker
 map.setZoom(10);
 		
