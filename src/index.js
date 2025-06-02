@@ -489,17 +489,18 @@ let JWT;
 JWT=1;
 let requests = 'Requests <span class="badge">NEW</span>'
 //let newrequests=false;
-let newrequests;
+//let newrequests = setRequestState(reqUID);
 function setRequestState(x){
  fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/requests/'+x)
  .then(res=>res.json())
  .then(d=> {
-  newrequests = d.new.booleanValue;
+  //newrequests = d.new.booleanValue;
+  return d.new.booleanValue;
  });
- alert('request state set to '+newrequests);
+ //alert('request state set to '+newrequests);
 };
 let reqUID = localStorage.getItem("UID");
-setRequestState(reqUID);
+alert(setRequestState(reqUID));
 /*let toggleState = (x)=>{
       x = true;
 }
