@@ -930,15 +930,15 @@ function fetchRequests(x){
  fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/requests/'+x)
  .then(res=>res.json())
  .then(d=> {
-  d.forEach((x)=>{
-	  requeststring+=JSON.stringify(x);
-	  console.log('OK...'+x);
+  
+	  requeststring=JSON.stringify(d);
+	
 	
  });
-
-});
-	console.log(requeststring);
+console.log(requeststring);
 }
+	
+
 fetchRequests(UID);
 /*let reqUID = localStorage.getItem("UID");
 alert(setRequestState(reqUID));
