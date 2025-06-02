@@ -489,6 +489,13 @@ let JWT;
 JWT=1;
 let requests = 'Requests <span class="badge">NEW</span>'
 let newrequests=false;
+
+function setRequestState(x){
+ fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/requests/'+x)
+ .then(res=>res.json())
+ .then(d=>console.log(d));
+};
+setRequestState(UID);
 /*let toggleState = (x)=>{
       x = true;
 }
