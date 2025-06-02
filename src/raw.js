@@ -939,12 +939,14 @@ function fetchRequests(x){
 	console.log(requeststring);
 }
 fetchRequests(UID);
-let reqUID = localStorage.getItem("UID");
+/*let reqUID = localStorage.getItem("UID");
 alert(setRequestState(reqUID));
 let newrequests = setRequestState(reqUID);
+
 /*let toggleState = (x)=>{
       x = true;
 }
+*/
 function Requests(){
 //setTimeout(renderList(requestslist,"requestslist"),10000);
   return `
