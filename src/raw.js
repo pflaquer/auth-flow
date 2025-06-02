@@ -924,7 +924,27 @@ function renderList(list,target){
 }
 
 let requestslist = [1,2,3,4];
+let requeststring = '';
+function fetchRequests(x){
 
+ fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/requests/'+x)
+ .then(res=>res.json())
+ .then(d=> {
+  d.forEach((x)=>{
+	  requeststring+=JSON.stringify(x);
+	
+ });
+
+});
+	console.log(requeststring);
+}
+fetchRequests(UID);
+let reqUID = localStorage.getItem("UID");
+alert(setRequestState(reqUID));
+let newrequests = setRequestState(reqUID);
+/*let toggleState = (x)=>{
+      x = true;
+}
 function Requests(){
 //setTimeout(renderList(requestslist,"requestslist"),10000);
   return `
