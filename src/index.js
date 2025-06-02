@@ -496,6 +496,7 @@ function setRequestState(x){
  .then(d=> {
   newrequests = d.new;
  });
+ alert('request state set to '+newrequests);
 };
 let reqUID = localStorage.getItem("UID");
 setRequestState(reqUID);
