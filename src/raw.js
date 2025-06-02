@@ -932,6 +932,7 @@ function fetchRequests(x){
  .then(d=> {
   d.forEach((x)=>{
 	  requeststring+=JSON.stringify(x);
+	  console.log('OK...'+x);
 	
  });
 
