@@ -494,8 +494,8 @@ function setRequestState(x){
  fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/requests/'+x)
  .then(res=>res.json())
  .then(d=> {
-  newrequests = d.new);
- };
+  newrequests = d.new;
+ });
 };
 let reqUID = localStorage.getItem("UID");
 setRequestState(reqUID);
