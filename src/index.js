@@ -495,7 +495,8 @@ function setRequestState(x){
  .then(res=>res.json())
  .then(d=>console.log(d));
 };
-setRequestState(UID);
+let reqUID = localStorage.getItem("UID");
+setRequestState(reqUID);
 /*let toggleState = (x)=>{
       x = true;
 }
