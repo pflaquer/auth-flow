@@ -488,8 +488,8 @@ function testfetch(){
 let JWT;
 JWT=1;
 let requests = 'Requests <span class="badge">NEW</span>'
-let newrequests=false;
-
+//let newrequests=false;
+let newrequests;
 function setRequestState(x){
  fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/requests/'+x)
  .then(res=>res.json())
