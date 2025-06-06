@@ -930,7 +930,7 @@ function fetchRequests(x){
  fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/requests/'+x)
  .then(res=>res.json())
  .then(d=> {
-  
+  console.log(d);
 	  requeststring=JSON.stringify(d);
 	
 	
