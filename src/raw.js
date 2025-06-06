@@ -925,17 +925,18 @@ function renderList(list,target){
 
 let requestslist = [1,2,3,4];
 let requeststring = '';
+let newRequests = false;
 function fetchRequests(x){
 
  fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/requests/'+x)
  .then(res=>res.json())
  .then(d=> {
-  console.log(d);
-	  requeststring=JSON.stringify(d);
+  //console.log(d);
+	  newRequests = d.fields.new.booleanValue;
 	
 	
  });
-console.log(requeststring);
+
 }
 	
 
