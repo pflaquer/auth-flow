@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<head>
+<title>
+Busk-It | Discover Live Music in NYC
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="styles3.css"/>
+      <link rel="stylesheet" href="./css/dots.css"/>
+      <link rel="stylesheet" href="/css/dots.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <style>
+  .particle{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  margin:0 auto;
+  top:1%;
+  left:1%;
+  position:absolute;
+   animation-name: floating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  
+}
+
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); opacity:.1}
+    25%  { transform: translate(0, 25px);opacity:.25; }
+  50%  { transform: translate(0, 50px);opacity:.5; }
+   75%  { transform: translate(0, 25px);opacity:.9; }
+    100%   { transform: translate(0, -0px);opacity:.25;
+  }    
+}
+
+/* Project Name: Landing Page Using SwiperJS
+Youtube: https://youtube.com/@devRasen
+Copyright: ©MdRasen */
+
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
+/* General CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  
+}
+
+body {
+  background: linear-gradient(to right, #a1ffce, #faffd1);
+}
+/* Custom CSS */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  column-gap: 40px;
+  padding: 60px 6%;
+  border-radius:10px;
+}
+
+.container .side-info {
+  margin: 20px 0;
+  border-radius:10px;
+}
+
+.container .side-info span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  color: #717171;
+}
+
+.container .side-info h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  background-color: #005baa;
+  background-image: linear-gradient(45deg, #005baa, #000000);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.container .side-info hr {
+  display: block;
+  background: #005baa;
+  height: 4px;
+  width: 20%;
+  margin: 18px 0;
+}
+
+.container a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 50px;
+  border: 2px solid #c2c2c2;
+  padding: 8px 16px;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.container a:hover {
+  border: 2px solid #005baa;
+  color: #005baa;
+}
+
+.container .swiper {
+  width: 100%;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 20px !important;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  border-radius:25px;
+  filter:drop-shadow(10px 5px 10px lightyellow)
+  
+}
+
+.swiper-slide:hover{
+  transform:scale(1.1);
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  padding: 0 0 0 24px;
+  text-transform: uppercase;border-border-radius:25px;
+}
+
+.swiper-slide p {
+  color: #dadada;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 24px;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  margin: 20px 25px 50px !important;
+  padding: 8px 16px !important;
+  font-size: 14px;
+  border: none;
+}
+
+.swiper-slide a:hover {
+  border: none;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 10px;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.slide-one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://images.unsplash.com/photo-1528143358888-6d3c7f67bd5d?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN0cmVldCUyMG11c2ljaWFufGVufDB8fDB8fHww) no-repeat 50% 50% / cover;
+}
+
+.slide-two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://cronkitenews.azpbs.org/wp-content/uploads/2022/12/Trumpet-Player-1200x800-1.jpg) no-repeat 50% 50% / cover;
+}
+
+.slide-three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://media.istockphoto.com/id/451967679/photo/black-street-musician-playing-on-saxophone-in-the-evening.jpg?s=612x612&w=0&k=20&c=3_y2xHMogrlMu4P4dEORuSM3M0Vam7cvInBQa2TzSE4=) no-repeat 50% 50% / cover;
+}
+
+.slide-four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fbe47323887327.5632a770721d1.jpg) no-repeat 50% 50% / cover;
+}
+
+/* Responsive Design */
+@media (min-width: 800px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .container .side-info {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container .side-info h1 {
+    font-size: 46px;
+  }
+
+  .container .side-info p {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+.iphone-x {
+  position: relative;
+  margin: 40px auto;
+  width: 360px;
+  height: 780px;
+  background-color: #7371ee;
+  background-image: linear-gradient(60deg, #7371ee 1%,#a1d9d6 100%);
+  border-radius: 40px;
+  box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
+  
+  &:before,
+  &:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  // home button indicator
+  &:after {
+    bottom: 7px;
+    width: 140px;
+    height: 4px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  
+  // frontal camera/speaker frame
+  &:before {
+    top: 0px;
+    width: 56%;
+    height: 30px;
+    background-color: #1f1f1f;
+    border-radius: 0px 0px 40px 40px;
+  }
+  
+  i,
+  b,
+  s,
+  span {
+    position: absolute;
+    display: block;
+    color: transparent;
+  }
+  
+  // speaker
+  i {
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 6px);
+    height: 8px;
+    width: 15%;
+    background-color: #101010;
+    border-radius: 8px;
+    box-shadow: inset 0px -3px 3px 0px rgba(256, 256, 256, 0.2);
+  }
+  
+  // camera
+  b {
+    left: 10%;
+    top: 0px;
+    transform: translate(180px, 4px);
+    width: 12px;
+    height: 12px;
+    background-color: #101010;
+    border-radius: 12px;
+    box-shadow: inset 0px -3px 2px 0px rgba(256, 256, 256, 0.2);
+    
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: #2d4d76;
+      width: 6px;
+      height: 6px;
+      top: 2px;
+      left: 2px;
+      top: 3px;
+      left: 3px;
+      display: block;
+      border-radius: 4px;
+      box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+  // time
+  s {
+    top: 50px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: 70px;
+    font-weight: 100;
+    padding-top: 60px;
+  }
+  
+  // action buttons
+  span {
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    left: 30px;
+    
+    & + span {
+      left: auto;
+      right: 30px;
+    }
+  }
+}
+
+.user-img{
+  width:30%;
+  height:30%;
+  border-radius:50%;
+}
+
+.cashapp{
+  
+  height:20%;
+  width:20%;
+  filter:drop-shadow(10px 10px 10px black);
+  padding:50x;
+  
+}
+
+.venmo{
+  width:50%;
+  height:50%;
+  filter:drop-shadow(10px 10px 10px black);
+}
+
+.payment-buttons{
+  position:relative;
+    top:300px;
+  margin:auto;
+  justify-content:center;
+}
+
+.soundcloud{
+  height:30%;
+  
+  width:30%;
+  filter:drop-shadow(10px 10px 10px black);
+}
+  </style>
+
+</head>
+<body>
+      
+<div class="container">
+
+      <!-- Side infos -->
+      <div class="side-info">
+        <span>discover</span>
+        <h1>live music in NYC</h1>
+        <hr />
+        <center>
+        <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/61/72/98/61729802-4c9f-4c99-e775-ae7a252275d3/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" width="30%" height="30%" style="border-radius:10px; filter:drop-shadow(10px 5px 4px gray");"></img></center>
+        <br>
+        <p>
+          Find the latest, live performances in your city!
+        </p>
+        <a href="/login.html">Login</a>
+        <a href="/login.html" disabled>Sign Up</a>
+      </div>
+      <div class="iphone-x">
+  <i>Speaker</i>
+  <b>Camera</b>
+  <s><img id="userimg" class="user-img"></img></s>
+<div class="payment-buttons"><center><img src="https://www.transvirginia.org/wp-content/uploads/2024/04/Venmo-Button.png" class="venmo"></img><br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Square_Cash_app_logo.svg/1200px-Square_Cash_app_logo.svg.png" class="cashapp"></img><br>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Antu_soundcloud.svg/1200px-Antu_soundcloud.svg.png" class="soundcloud"></img>
+</div>
+  
+  <span>Left action button</span>
+  <span>Right action button</span>
+</div>
+    </div>
+</div>
+</div>
+      <!--
+  <script src="main.js">
+      -->
+      <script src="index.js"></script>
+  </script>
+      <script>
+     let note = `
+<div style="margin:5px;">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+<g>
+	<path style="fill:#00A8E1;" d="M159.498,112.492v242.484c-14.597-3.372-31.195-3.986-48.801-1.243
+		c-58.334,9.086-105.62,51.491-105.62,94.718c0,43.23,47.287,70.907,105.62,61.822c58.335-9.086,105.62-51.493,105.62-94.72v-311.91
+		L159.498,112.492z"/>
+	<path style="fill:#00A8E1;" d="M450.101,67.234v242.482c-14.597-3.371-31.194-3.985-48.799-1.241
+		c-58.335,9.086-105.62,51.491-105.62,94.72c0,43.228,47.286,70.904,105.62,61.82c58.334-9.086,105.62-51.491,105.62-94.72V58.383
+		L450.101,67.234z"/>
+</g>
+<path style="fill:#0071CE;" 
+</div>
+
+`
+let i;
+i=0;
+function genDots(){
+  while(i<0xff)
+    i++;
+    setInterval(()=>{
+document.body.innerHTML += `<div class="particle" id="particle" style="position:absolute;top:${Math.random()*100}%;left:${Math.random()*100}%;opacity:${Math.random()*100};background-color:rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255});">
+
+${note}
+
+
+</div>`
+//document.getElementById("particle").style.backgroundColor = colors[i]
+},1000)
+}
+//
+
+genDots()
+
+        let user={
+  img:'https://preview.redd.it/lady-gaga-stuns-while-promoting-haus-labs-new-liquid-v0-0r56uxmn33hd1.jpeg?width=640&crop=smart&auto=webp&s=946e885ee880df7e349725700e857c421694f3fd',
+  cashapp:'',
+  venmo:'',
+  soundcloud:'',
+  instagram:''
+}
+
+document.getElementById("userimg").src=user.img
+//
+
+      </script>
+
+  </body>
+<footer>
+  
+</footer>
+</html>
