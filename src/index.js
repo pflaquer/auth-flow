@@ -519,7 +519,9 @@ function buskerNavBar(){
               <i class="fas fa-search"></i>Events
             </li></a
           >
-          <a href="#"
+          ${function(){
+           if(true)
+          return `<a href="#"
             ><li class="item-menu" onclick="handleClick(Tickets)">
               <i class="fa-solid fa-ticket"></i>Tickets
             </li></a
@@ -528,6 +530,8 @@ function buskerNavBar(){
               <i class="fa-solid fa-table-list"></i>Gigs
             </li></a
           >
+  `
+  };
           <a href="#"
             ><li class="item-menu" onclick="handleClick(Payments)">
               <i class="fa-solid fa-money-bill"></i>Payments
