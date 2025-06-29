@@ -531,7 +531,7 @@ function buskerNavBar(){
             </li></a
           >
   `
-  };
+  }
             }
           <a href="#"
             ><li class="item-menu" onclick="handleClick(Payments)">
