@@ -532,6 +532,7 @@ function buskerNavBar(){
           >
   `
   };
+            }
           <a href="#"
             ><li class="item-menu" onclick="handleClick(Payments)">
               <i class="fa-solid fa-money-bill"></i>Payments
