@@ -641,6 +641,75 @@ function Payments(){
   `
 }
 
+function dynamicLoadRequests(){
+
+
+	let imgURLStr = "https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/users/"
+
+let usersImg = ''
+
+function getImg(x){
+  fetch(x)
+  .then(res=>res.json())
+  .then(d=>{
+  usersImg = d.fields.img.stringValue;
+  });
+  
+}
+
+
+function setUserId(){
+  uid=window.prompt('Enter UID');
+}
+
+function renderRequests(currentUID){
+ 
+	fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/requests/'+currentUID+'/details')
+	.then(res=>res.json())
+	.then(d=>{
+d.documents.forEach((x)=>{
+  
+  
+ 
+
+const uidString = x.name;
+const noSlashIndex = uidString.lastIndexOf('/');
+
+
+  const extractedUID = uidString.substring(noSlashIndex + 1);
+  //uid = extractedUID;
+  //console.log(uid);
+   getImg(imgURLStr+extractedUID)
+
+
+  setTimeout(()=>{
+  //console.log(x.name,x.fields.date.stringValue);
+  document.getElementById("requestsRender").innerHTML += ` <div>
+  <img src="${usersImg}"></img><br>
+  ${x.name}  <br>
+  ${x.fields.payment.doubleValue || x.fields.payment.integerValue} <br>
+  ${x.fields.date.stringValue} <br>
+  <button onclick="alert('Accept?')">Accept</button><button onclick="alert('Decline?')">Decline</button>
+  
+  `
+  },1000);
+;
+})
+        
+	      });
+}
+
+
+
+
+renderRequests("cGpmbGFxdWVyQGdtYWlsLmNvbQ==")
+
+
+
+};
+
+	
+
 
 function Hire(){
 	const urlParams = new URLSearchParams(window.location.hash);
@@ -728,6 +797,7 @@ function Requests(){
   </ul>
   <div id="requestsRender"></div>
 ${rendertodiv('requestsRender')}
+${dynamicLoadRequests()}
   </div>
   `
 }
