@@ -26,7 +26,7 @@ db.collection(users).doc(UID).get()
 
 //DEV_MODE = parseInt(window.prompt('Choose Your Mode 0 or 1'));
 //test();
-DEV_MODE = 0;
+DEV_MODE = 1;
 let userObj = {
 	newRequests:false
 }
