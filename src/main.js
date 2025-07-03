@@ -12,4 +12,5 @@ else{
 render(NoAuth());
 }
 
-includeJS("/src/app.js",'text/javascript');
+//includeJS("/src/app.js",'text/javascript');
+includeJS("/src/app.js",'module');
