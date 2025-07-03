@@ -692,13 +692,14 @@ function fetchRequests(x){
 
 }
 
-function renderRequests(){
+/*function renderRequests(){
 	fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/markers')
 	.then(res=>res.json())
 	.then(d=>{
 		this.innerHTML+=JSON.stringify(d);
 	}
 	      }
+       */
 
 fetchRequests(UID);
 /*let reqUID = localStorage.getItem("UID");
