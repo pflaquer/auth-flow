@@ -6,6 +6,7 @@ let currentroute = routes[0];
 let globalMarkers = [];
 let requestsState=0;
 
+
 DEV_MODE = 1;
 let userObj = {
 	newRequests:false
@@ -690,7 +691,14 @@ function fetchRequests(x){
  });
 
 }
-	
+
+function renderRequests(){
+	fetch('https://firestore.googleapis.com/v1/projects/buskitv2/databases/(default)/documents/markers')
+	.then(res=>res.json())
+	.then(d=>{
+		this.innerHTML+=JSON.stringify(d);
+	}
+	      }
 
 fetchRequests(UID);
 /*let reqUID = localStorage.getItem("UID");
@@ -702,6 +710,9 @@ let newrequests = setRequestState(reqUID);
 }
 */
 function Requests(){
+	function rendertodiv(x){
+		document.getElementById(x).innerHTML = 'testing render to div';
+	};
 //setTimeout(renderList(requestslist,"requestslist"),10000);
   return `
   
@@ -709,8 +720,11 @@ function Requests(){
   <div id="requests">
   <div class="views2" id="hiringheading">Current Requests</div>
   <ul ="requestslist">
+  
 <li></li>
   </ul>
+  <div id="requestsRender"></div>
+  ${rendertodiv('requestsRender')};
   </div>
   `
 }
