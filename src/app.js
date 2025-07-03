@@ -118,11 +118,6 @@ window.onclick = e => {
   }
 };
 
-
-/*function hireBusker(){
-  alert();
-}
-*/
 </script>
 `
 }
@@ -130,9 +125,7 @@ window.onclick = e => {
 function buttonFilter(genre){
 	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers); markers.forEach((x)=>
  {
- /*if(x.title!==genrefilter){x.map=null;}
-else{x.map=globalMap}
-    */
+ 
     x.map=globalMap;
     console.log(markers);
     //x.visible=true;
@@ -155,7 +148,7 @@ let useremail = localStorage.getItem(2);
 let username = localStorage.getItem(3);
 let type = localStorage.getItem(4);
 
-//change this to a different number
+
 let UID = btoa(useremail);
 
 
@@ -235,7 +228,7 @@ let altmarker = {
     
 };
 let custommarker = altmarker;
-//let livemarker = 'https://raw.githubusercontent.com/pflaquer/auth-flow/main/marker.png';
+
 
 
 let livemarker = altmarker;
@@ -586,15 +579,6 @@ function Gigs(){
   <div class="views2 smoothfade">Current Route: /Gigs</div>
 	  <div class="views2">
 
-   <!--
-	  <ul>
-   <li><div class="gig-card">Event 1</div></li>
-    <li><div class="gig-card">Event 2</div></li>
-     <li><div class="gig-card">Event 3</div></li>
- 
-	  </div>
--->
-
 <li>
   <div class="gig-card">
     <img src=${randomuserimg()} class="userimg"></img><hr>
@@ -636,6 +620,7 @@ function Gigs(){
 	  new QRCode(document.getElementById("qrcodes"), `https://venmo.com/?txn=pay&audience=friends&recipients=${useremail}`);
   };
 
+let tipsreceived = parseInt(100*Math.random());
 
 function Payments(){
 	setTimeout(initQR,0xff);
@@ -650,7 +635,7 @@ function Payments(){
 
   <code>Your Payment QR Code</code>
   <br>
-  <div style="background:white;">Current Balance: $371.82</div>
+  <div style="background:white;">Total Tips Received: $${tipsreceived}</div>
     
   `
 }
