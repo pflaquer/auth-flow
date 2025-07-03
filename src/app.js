@@ -1,4 +1,4 @@
-import Payments from './views/Payments.js'
+//import Payments from './views/Payments.js'
 let userdat;
 let DEV_MODE;
 let routes =['Home'];
