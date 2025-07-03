@@ -714,7 +714,7 @@ function Requests(){
 	function rendertodiv(x){
 		setTimeout(()=>{
 		document.getElementById(x).innerHTML = 'testing this rendertodiv';
-		},750);
+		},100);
 	};
 //setTimeout(renderList(requestslist,"requestslist"),10000);
   return `
