@@ -711,7 +711,9 @@ let newrequests = setRequestState(reqUID);
 }
 */
 function Requests(){
-	
+	function rendertodiv(x){
+		document.getElementById(x).innerHTML = 'testing this rendertodiv';
+	};
 //setTimeout(renderList(requestslist,"requestslist"),10000);
   return `
   
@@ -723,7 +725,7 @@ function Requests(){
 <li></li>
   </ul>
   <div id="requestsRender"></div>
-
+${rendertodiv('requestsRender')}
   </div>
   `
 }
