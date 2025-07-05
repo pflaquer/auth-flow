@@ -152,7 +152,18 @@ let type = localStorage.getItem(4);
 
 let UID = btoa(useremail);
 
+function addNewRequest(artist,requestorid,payment){
+	console.log('creating new user request document...');
+	db.collection('requests').doc(artist).collection('details').doc(requestorid).set({
+                payment: payment,
+               location:username,
+		title:false,
+		description:null
+            });
 
+	console.log('created successfully');
+};
+	
 console.log(UID);
 //check if doc exists, if not, create it
 function setUserFirestore(x){
