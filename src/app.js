@@ -796,7 +796,7 @@ function Requests(){
 <li></li>
   </ul>
   <div id="requestsRender"></div>
-${rendertodiv('requestsRender')}
+<!--${rendertodiv('requestsRender')}-->
 ${dynamicLoadRequests()}
   </div>
   `
