@@ -135,7 +135,7 @@ function buttonFilter(genre){
     <option value="HipHop">HipHop</option>
     <option value="Country">Country</option>
     <option value="Pop">Pop</option>
-  </select></div>
+  </select><button onclick="addNewRequest('testing','testing','testing')">Add Request</button></div>
  `
 }
 
