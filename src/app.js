@@ -162,8 +162,8 @@ function addNewRequest(artist,requestorid,location,payment){
         if (docSnapshot.exists) {
           console.warn('A request already exists');
          }
-      });
-	db.collection('requests').doc(artist).collection('details').doc(requestorid).set({
+	else{
+		db.collection('requests').doc(artist).collection('details').doc(requestorid).set({
                 payment: payment,
                location:location,
 		title:false,
@@ -171,6 +171,9 @@ function addNewRequest(artist,requestorid,location,payment){
             });
 
 	console.log('created successfully');
+	}
+      });
+	
 	}
 	catch(err){
 		console.log(err,'Did not work');
