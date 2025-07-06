@@ -148,18 +148,18 @@ function buttonFilter(genre){
     <option value="HipHop">HipHop</option>
     <option value="Country">Country</option>
     <option value="Pop">Pop</option>  
-  </select><button onclick="addNewRequest('testing','testing','400')">Add Request</button></div>
+  </select><input type="text" id="requestValue">DROMANCE</input><button onclick="addNewRequest('testing','testing','nyc','400')">Add Request</button></div>
  `
 }
 
 
 
-function addNewRequest(artist,requestorid,payment){
+function addNewRequest(artist,requestorid,location,payment){
 	console.log('creating new user request document...');
 	try {
 	db.collection('requests').doc(artist).collection('details').doc(requestorid).set({
                 payment: payment,
-               location:username,
+               location:location,
 		title:false,
 		description:null
             });
