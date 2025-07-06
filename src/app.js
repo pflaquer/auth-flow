@@ -157,6 +157,12 @@ function buttonFilter(genre){
 function addNewRequest(artist,requestorid,location,payment){
 	console.log('creating new user request document...');
 	try {
+		db.collection('requests').doc(artist).collection('details').doc(requestorid).get()
+.then(docSnapshot => {
+        if (docSnapshot.exists) {
+          console.warn('A request already exists');
+        }
+      };
 	db.collection('requests').doc(artist).collection('details').doc(requestorid).set({
                 payment: payment,
                location:location,
