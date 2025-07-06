@@ -161,8 +161,8 @@ function addNewRequest(artist,requestorid,location,payment){
 .then(docSnapshot => {
         if (docSnapshot.exists) {
           console.warn('A request already exists');
-        }
-      };
+         }
+      });
 	db.collection('requests').doc(artist).collection('details').doc(requestorid).set({
                 payment: payment,
                location:location,
