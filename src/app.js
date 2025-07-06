@@ -154,6 +154,7 @@ let UID = btoa(useremail);
 
 function addNewRequest(artist,requestorid,payment){
 	console.log('creating new user request document...');
+	try {
 	db.collection('requests').doc(artist).collection('details').doc(requestorid).set({
                 payment: payment,
                location:username,
@@ -162,6 +163,10 @@ function addNewRequest(artist,requestorid,payment){
             });
 
 	console.log('created successfully');
+	}
+	catch(err){
+		console.log(err,'Did not work');
+	};
 };
 	
 console.log(UID);
