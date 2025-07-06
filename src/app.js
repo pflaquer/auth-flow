@@ -7,7 +7,7 @@ let globalMarkers = [];
 let requestsState=0;
 //alert(UID)
 
-DEV_MODE = 1;
+DEV_MODE = 0;
 let userObj = {
 	newRequests:false
 }
