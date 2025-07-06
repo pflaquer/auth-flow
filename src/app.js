@@ -5,7 +5,7 @@ let routes =['Home'];
 let currentroute = routes[0]; 
 let globalMarkers = [];
 let requestsState=0;
-alert(UID)
+//alert(UID)
 
 DEV_MODE = 1;
 let userObj = {
