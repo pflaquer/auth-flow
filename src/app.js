@@ -123,6 +123,19 @@ window.onclick = e => {
 `
 }
 
+let globalMap;
+
+let user;
+let events;
+
+let btns = document.getElementById("pulse");
+let useremail = localStorage.getItem(2);
+let username = localStorage.getItem(3);
+let type = localStorage.getItem(4);
+
+
+let UID = btoa(useremail);
+
 function buttonFilter(genre){
 	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers); markers.forEach((x)=>
  {
@@ -139,18 +152,7 @@ function buttonFilter(genre){
  `
 }
 
-let globalMap;
 
-let user;
-let events;
-
-let btns = document.getElementById("pulse");
-let useremail = localStorage.getItem(2);
-let username = localStorage.getItem(3);
-let type = localStorage.getItem(4);
-
-
-let UID = btoa(useremail);
 
 function addNewRequest(artist,requestorid,payment){
 	console.log('creating new user request document...');
