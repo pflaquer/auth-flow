@@ -6,7 +6,7 @@ let currentroute = routes[0];
 let globalMarkers = [];
 let requestsState=0;
 //alert(UID)
-
+//make a new top level function that takes any of the markers, whether dev mode generated or live, and adds to map.
 DEV_MODE = 0;
 let userObj = {
 	newRequests:false
