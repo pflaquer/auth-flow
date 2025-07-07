@@ -154,7 +154,7 @@ function buttonFilter(genre){
     <option value="HipHop">HipHop</option>
     <option value="Country">Country</option>
     <option value="Pop">Pop</option>  
-  </select><input type="text" id="requestValue">DROMANCE</input><button onclick="addNewRequest(document.getElementById('requestValue').value,${btoa(Math.random()*Math.PI)},'nyc',${parseInt(Math.random()*500})">Add Request</button></div>
+  </select><input type="text" id="requestValue">DROMANCE</input><button onclick="addNewRequest(document.getElementById('requestValue').value,'testing','nyc','testing')">Add Request</button></div>
  `
 }
 
