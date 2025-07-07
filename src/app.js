@@ -135,7 +135,13 @@ let type = localStorage.getItem(4);
 
 
 let UID = btoa(useremail);
-
+function closeModal(){
+	
+document.querySelector(".close").addEventListener("click", function() {
+  modal.style.display = "none";
+  modalContent.classList.remove("show");
+});
+	
 function buttonFilter(genre){
 	return `<div class="buttonFilter"><button>Filter</button> <select id="genres" name="genres" onchange='alert("Filter Applied!");console.log(markers); markers.forEach((x)=>
  {
@@ -148,7 +154,7 @@ function buttonFilter(genre){
     <option value="HipHop">HipHop</option>
     <option value="Country">Country</option>
     <option value="Pop">Pop</option>  
-  </select><input type="text" id="requestValue">DROMANCE</input><button onclick="addNewRequest(document.getElementById('requestValue').value,'testing','nyc','100')">Add Request</button></div>
+  </select><input type="text" id="requestValue">DROMANCE</input><button onclick="addNewRequest(document.getElementById('requestValue').value,${btoa(Math.random()*Math.PI)},'nyc',${parseInt(Math.random()*500})">Add Request</button></div>
  `
 }
 
@@ -178,6 +184,7 @@ function addNewRequest(artist,requestorid,location,payment){
 	catch(err){
 		console.log(err,'Did not work');
 	};
+	closeModal();
 };
 	
 console.log(UID);
