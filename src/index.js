@@ -214,7 +214,8 @@ return `
     transform: translate(-50%, -50%);
     background-color: #fff;
     margin: 25% auto;
-    width: 25%;
+    width: 250px;
+    height:250px;
     border-radius: 4px;
 
     .modal-header {
@@ -472,7 +473,7 @@ nav {
   .then((response) => response.json())
   .then((json) => alert('Request successful! Server returned '+JSON.stringify(json)));
           
-          ">Submit!</button>
+          ">Submit!</button><button onclick="addNewRequest('1','1','1','1')">Add Request</button>
         </div>
       </div>
     </div>
